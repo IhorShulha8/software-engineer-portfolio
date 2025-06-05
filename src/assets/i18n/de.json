@@ -1,0 +1,114 @@
+{
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "ROLE": "Software Engineer",
+    "LOCATION": "Berlin, Deutschland",
+    "TEXT": "Ich bin ein leidenschaftlicher Softwareentwickler mit Schwerpunkt Backend (Java, Spring Boot, Docker, AWS, PostgreSQL, Kafka, Redis, Cassandra). Ich habe auch Erfahrung als Fullstack- und Mobile-Entwickler (Angular, Flutter, Kotlin). Ich liefere robuste, skalierbare Lösungen sowohl für Startups als auch für eigene Projekte.",
+    "EXPERIENCE_BLOCK": "2020–2023, Software Engineer, AcmeTech GmbH: Entwicklung skalierbarer Backend-Microservices und Integration von Frontend-Komponenten in cross-funktionalen Teams."
+  },
+  "SKILLS": {
+    "TITLE": "Fähigkeiten",
+    "LIST": [
+      "Java", "Spring Boot", "Docker", "AWS", "PostgreSQL", "Kafka", "Redis", "Cassandra",
+      "Angular", "Flutter", "Kotlin"
+    ]
+  },
+  "PROJECTS": {
+  "TITLE": "Projekte",
+  "BACKEND": "Backend-Projekte",
+  "FULLSTACK": "Fullstack-Projekte",
+  "MOBILE": "Mobile / Frontend-Projekte",
+  "EXPERIENCE": "Erfahrung als Inhouse-Entwickler wird im Abschnitt Über mich beschrieben.",
+  "LIST": {
+    "BACKEND": [
+      {
+        "NAME": "BillingCloud API",
+        "TECH": "Java, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
+        "ROLE": "Lead Backend Engineer & Solution Architect",
+        "DESC": "Skalierbares Backend für eine Enterprise-Billing-SaaS-Plattform. Verwaltung von Rechnungen, Kunden, sicheren Zahlungen und komplexem Reporting mit Kafka-basiertem Event Sourcing."
+      },
+      {
+        "NAME": "DocuSigner Microservice",
+        "TECH": "Java, Spring Boot, Redis, Cassandra, AWS S3",
+        "ROLE": "Technischer Owner & Hauptentwickler",
+        "DESC": "Microservice für sichere digitale Dokumentenspeicherung, E-Signaturen und revisionssichere Archivierung. Integration mit AWS S3 für verschlüsselte Ablage und Echtzeit-Validierung."
+      },
+      {
+        "NAME": "User Identity & Access Manager",
+        "TECH": "Java, Spring Boot, Keycloak, PostgreSQL, Redis",
+        "ROLE": "Backend-Entwickler & Security-Integrator",
+        "DESC": "Zentralisierte Identitäts- und Zugriffsverwaltung für verteilte Systeme. Unterstützt OAuth2, SSO, RBAC und Session Management für Enterprise-Sicherheit."
+      },
+      {
+        "NAME": "Payments Processing Engine",
+        "TECH": "Java, Spring Boot, Kafka, PostgreSQL, AWS",
+        "ROLE": "Projektgründer & Principal Engineer",
+        "DESC": "Hochperformantes Zahlungsgateway mit Echtzeit-Betrugserkennung, transaktionalem Messaging via Kafka und resilientem API-Design für Fintech-Anwendungen."
+      },
+      {
+        "NAME": "Realtime Collaboration Service",
+        "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
+        "ROLE": "Backend-Architekt & Lead Developer",
+        "DESC": "Backend für Live-Dokumenten- und Whiteboard-Collaboration-Tools. Unterstützt Low-Latency-Sync, gleichzeitiges Editieren und Aktivitätsprotokolle."
+      },
+      {
+        "NAME": "IoT Device Event Aggregator",
+        "TECH": "Java, Spring Boot, Kafka, Cassandra, Docker, AWS",
+        "ROLE": "Technischer Berater (Freelance)",
+        "DESC": "Verteilte Service zum Aggregieren und Verarbeiten von IoT-Telemetriedaten. Entwickelt für Zeitreihen, Anomalieerkennung und skalierbare Cloud-Deployments."
+      }
+    ],
+    "FULLSTACK": [
+      {
+        "NAME": "SmartTask Flow",
+        "TECH": "Java, Spring Boot, Angular, Docker",
+        "ROLE": "Fullstack-Entwickler (Design, Implementierung & Deployment)",
+        "DESC": "Fullstack-Task- und Projektmanagementsystem für KMU. Echtzeit-Boards, Benutzerrollen und Analytics-Dashboards mit modernem Responsive UI."
+      },
+      {
+        "NAME": "eCommerce Admin Suite",
+        "TECH": "Java, Spring Boot, Angular, PostgreSQL, Docker",
+        "ROLE": "Fullstack-Entwickler & API-Integrator",
+        "DESC": "Admin-Panel zur Verwaltung von Produktkatalogen, Bestellungen und Kunden-Insights für Online-Shops. Sichere Authentifizierung, API-first Architektur."
+      },
+      {
+        "NAME": "HR Interview Portal",
+        "TECH": "Java, Spring Boot, Angular, WebSocket",
+        "ROLE": "Lead Fullstack Engineer",
+        "DESC": "Plattform zur Automatisierung von Remote-Interviews, Coding-Tests und Kandidatenbewertung. Unterstützt Live-Feedback und Berichtserstellung."
+      }
+    ],
+    "MOBILE": [
+      {
+        "NAME": "Wellness Tracker App",
+        "TECH": "Flutter, Firebase, REST API",
+        "ROLE": "Mobile App Entwickler & UI Designer",
+        "DESC": "Mobile App für persönliches Wellness-Tracking: Sport, Ernährung, Schlaf und Stimmung mit Cloud-Sync und Push-Benachrichtigungen."
+      },
+      {
+        "NAME": "MiniCRM Mobile",
+        "TECH": "Flutter, Kotlin, Firebase",
+        "ROLE": "Projektverantwortlicher & Mobile Entwickler",
+        "DESC": "Leichtgewichtige CRM-App für Vertriebsteams: Kontakte, Pipeline, Erinnerungen und Instant-Chat."
+      },
+      {
+        "NAME": "SmartHome Dashboard",
+        "TECH": "Angular, REST API",
+        "ROLE": "Frontend Entwickler (PWA)",
+        "DESC": "PWA für Überwachung und Steuerung von Smart-Home-Geräten, Energieverbrauch und Benachrichtigungen in Echtzeit."
+      }
+    ]
+  }
+},
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "E-Mail",
+    "WHATSAPP": "WhatsApp",
+    "GITHUB_URL": "https://github.com/andrii-dev",
+    "LINKEDIN_URL": "https://linkedin.com/in/andrii-dev",
+    "EMAIL_ADDR": "john.engineer@email.com",
+    "WHATSAPP_NUM": "+49 123 4567890"
+  }
+}
