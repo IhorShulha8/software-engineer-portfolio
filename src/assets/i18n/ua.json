@@ -1,114 +1,96 @@
 {
   "ABOUT": {
     "TITLE": "Про мене",
-    "ROLE": "Software Engineer",
-    "LOCATION": "Берлін, Німеччина",
-    "TEXT": "Я — пристрасний розробник серверної частини (Java, Spring Boot, Docker, AWS, PostgreSQL, Kafka, Redis, Cassandra). Маю також досвід як fullstack- і mobile-розробник (Angular, Flutter, Kotlin). Розробляю масштабовані та надійні рішення для стартапів, компаній та власних pet-проєктів.",
-    "EXPERIENCE_BLOCK": "2020–2023, Software Engineer, AcmeTech GmbH: Розробка масштабованих мікросервісів (backend) і інтеграція frontend-компонентів у кросфункціональних командах."
-  },
-  "SKILLS": {
-    "TITLE": "Навички",
-    "LIST": [
-      "Java", "Spring Boot", "Docker", "AWS", "PostgreSQL", "Kafka", "Redis", "Cassandra",
-      "Angular", "Flutter", "Kotlin"
-    ]
+    "TEXT": "Ігор Шульга — універсальний Software Engineer з глибокою експертизою у backend-розробці, хмарних рішеннях та високонавантажених архітектурах. Понад 4 роки досвіду у міжнародних командах, реалізація масштабних систем для фінансів, медицини й цифрових платформ. Спеціалізація: Java (8–21), Spring Boot, мікросервіси, AWS, PostgreSQL. Володіє сучасними DevOps-практиками, контейнеризацією, а також фронтенд і мобільними технологіями (Angular, Flutter, Kotlin). Захоплюється проєктуванням масштабованих рішень, інтеграцією платіжних систем та впровадженням інновацій. Поєднує інженерний підхід із комунікативністю та орієнтацією на результат.\n\nЛокація: Кассель, Німеччина\nМови: англійська (професійна), українська (рідна)\nКонтакт: ihor.shulha8@gmail.com, +49 160 91483423\nLinkedIn: linkedin.com/in/ihorshulha\n\n\"Створюю програмні рішення, які вирішують бізнес-завдання і масштабуються разом із клієнтом.\""
   },
   "PROJECTS": {
-  "TITLE": "Проєкти",
-  "BACKEND": "Backend-проєкти",
-  "FULLSTACK": "Fullstack-проєкти",
-  "MOBILE": "Мобільні / Frontend-проєкти",
-  "EXPERIENCE": "Досвід штатного розробника описано у розділі Про мене.",
-  "LIST": {
-    "BACKEND": [
-      {
-        "NAME": "BillingCloud API",
-        "TECH": "Java, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
-        "ROLE": "Lead Backend Engineer та Solution Architect",
-        "DESC": "Масштабований backend для SaaS-платформи з білінгу для бізнесу. Автоматизація рахунків, керування клієнтами, безпечні платежі та складна аналітика на основі подій Kafka."
-      },
-      {
-        "NAME": "DocuSigner Microservice",
-        "TECH": "Java, Spring Boot, Redis, Cassandra, AWS S3",
-        "ROLE": "Технічний власник та core-розробник",
-        "DESC": "Мікросервіс для безпечного зберігання електронних документів, workflow електронного підпису, архівування. Інтеграція з AWS S3 для шифрування та реального часу перевірок."
-      },
-      {
-        "NAME": "User Identity & Access Manager",
-        "TECH": "Java, Spring Boot, Keycloak, PostgreSQL, Redis",
-        "ROLE": "Backend-розробник та інтегратор безпеки",
-        "DESC": "Централізована система керування ідентифікацією та доступом для розподілених сервісів. Підтримка OAuth2, SSO, RBAC, керування сесіями для корпоративної безпеки."
-      },
-      {
-        "NAME": "Payments Processing Engine",
-        "TECH": "Java, Spring Boot, Kafka, PostgreSQL, AWS",
-        "ROLE": "Засновник проєкту та головний інженер",
-        "DESC": "Високонавантажений платіжний шлюз з детекцією шахрайства в реальному часі, транзакційними повідомленнями через Kafka, стійким API для fintech-додатків."
-      },
-      {
-        "NAME": "Realtime Collaboration Service",
-        "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
-        "ROLE": "Backend-архітектор та lead-розробник",
-        "DESC": "Backend для сервісу спільного редагування документів та онлайн-дошок. Підтримка low-latency синхронізації, одночасного редагування й аудиту дій."
-      },
-      {
-        "NAME": "IoT Device Event Aggregator",
-        "TECH": "Java, Spring Boot, Kafka, Cassandra, Docker, AWS",
-        "ROLE": "Технічний консультант (фріланс)",
-        "DESC": "Розподілений сервіс для збору й обробки телеметрії IoT-пристроїв. Оптимізований для time-series-даних, пошуку аномалій та хмарного розгортання."
-      }
-    ],
-    "FULLSTACK": [
-      {
-        "NAME": "SmartTask Flow",
-        "TECH": "Java, Spring Boot, Angular, Docker",
-        "ROLE": "Fullstack-розробник (дизайн, реалізація, деплой)",
-        "DESC": "Fullstack-система для управління задачами та проєктами малих і середніх компаній. Live-дошки, ролі користувачів, аналітичні дашборди, сучасний UI."
-      },
-      {
-        "NAME": "eCommerce Admin Suite",
-        "TECH": "Java, Spring Boot, Angular, PostgreSQL, Docker",
-        "ROLE": "Fullstack-розробник та інтегратор API",
-        "DESC": "Адмін-панель для керування каталогами товарів, замовленнями та аналітикою клієнтів інтернет-магазинів. Безпечна автентифікація, архітектура API-first."
-      },
-      {
-        "NAME": "HR Interview Portal",
-        "TECH": "Java, Spring Boot, Angular, WebSocket",
-        "ROLE": "Lead Fullstack Engineer",
-        "DESC": "Платформа для автоматизації онлайн-інтерв’ю, тестів та ранжування кандидатів. Підтримка live-фідбеку та генерації звітів."
-      }
-    ],
-    "MOBILE": [
-      {
-        "NAME": "Wellness Tracker App",
-        "TECH": "Flutter, Firebase, REST API",
-        "ROLE": "Mobile-розробник та UI-дизайнер",
-        "DESC": "Мобільний застосунок для трекінгу спорту, харчування, сну і настрою із хмарною синхронізацією та push-нотифікаціями."
-      },
-      {
-        "NAME": "MiniCRM Mobile",
-        "TECH": "Flutter, Kotlin, Firebase",
-        "ROLE": "Власник проєкту та mobile-розробник",
-        "DESC": "Легка CRM для команд продажів: контакти, угоди, нагадування та швидкий чат."
-      },
-      {
-        "NAME": "SmartHome Dashboard",
-        "TECH": "Angular, REST API",
-        "ROLE": "Frontend-розробник (PWA)",
-        "DESC": "PWA-додаток для моніторингу та керування пристроями smart home, споживанням енергії та оповіщеннями в реальному часі."
-      }
-    ]
-  }
-},
-  "CONTACT": {
-    "TITLE": "Контакти",
-    "GITHUB": "GitHub",
-    "LINKEDIN": "LinkedIn",
-    "EMAIL": "Електронна пошта",
-    "WHATSAPP": "WhatsApp",
-    "GITHUB_URL": "https://github.com/andrii-dev",
-    "LINKEDIN_URL": "https://linkedin.com/in/andrii-dev",
-    "EMAIL_ADDR": "john.engineer@email.com",
-    "WHATSAPP_NUM": "+49 123 4567890"
+    "TITLE": "Проєкти",
+    "BACKEND": {
+      "TITLE": "Бекенд",
+      "LIST": [
+        {
+          "TITLE": "Модульна платіжна платформа",
+          "DESC": "Надійна платіжна система з інтеграціями 20+ провайдерів, аналітикою у реальному часі, каскадними платежами та конвертацією валют.",
+          "STACK": "Java 21, Spring Boot, AWS, Webflux, PostgreSQL, Angular",
+          "ROLE": "Архітектор рішення та лід бекенд-розробки"
+        },
+        {
+          "TITLE": "Мікросервісний пакет для SaaS",
+          "DESC": "Розробка мікросервісів для глобальних продуктів у сфері комунікацій, медіа й фінансів. CI/CD з Kubernetes і Jenkins.",
+          "STACK": "Java 17, Spring Boot, Kafka, gRPC, AWS S3, Jenkins, Swagger",
+          "ROLE": "Ведучий бекенд-розробник, DevOps інтеграція"
+        },
+        {
+          "TITLE": "Платформа медичних даних",
+          "DESC": "Сервісна система для захищеної роботи з медичними пристроями та дотримання стандартів (Class B, USA). Міграція у хмару, надійні API, внутрішні інструменти.",
+          "STACK": "Java 11/17, Spring Boot, Cassandra, PostgreSQL, Azure DevOps, Docker",
+          "ROLE": "Бекенд-розробник, R&D"
+        },
+        {
+          "TITLE": "Бекенд криптоплатформи",
+          "DESC": "Ядро платформи для криптотрейдингу з реальними даними і сучасною безпекою.",
+          "STACK": "Java 8, Spring Security, PostgreSQL, WebSocket",
+          "ROLE": "Бекенд-розробник (фічі, безпека)"
+        },
+        {
+          "TITLE": "Сервіс аналітики даних",
+          "DESC": "Мікросервіс аналітики для дашбордів і фінансової звітності на основі платіжних даних.",
+          "STACK": "Java, Spring Boot, PostgreSQL, Kafka",
+          "ROLE": "Розробник рішень"
+        },
+        {
+          "TITLE": "Інтеграція платіжних систем",
+          "DESC": "Адаптери для швидкої інтеграції з зовнішніми платіжними шлюзами, забезпечення безперервної роботи та відмовостійкості.",
+          "STACK": "Java, Spring, AWS, REST, SQS",
+          "ROLE": "Інтеграційний лід"
+        }
+      ]
+    },
+    "FULLSTACK": {
+      "TITLE": "Fullstack",
+      "LIST": [
+        {
+          "TITLE": "Веб-дешборд для платежів",
+          "DESC": "Інтерфейс для фінансових команд для візуалізації платежів, аналітики та стану системи.",
+          "STACK": "Angular, Spring Boot, AWS",
+          "ROLE": "Fullstack-розробник"
+        },
+        {
+          "TITLE": "Портал тестування пристроїв",
+          "DESC": "Внутрішній веб-додаток для тестування та перевірки медичної техніки.",
+          "STACK": "Angular, Java, Docker",
+          "ROLE": "Fullstack-розробник"
+        },
+        {
+          "TITLE": "Адмін UI для криптоплатформи",
+          "DESC": "Адмін-панель для безпечного управління користувачами та операціями.",
+          "STACK": "Angular, Spring, PostgreSQL",
+          "ROLE": "Fullstack-розробник"
+        }
+      ]
+    },
+    "MOBILE": {
+      "TITLE": "Мобільні / Фронтенд",
+      "LIST": [
+        {
+          "TITLE": "Flutter Mobile Payment Client",
+          "DESC": "Кросплатформний застосунок для управління платежами, повідомленнями у реальному часі та відстеження транзакцій.",
+          "STACK": "Flutter, Dart, REST, AWS",
+          "ROLE": "Мобільний розробник"
+        },
+        {
+          "TITLE": "Kotlin Payment Assistant",
+          "DESC": "Нативний Android-додаток для платіжних повідомлень, трекінгу та аналітики.",
+          "STACK": "Kotlin, Spring Boot backend",
+          "ROLE": "Мобільний розробник"
+        },
+        {
+          "TITLE": "Адаптивний портал користувача",
+          "DESC": "Адаптивний веб-портал для управління профілем і роботи з бізнес-сервісами.",
+          "STACK": "Angular, REST API",
+          "ROLE": "Фронтенд-розробник"
+        }
+      ]
+    }
   }
 }
