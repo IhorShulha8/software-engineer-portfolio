@@ -3,112 +3,112 @@
     "TITLE": "Про мене",
     "ROLE": "Software Engineer",
     "LOCATION": "",
-    "TEXT": "Я інженер-програміст, що спеціалізується на бекенді, і моєю метою є створення надійних, масштабованих систем для складних бізнес-сфер. Мої основні технології — Java, Spring Boot, AWS і PostgreSQL, але я люблю працювати з усім продуктом — від хмарної інфраструктури до фронтенду та мобільних додатків.\n\nПротягом останніх 6 років я запускав SaaS-платформи, високопродуктивні фінтех-рішення та інтеграції IoT — як у складі команди, так і в якості фріланс-консультанта. Мій підхід є прагматичним та орієнтованим на продукт: я дбаю про чистий код, автоматизацію та створення рішень, які мають значення для користувачів та бізнесу.\n\nЯ люблю працювати в міжфункціональних командах, наставляти молодших колег та вивчати нові технології. Якщо у вас є складний проект або ідея для обговорення, давайте зв'яжемося!",
+    "TEXT": "Я розробник із фокусом на backend та побудову надійних, масштабованих рішень для сучасних бізнес-потреб. Мій основний стек — Java, Spring Boot, AWS, PostgreSQL, але я із задоволенням працюю і з хмарною інфраструктурою, і з frontend чи mobile-розробкою.\n\nЗа 6+ років досвіду я реалізував SaaS-платформи, фінтех-рішення з високим навантаженням, та мікросервіси — як частина міжнародної команди, так і у ролі фрілансера. Мій підхід — прагматичний і орієнтований на продукт: чистий код, автоматизація й рішення, які приносять реальну цінність бізнесу та користувачам.\n\nМені близька робота у мультидисциплінарних командах, менторство для junior-розробників та постійне освоєння нових технологій. Готовий долучитися до амбітного проєкту чи обговорити цікаву ідею — пишіть у будь-який зручний спосіб!",
     "EXPERIENCE_BLOCK": ""
   },
   "SKILLS": {
     "TITLE": "Навички",
     "LIST": [
-      "Java", "Spring Boot", "Docker", "AWS", "PostgreSQL", "Kafka", "Redis", "Cassandra",
-      "Angular", "Flutter", "Kotlin"
+      "Java",
+      "Spring Boot",
+      "Kotlin",
+      "Python",
+      "Docker",
+      "AWS",
+      "PostgreSQL",
+      "Kafka",
+      "Redis",
+      "Cassandra",
+      "Angular",
+      "Flutter"
     ]
   },
   "PROJECTS": {
-  "TITLE": "Проєкти",
-  "BACKEND": "Backend-проєкти",
-  "FULLSTACK": "Fullstack-проєкти",
-  "MOBILE": "Мобільні / Frontend-проєкти",
-  "EXPERIENCE": "Досвід штатного розробника описано у розділі Про мене.",
-  "LIST": {
-    "BACKEND": [
-      {
-        "NAME": "BillingCloud API",
-        "TECH": "Java, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
-        "ROLE": "Lead Backend Engineer та Solution Architect",
-        "DESC": "Масштабований backend для SaaS-платформи з білінгу для бізнесу. Автоматизація рахунків, керування клієнтами, безпечні платежі та складна аналітика на основі подій Kafka."
-      },
-      {
-        "NAME": "DocuSigner Microservice",
-        "TECH": "Java, Spring Boot, Redis, Cassandra, AWS S3",
-        "ROLE": "Технічний власник та core-розробник",
-        "DESC": "Мікросервіс для безпечного зберігання електронних документів, workflow електронного підпису, архівування. Інтеграція з AWS S3 для шифрування та реального часу перевірок."
-      },
-      {
-        "NAME": "User Identity & Access Manager",
-        "TECH": "Java, Spring Boot, Keycloak, PostgreSQL, Redis",
-        "ROLE": "Backend-розробник та інтегратор безпеки",
-        "DESC": "Централізована система керування ідентифікацією та доступом для розподілених сервісів. Підтримка OAuth2, SSO, RBAC, керування сесіями для корпоративної безпеки."
-      },
-      {
-        "NAME": "Payments Processing Engine",
-        "TECH": "Java, Spring Boot, Kafka, PostgreSQL, AWS",
-        "ROLE": "Засновник проєкту та головний інженер",
-        "DESC": "Високонавантажений платіжний шлюз з детекцією шахрайства в реальному часі, транзакційними повідомленнями через Kafka, стійким API для fintech-додатків."
-      },
-      {
-        "NAME": "Realtime Collaboration Service",
-        "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
-        "ROLE": "Backend-архітектор та lead-розробник",
-        "DESC": "Backend для сервісу спільного редагування документів та онлайн-дошок. Підтримка low-latency синхронізації, одночасного редагування й аудиту дій."
-      },
-      {
-        "NAME": "IoT Device Event Aggregator",
-        "TECH": "Java, Spring Boot, Kafka, Cassandra, Docker, AWS",
-        "ROLE": "Технічний консультант (фріланс)",
-        "DESC": "Розподілений сервіс для збору й обробки телеметрії IoT-пристроїв. Оптимізований для time-series-даних, пошуку аномалій та хмарного розгортання."
-      }
-    ],
-    "FULLSTACK": [
-      {
-        "NAME": "SmartTask Flow",
-        "TECH": "Java, Spring Boot, Angular, Docker",
-        "ROLE": "Fullstack-розробник (дизайн, реалізація, деплой)",
-        "DESC": "Fullstack-система для управління задачами та проєктами малих і середніх компаній. Live-дошки, ролі користувачів, аналітичні дашборди, сучасний UI."
-      },
-      {
-        "NAME": "eCommerce Admin Suite",
-        "TECH": "Java, Spring Boot, Angular, PostgreSQL, Docker",
-        "ROLE": "Fullstack-розробник та інтегратор API",
-        "DESC": "Адмін-панель для керування каталогами товарів, замовленнями та аналітикою клієнтів інтернет-магазинів. Безпечна автентифікація, архітектура API-first."
-      },
-      {
-        "NAME": "HR Interview Portal",
-        "TECH": "Java, Spring Boot, Angular, WebSocket",
-        "ROLE": "Lead Fullstack Engineer",
-        "DESC": "Платформа для автоматизації онлайн-інтерв’ю, тестів та ранжування кандидатів. Підтримка live-фідбеку та генерації звітів."
-      }
-    ],
-    "MOBILE": [
-      {
-        "NAME": "Wellness Tracker App",
-        "TECH": "Flutter, Firebase, REST API",
-        "ROLE": "Mobile-розробник та UI-дизайнер",
-        "DESC": "Мобільний застосунок для трекінгу спорту, харчування, сну і настрою із хмарною синхронізацією та push-нотифікаціями."
-      },
-      {
-        "NAME": "MiniCRM Mobile",
-        "TECH": "Flutter, Kotlin, Firebase",
-        "ROLE": "Власник проєкту та mobile-розробник",
-        "DESC": "Легка CRM для команд продажів: контакти, угоди, нагадування та швидкий чат."
-      },
-      {
-        "NAME": "SmartHome Dashboard",
-        "TECH": "Angular, REST API",
-        "ROLE": "Frontend-розробник (PWA)",
-        "DESC": "PWA-додаток для моніторингу та керування пристроями smart home, споживанням енергії та оповіщеннями в реальному часі."
-      }
-    ]
-  }
-},
+    "TITLE": "Проєкти",
+    "BACKEND": "Backend проєкти",
+    "FULLSTACK": "Fullstack проєкти",
+    "MOBILE": "Mobile проєкти",
+    "EXPERIENCE": "Досвід штатного розробника описано у розділі «Про мене».",
+    "LIST": {
+      "BACKEND": [
+        {
+          "NAME": "Хмарна система розрахунків",
+          "TECH": "Java 21, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
+          "ROLE": "Lead Backend Engineer (дизайн, розробка, впровадження)",
+          "DESC": "Масштабований бекенд для SaaS-платформи автоматизації білінгу, управління клієнтами, захищених платежів та аналітики на основі подій Kafka."
+        },
+        {
+          "NAME": "Сервіс для співпраці в реальному часі",
+          "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
+          "ROLE": "Lead backend developer (дизайн, розробка, впровадження)",
+          "DESC": "Бекенд для live-редагування документів та онлайн-дошок. Підтримка синхронізації з низькою затримкою, спільного редагування і аудиту дій."
+        },
+        {
+          "NAME": "Модульна платіжна платформа",
+          "DESC": "Стабільна платіжна система з інтеграцією 50+ провайдерів, аналітикою в реальному часі, каскадними платежами і конвертацією валют.",
+          "TECH": "Java 21, Spring Boot, AWS, Webflux, PostgreSQL, Angular",
+          "ROLE": "Lead backend developer (дизайн, розробка, впровадження)"
+        },
+        {
+          "NAME": "SaaS: мікросервісна архітектура",
+          "DESC": "Розробка сервісів для міжнародних продуктів у сферах комунікацій, медіа та фінансів.",
+          "TECH": "Java 17, Spring Boot, Kafka, AWS S3, Jenkins, Swagger",
+          "ROLE": "Lead backend developer (дизайн, розробка, впровадження)"
+        },
+        {
+          "NAME": "ПЗ для медичних закладів",
+          "DESC": "Система для інтеграції медичних пристроїв із відповідністю стандартам (Class B, USA). Міграція у хмару, надійні API, мікросервісна архітектура.",
+          "TECH": "Java 11/17, Spring, Cassandra, S3, Azure DevOps, DockerSWARM, gRPC, Groovy",
+          "ROLE": "Backend developer (дизайн, розробка, R&D, впровадження)"
+        },
+        {
+          "NAME": "Бекенд криптоплатформи",
+          "DESC": "Ядро платформи для взаємодії з криптогаманцями, з унікальною системою безпеки.",
+          "TECH": "Java 8, Spring Security, PostgreSQL, WebSocket",
+          "ROLE": "Backend developer (фічі, R&D, інтеграційні тести)"
+        },
+        {
+          "NAME": "Сервіс аналітики даних",
+          "DESC": "Мікросервіс для аналітики дашбордів і фінансової звітності на основі платіжних даних.",
+          "TECH": "Java 17/21, Spring Boot, PostgreSQL, Kafka",
+          "ROLE": "Backend developer (дослідження та розробка)"
+        },
+        {
+          "NAME": "Інтеграція платіжних систем",
+          "DESC": "Адаптери для швидкої інтеграції з зовнішніми платіжними шлюзами. Безперервна робота і відмовостійкість.",
+          "TECH": "Java, Spring, AWS, SQS, PostgreSQL",
+          "ROLE": "Backend developer (інтеграція та розробка фіч)"
+        }
+      ],
+      "FULLSTACK": [
+        {
+          "NAME": "Інструменти для eCommerce",
+          "TECH": "Java 21, Spring Boot, Angular, PostgreSQL, Docker",
+          "ROLE": "Fullstack developer (R&D, дизайн, розробка, впровадження)",
+          "DESC": "Адмін-панель для управління каталогами товарів, замовленнями та аналітикою клієнтів для онлайн-магазинів. Безпечна автентифікація, архітектура API-first."
+        }
+      ],
+      "MOBILE": [
+        {
+          "NAME": "Додаток для трекінгу здоров'я",
+          "TECH": "Flutter, Firebase, REST API",
+          "ROLE": "Project owner та розробник",
+          "DESC": "Мобільний застосунок для трекінгу спорту, харчування, сну і настрою з хмарною синхронізацією та push-нотифікаціями."
+        },
+        {
+          "NAME": "Мобільна міні CRM",
+          "TECH": "Flutter, Kotlin, Firebase",
+          "ROLE": "Project owner та розробник",
+          "DESC": "Легка CRM для відділів продажу: контакти, угоди, зустрічі, нагадування і швидкий чат."
+        }
+      ]
+    }
+  },
   "CONTACT": {
     "TITLE": "Контакти",
-    "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
-    "EMAIL": "Електронна пошта",
-    "WHATSAPP": "WhatsApp",
-    "GITHUB_URL": "https://github.com/andrii-dev",
-    "LINKEDIN_URL": "https://linkedin.com/in/andrii-dev",
-    "EMAIL_ADDR": "john.engineer@email.com",
-    "WHATSAPP_NUM": "+49 123 4567890"
+    "EMAIL": "Email",
+    "LINKEDIN_URL": "https://linkedin.com/in/ihorshulha",
+    "EMAIL_ADDR": "ihor\u200Bshulha\u200B.\u200Bdev[at]gmail\u200B.com"
   }
 }
