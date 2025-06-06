@@ -1,96 +1,124 @@
 {
   "ABOUT": {
     "TITLE": "About Me",
-    "TEXT": "Ihor Shulha is a versatile Software Engineer with deep expertise in backend development, cloud solutions, and high-load architectures. With over 4 years of hands-on experience in international teams, Ihor has delivered robust enterprise systems in finance, healthcare, and digital platforms. Specializing in Java (8–21), Spring Boot, microservices, AWS, and PostgreSQL, he also possesses solid knowledge of DevOps, containerization, and frontend/mobile technologies (Angular, Flutter, Kotlin). Ihor is passionate about designing scalable solutions, integrating modern payment systems, and bringing innovation to every project. He combines a pragmatic engineering mindset with strong communication skills and a focus on results.\n\nLocation: Kassel, Germany\nLanguages: English (professional), Ukrainian (native)\nContact: ihor.shulha8@gmail.com, +49 160 91483423\nLinkedIn: linkedin.com/in/ihorshulha\n\n\"Building software that solves real business problems and scales with your growth.\""
+    "ROLE": "Software Engineer | Backend, FullStack",
+    "LOCATION": "",
+    "TEXT": "I’m a backend-focused software engineer driven by building reliable, scalable systems for complex business domains. My core stack is Java, Spring Boot, AWS, and PostgreSQL, but I enjoy working across the whole product — from cloud infrastructure to frontend and mobile.\n\nOver the last 6 years, I’ve launched SaaS platforms, high-load fintech solutions, and IoT integrations — both as a team player and as a freelance consultant. My approach is pragmatic and product-oriented: I care about clean code, automation, and creating solutions that make a difference for users and business.\n\nI love working in cross-functional teams, mentoring juniors, and learning new tech. If you have a challenging project or an idea to discuss, let’s connect!",
+    "EXPERIENCE_BLOCK": ""
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "BACKEND": "Backend",
+    "INFRA": "Infrastructure",
+    "FRONTEND": "Frontend",
+    "MOBILE": "Mobile",
+    "LIST": [
+      "Java",
+      "Spring Boot",
+      "Kotlin",
+      "Python",
+      "Docker",
+      "AWS",
+      "Kafka",
+      "PostgreSQL",
+      "Redis",
+      "Cassandra",
+      "Angular",
+      "Flutter"
+    ]
   },
   "PROJECTS": {
     "TITLE": "Projects",
-    "BACKEND": {
-      "TITLE": "Backend",
-      "LIST": [
+    "BACKEND": "Backend Projects",
+    "FULLSTACK": "Fullstack Projects",
+    "MOBILE": "Mobile Projects",
+    "EXPERIENCE": "",
+    "LIST": {
+      "BACKEND": [
         {
-          "TITLE": "Modular Payment Platform",
-          "DESC": "A resilient, modular payment processing system supporting integrations with 20+ providers, real-time analytics, cascading payments, and currency conversion.",
-          "STACK": "Java 21, Spring Boot, AWS, Webflux, PostgreSQL, Angular",
-          "ROLE": "Solution architect and lead backend engineer"
+          "NAME": "BillingCloud API",
+          "TECH": "Java, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
+          "ROLE": "Lead Backend Engineer & Solution Architect",
+          "DESC": "Designed and implemented a multi-tenant billing SaaS backend from scratch. Features include invoicing, customer/contract management, secure payment processing, tax compliance, and advanced reporting with Kafka-driven event sourcing. Focused on high reliability, security, and scalability for enterprise clients."
         },
         {
-          "TITLE": "Enterprise Microservices Suite",
-          "DESC": "Developed microservices for global SaaS in communication, media, and finance. CI/CD with Kubernetes and Jenkins.",
-          "STACK": "Java 17, Spring Boot, Kafka, gRPC, AWS S3, Jenkins, Swagger",
-          "ROLE": "Lead backend engineer, DevOps integration"
+          "NAME": "DocuSigner Microservice",
+          "TECH": "Java, Spring Boot, Redis, Cassandra, AWS S3",
+          "ROLE": "Technical Owner & Core Developer",
+          "DESC": "Created a robust microservice for digital document storage, e-signature workflow, and secure archiving. Integrated with AWS S3 for encrypted storage, implemented real-time validation, and ensured regulatory compliance for legal documents."
         },
         {
-          "TITLE": "Healthcare Data Platform",
-          "DESC": "Service-oriented system for secure medical device data and compliance (Class B, USA). Legacy-to-cloud migration, robust APIs, and internal tools.",
-          "STACK": "Java 11/17, Spring Boot, Cassandra, PostgreSQL, Azure DevOps, Docker",
-          "ROLE": "Backend developer, research and development"
+          "NAME": "User Identity & Access Manager",
+          "TECH": "Java, Spring Boot, Keycloak, PostgreSQL, Redis",
+          "ROLE": "Backend Developer & Security Integrator",
+          "DESC": "Developed a centralized IAM system supporting OAuth2, SSO, RBAC, and session management for distributed systems. Focused on enterprise-grade security, seamless authentication, and extensible user provisioning."
         },
         {
-          "TITLE": "Crypto Platform Backend",
-          "DESC": "Core backend for a secure cryptocurrency trading platform with real-time data and advanced security.",
-          "STACK": "Java 8, Spring Security, PostgreSQL, WebSocket",
-          "ROLE": "Backend developer (feature implementation, security)"
+          "NAME": "Payments Processing Engine",
+          "TECH": "Java, Spring Boot, Kafka, PostgreSQL, AWS",
+          "ROLE": "Project Founder & Principal Engineer",
+          "DESC": "Engineered a high-throughput payment gateway with real-time fraud detection, transactional messaging via Kafka, and resilient API design for demanding fintech applications. Delivered 24/7 uptime and robust monitoring."
         },
         {
-          "TITLE": "Data Analytics Service",
-          "DESC": "Custom analytics microservice powering dashboards and business reporting for payment data.",
-          "STACK": "Java, Spring Boot, PostgreSQL, Kafka",
-          "ROLE": "Solution developer"
+          "NAME": "Realtime Collaboration Service",
+          "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
+          "ROLE": "Backend Architect & Lead Developer",
+          "DESC": "Architected and built a backend for live document and whiteboard collaboration tools. Enabled low-latency synchronization, concurrent editing, audit logging, and scalable deployment for thousands of active users."
         },
         {
-          "TITLE": "Payment System Integrations",
-          "DESC": "Adapters for fast integration with third-party gateways, ensuring 24/7 availability and failover.",
-          "STACK": "Java, Spring, AWS, REST, SQS",
-          "ROLE": "Integration lead"
+          "NAME": "IoT Device Event Aggregator",
+          "TECH": "Java, Spring Boot, Kafka, Cassandra, Docker, AWS",
+          "ROLE": "Technical Consultant (freelance)",
+          "DESC": "Designed and deployed a distributed service for aggregating and processing IoT telemetry. Built for time-series analytics, anomaly detection, and efficient scaling on cloud platforms."
         }
-      ]
-    },
-    "FULLSTACK": {
-      "TITLE": "Fullstack",
-      "LIST": [
+      ],
+      "FULLSTACK": [
         {
-          "TITLE": "Payment Dashboard Web App",
-          "DESC": "Frontend for finance teams to visualize payment flows, analytics, and system health.",
-          "STACK": "Angular, Spring Boot, AWS",
-          "ROLE": "Fullstack developer"
+          "NAME": "SmartTask Flow",
+          "TECH": "Java, Spring Boot, Angular, Docker",
+          "ROLE": "Fullstack Developer (design, implementation & deployment)",
+          "DESC": "End-to-end task and project management platform for SMEs. Features real-time Kanban boards, user roles, analytics dashboards, and a modern responsive UI."
         },
         {
-          "TITLE": "Device Testing Portal",
-          "DESC": "Internal web app for QA engineers to test and validate medical equipment.",
-          "STACK": "Angular, Java, Docker",
-          "ROLE": "Fullstack developer"
+          "NAME": "eCommerce Admin Suite",
+          "TECH": "Java, Spring Boot, Angular, PostgreSQL, Docker",
+          "ROLE": "Fullstack Developer & API Integrator",
+          "DESC": "Built a secure admin panel for product catalogs, order management, and customer insights for online retail. Focused on API-first architecture, secure authentication, and easy extensibility."
         },
         {
-          "TITLE": "Admin UI for Crypto Platform",
-          "DESC": "Feature-rich admin panel for secure user and operations management.",
-          "STACK": "Angular, Spring, PostgreSQL",
-          "ROLE": "Fullstack developer"
+          "NAME": "HR Interview Portal",
+          "TECH": "Java, Spring Boot, Angular, WebSocket",
+          "ROLE": "Lead Fullstack Engineer",
+          "DESC": "Developed a platform to automate remote interviews, coding assessments, and candidate ranking. Enabled live feedback, real-time reporting, and seamless interviewer experience."
         }
-      ]
-    },
-    "MOBILE": {
-      "TITLE": "Mobile / Frontend",
-      "LIST": [
+      ],
+      "MOBILE": [
         {
-          "TITLE": "Flutter Mobile Payment Client",
-          "DESC": "Cross-platform app for managing payments with real-time notifications and transaction tracking.",
-          "STACK": "Flutter, Dart, REST, AWS",
-          "ROLE": "Mobile app developer"
+          "NAME": "Wellness Tracker App",
+          "TECH": "Flutter, Firebase, REST API",
+          "ROLE": "Mobile App Developer & UI Designer",
+          "DESC": "Mobile application for personal wellness tracking: exercise, nutrition, sleep, and mood logs with cloud sync and push notifications. Designed with intuitive UX and cross-platform support."
         },
         {
-          "TITLE": "Kotlin Payment Assistant",
-          "DESC": "Native Android solution for payment notifications, tracking, and analytics.",
-          "STACK": "Kotlin, Spring Boot backend",
-          "ROLE": "Mobile developer"
+          "NAME": "MiniCRM Mobile",
+          "TECH": "Flutter, Kotlin, Firebase",
+          "ROLE": "Project Owner & Mobile Developer",
+          "DESC": "Lightweight mobile CRM client for sales teams: manage contacts, pipeline, reminders, and instant chat. Integrated with Firebase backend for real-time updates."
         },
         {
-          "TITLE": "Responsive User Portal",
-          "DESC": "Adaptive web portal for end-users to manage profiles and interact with business services.",
-          "STACK": "Angular, REST API",
-          "ROLE": "Frontend developer"
+          "NAME": "SmartHome Dashboard",
+          "TECH": "Angular, REST API",
+          "ROLE": "Frontend Developer (PWA)",
+          "DESC": "Progressive web app (PWA) for monitoring and controlling smart home devices, energy usage, and alerts in real time. Designed for fast loading and mobile responsiveness."
         }
       ]
     }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "Email",
+    "LINKEDIN_URL": " https://linkedin.com/in/ihorshulha",
+    "EMAIL_ADDR": " ihor\u200Bshulha\u200B.\u200Bdev[at]gmail\u200B.com"
   }
 }

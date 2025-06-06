@@ -6,6 +6,9 @@ body {
   background: #181d25;
   color: #f5f6fa;
   min-height: 100vh;
+  line-height: 1.5;            
+  letter-spacing: 0.05em;     
+  font-size: 1.05em;           
 }
 .container {
   max-width: 900px;
@@ -16,7 +19,7 @@ body {
   gap: 32px;
 }
 
-/* Cards та секції */
+/* Cards */
 .about-card,
 .skills-card,
 .projects-section,
@@ -63,7 +66,6 @@ body {
   }
 }
 
-/* Cards — трохи hover */
 .project-card {
   margin-bottom: 14px;
   padding: 14px 18px;
@@ -76,7 +78,15 @@ body {
   transform: translateY(-2px) scale(1.01);
 }
 
-/* Інші корисні стилі — за потреби */
 ul, li { margin: 0; padding: 0; list-style: none; }
 a { color: #19e2e6; text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+.multiline-text {
+  white-space: pre-line;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.22;         // NEW
+  letter-spacing: 0.033em;   // NEW
+}
