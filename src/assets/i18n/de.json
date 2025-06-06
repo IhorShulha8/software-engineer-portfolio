@@ -2,9 +2,9 @@
   "ABOUT": {
     "TITLE": "Über mich",
     "ROLE": "Software Engineer",
-    "LOCATION": "Berlin, Deutschland",
-    "TEXT": "Ich bin ein leidenschaftlicher Softwareentwickler mit Schwerpunkt Backend (Java, Spring Boot, Docker, AWS, PostgreSQL, Kafka, Redis, Cassandra). Ich habe auch Erfahrung als Fullstack- und Mobile-Entwickler (Angular, Flutter, Kotlin). Ich liefere robuste, skalierbare Lösungen sowohl für Startups als auch für eigene Projekte.",
-    "EXPERIENCE_BLOCK": "2020–2023, Software Engineer, AcmeTech GmbH: Entwicklung skalierbarer Backend-Microservices und Integration von Frontend-Komponenten in cross-funktionalen Teams."
+    "LOCATION": "",
+    "TEXT": "Ich bin ein auf Backend spezialisierter Softwareentwickler, der davon angetrieben wird, zuverlässige und skalierbare Systeme für komplexe Geschäftsfelder zu bauen. Mein Haupt-Stack ist Java, Spring Boot, AWS und PostgreSQL, aber ich arbeite gerne am gesamten Produkt – von der Cloud-Infrastruktur bis hin zum Frontend und Mobile.\n\nIn den letzten 6 Jahren habe ich SaaS-Plattformen, hochskalierbare FinTech-Lösungen und IoT-Integrationen umgesetzt – sowohl als Teamplayer als auch als freiberuflicher Berater. Mein Ansatz ist pragmatisch und produktorientiert: Ich lege Wert auf sauberen Code, Automatisierung und darauf, Lösungen zu entwickeln, die für Nutzer und Unternehmen wirklich etwas bewirken.\n\nIch arbeite gerne in cross-funktionalen Teams, unterstütze Junioren als Mentor und lerne ständig neue Technologien. Wenn Sie ein herausforderndes Projekt oder eine Idee zu besprechen haben, lassen Sie uns in Kontakt treten!",
+    "EXPERIENCE_BLOCK": ""
   },
   "SKILLS": {
     "TITLE": "Fähigkeiten",
