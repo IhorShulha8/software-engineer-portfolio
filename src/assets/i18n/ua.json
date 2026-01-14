@@ -109,6 +109,8 @@
     "LINKEDIN": "LinkedIn",
     "EMAIL": "Email",
     "LINKEDIN_URL": " https://linkedin.com/in/ihorshulha",
-    "EMAIL_ADDR": " ihor\u200Bshulha\u200B.\u200Bdev[at]gmail\u200B.com"
+    "EMAIL_ADDR": "ihorshulha@mail.online-impressum.de",
+    "IMPRESSUM": "Імпресум (правова інформація)",
+    "IMPRESSUM_URL": "https://mein.online-impressum.de/ihorshulha/"
   }
 }
