@@ -31,9 +31,17 @@
     "typescript": "5.5.4"
   },
   "overrides": {
-    "@angular/build:critters": "0.0.16",
-    "@angular-devkit/build-angular:critters": "0.0.16",
-    "critters:css-select": "4.3.0",
-    "css-select:css-what": "6.1.0"
+    "@angular/build": {
+      "critters": "0.0.16"
+    },
+    "@angular-devkit/build-angular": {
+      "critters": "0.0.16"
+    },
+    "critters": {
+      "css-select": "4.3.0"
+    },
+    "css-select": {
+      "css-what": "6.1.0"
+    }
   }
 }
