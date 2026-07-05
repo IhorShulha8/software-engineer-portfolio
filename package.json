@@ -1,0 +1,47 @@
+{
+  "name": "software-engineer-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^18.2.13",
+    "@angular/common": "^18.2.13",
+    "@angular/compiler": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@angular/forms": "^18.2.13",
+    "@angular/platform-browser": "^18.2.13",
+    "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular/router": "^18.2.13",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
+    "rxjs": "^7.8.2",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "18.2.20",
+    "@angular/cli": "18.2.20",
+    "@angular/compiler-cli": "18.2.13",
+    "typescript": "5.5.4"
+  },
+  "overrides": {
+    "@angular/build": {
+      "critters": "0.0.16"
+    },
+    "@angular-devkit/build-angular": {
+      "critters": "0.0.16"
+    },
+    "critters": {
+      "css-select": "4.3.0"
+    },
+    "css-select": {
+      "css-what": "6.1.0"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.lang-switcher {
+  display: flex;
+  gap: 0;
+  justify-content: flex-end;
+  margin-top: 18px;
+  margin-bottom: 28px;
+  padding-right: 18px; // для десктопу
+  padding-left: 0;     // для десктопу
+
+  button {
+    background: #222834;
+    color: #fff;
+    border: 1.5px solid #222834;
+    border-left: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background 0.2s, color 0.15s, border 0.15s;
+    &:first-child {
+      border-radius: 16px 0 0 16px;
+      border-left: 1.5px solid #222834;
+    }
+    &:last-child {
+      border-radius: 0 16px 16px 0;
+    }
+    &.active {
+      background: #19e2e6;
+      color: #161923;
+      border-color: #19e2e6;
+      z-index: 1;
+    }
+    &:hover:not(.active) {
+      background: #293043;
+      color: #19e2e6;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .lang-switcher {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding-right: 2vw; // як у .container
+    padding-left: 2vw;  // симетрично зліва
+
+    button {
+      font-size: 0.92em;
+      padding: 6px 12px;
+    }
+  }
+}

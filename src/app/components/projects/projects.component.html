@@ -1,0 +1,31 @@
+<section class="projects-section">
+  <h2>{{ 'PROJECTS.TITLE' | translate }}</h2>
+
+  <h3>{{ 'PROJECTS.BACKEND' | translate }}</h3>
+  <div *ngFor="let p of backend" class="project-card">
+    <strong>{{ p.NAME }}</strong>
+    <span class="stack">{{ p.TECH }}</span>
+    <span class="role">{{ p.ROLE }}</span>
+    <p>{{ p.DESC }}</p>
+  </div>
+
+  <h3>{{ 'PROJECTS.FULLSTACK' | translate }}</h3>
+  <div *ngFor="let p of fullstack" class="project-card">
+    <strong>{{ p.NAME }}</strong>
+    <span class="stack">{{ p.TECH }}</span>
+    <span class="role">{{ p.ROLE }}</span>
+    <p>{{ p.DESC }}</p>
+  </div>
+
+  <h3>{{ 'PROJECTS.MOBILE' | translate }}</h3>
+  <div *ngFor="let p of mobile" class="project-card">
+    <strong>{{ p.NAME }}</strong>
+    <span class="stack">{{ p.TECH }}</span>
+    <span class="role">{{ p.ROLE }}</span>
+    <p>{{ p.DESC }}</p>
+  </div>
+
+  <div class="experience-block">
+    {{ 'PROJECTS.EXPERIENCE' | translate }}
+  </div>
+</section>
