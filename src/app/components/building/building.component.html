@@ -1,0 +1,17 @@
+<section class="building" id="building" appReveal>
+  <header class="building__head">
+    <p class="building__kicker">{{ focusLabel() }}</p>
+    <h2>{{ title() }}</h2>
+    <p class="building__lead">{{ lead() }}</p>
+  </header>
+
+  <div class="building__grid">
+    @for (item of items(); track item.TITLE; let i = $index) {
+      <article class="building-card" appReveal [revealDelay]="i * 0.08">
+        <span class="building-card__tag" [attr.data-tag]="item.TAG">{{ item.TAG }}</span>
+        <h3 class="building-card__title">{{ item.TITLE }}</h3>
+        <p class="building-card__desc">{{ item.DESC }}</p>
+      </article>
+    }
+  </div>
+</section>

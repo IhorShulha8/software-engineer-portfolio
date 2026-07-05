@@ -1,0 +1,41 @@
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__name">Ihor Shulha</span>
+      <span class="footer__tagline">{{ (footer())?.TAGLINE }}</span>
+      <span class="footer__location">
+        <span class="footer__dot" aria-hidden="true"></span>
+        {{ (footer())?.LOCATION }}
+      </span>
+    </div>
+
+    <nav class="footer__col" aria-label="{{ (footer())?.LINKS }}">
+      <h3 class="footer__col-title">{{ (footer())?.LINKS }}</h3>
+      <ul>
+        <li><a [href]="'mailto:' + (contact())?.EMAIL_ADDR">{{ (contact())?.EMAIL }}</a></li>
+        <li><a [href]="(contact())?.LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="{{ (footer())?.LEGAL }}">
+      <h3 class="footer__col-title">{{ (footer())?.LEGAL }}</h3>
+      <ul>
+        <li><a [href]="(contact())?.IMPRESSUM_URL" target="_blank" rel="noopener">Impressum</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__lang">
+      @for (lang of langs; track lang) {
+        <button type="button"
+                [class.active]="translate.currentLang() === lang"
+                (click)="setLang(lang)">
+          {{ lang | uppercase }}
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© {{ year }} Ihor Shulha</span>
+  </div>
+</footer>

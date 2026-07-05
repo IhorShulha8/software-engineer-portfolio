@@ -1,116 +1,257 @@
 {
+  "HERO": {
+    "EYEBROW": "Software Engineer · Німеччина",
+    "TITLE_LINE_1": "Створюю",
+    "TITLE_HIGHLIGHT": "надійні системи",
+    "TITLE_LINE_2": "та впроваджую AI у продукти.",
+    "TITLE_LINE_3": "Підтримка та міграція існуючих систем.",
+    "LEAD": "Software Engineer. Проєктую та розробляю сервіси повного циклу — від хмарної інфраструктури до інтеграції AI. Розробляю та розвиваю власні tech-стартапи. Відкритий до нових викликів та співпраці.",
+    "CTA_PRIMARY": "Почати проєкт",
+    "CTA_SECONDARY": "Переглянути портфоліо",
+    "SCROLL_HINT": "Гортати вниз"
+  },
+  "NAV": {
+    "BRAND": "Ігор Шульга",
+    "WORK": "Проєкти",
+    "ABOUT": "Про мене",
+    "CONTACT": "Контакти",
+    "MENU": "Меню",
+    "BUILDING": "Власні розробки"
+  },
   "ABOUT": {
     "TITLE": "Про мене",
     "ROLE": "Software Engineer",
-    "LOCATION": "",
-    "TEXT": "Я розробник із фокусом на backend та побудову надійних, масштабованих рішень для сучасних бізнес-потреб. Мій основний стек — Java, Spring Boot, AWS, PostgreSQL, але я із задоволенням працюю і з хмарною інфраструктурою, і з frontend чи mobile-розробкою.\n\nЗа 6+ років досвіду я реалізував SaaS-платформи, фінтех-рішення з високим навантаженням, та мікросервіси — як частина міжнародної команди, так і у ролі фрілансера. Мій підхід — прагматичний і орієнтований на продукт: чистий код, автоматизація й рішення, які приносять реальну цінність бізнесу та користувачам.\n\nМені близька робота у мультидисциплінарних командах, менторство для junior-розробників та постійне освоєння нових технологій. Готовий долучитися до амбітного проєкту чи обговорити цікаву ідею — пишіть у будь-який зручний спосіб!",
-    "EXPERIENCE_BLOCK": ""
+    "LOCATION": "Живу в Німеччині",
+    "TEXT": "Software Engineer з 7+ роками досвіду розробки стійких і масштабованих систем для фінтеху, медицини та SaaS. Мій основний стек — Java, Spring Boot, AWS та PostgreSQL, проте я беру відповідальність за весь продукт: від хмарної інфраструктури до мобільних додатків і впровадження AI-рішень у реальні бізнес-функції.\n\nЦіную чистий код, автоматизацію та прагматичний підхід до архітектури, який рухає продукт уперед. Відкритий до фріланс-проєктів, співпраці та амбітних ідей."
   },
   "SKILLS": {
-    "TITLE": "Навички",
-    "LIST": [
-      "Java",
-      "Spring Boot",
-      "Kotlin",
-      "Python",
-      "Docker",
-      "AWS",
-      "PostgreSQL",
-      "Kafka",
-      "Redis",
-      "Cassandra",
-      "Angular",
-      "Flutter"
+    "TITLE": "Інструменти",
+    "GROUPS": [
+      {
+        "LABEL": "Мови",
+        "ITEMS": [
+          "Java",
+          "Kotlin",
+          "Go",
+          "Python",
+          "TypeScript"
+        ]
+      },
+      {
+        "LABEL": "Backend та бази даних",
+        "ITEMS": [
+          "Spring Boot",
+          "PostgreSQL",
+          "Kafka",
+          "Redis",
+          "Cassandra"
+        ]
+      },
+      {
+        "LABEL": "Cloud та інфраструктура",
+        "ITEMS": [
+          "AWS",
+          "Docker",
+          "Terraform",
+          "CI/CD"
+        ]
+      },
+      {
+        "LABEL": "AI",
+        "ITEMS": [
+          "LLM APIs",
+          "RAG",
+          "Vector DB",
+          "Оркестрація"
+        ]
+      },
+      {
+        "LABEL": "Frontend та Mobile",
+        "ITEMS": [
+          "Angular",
+          "Flutter"
+        ]
+      }
     ]
   },
-  "PROJECTS": {
-    "TITLE": "Проєкти",
-    "BACKEND": "Backend проєкти",
-    "FULLSTACK": "Fullstack проєкти",
-    "MOBILE": "Mobile проєкти",
-    "EXPERIENCE": "Досвід штатного розробника описано у розділі «Про мене».",
-    "LIST": {
-      "BACKEND": [
-        {
-          "NAME": "Хмарна система розрахунків",
-          "TECH": "Java 21, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
-          "ROLE": "Lead Backend Engineer (дизайн, розробка, впровадження)",
-          "DESC": "Масштабований бекенд для SaaS-платформи автоматизації білінгу, управління клієнтами, захищених платежів та аналітики на основі подій Kafka."
-        },
-        {
-          "NAME": "Сервіс для співпраці в реальному часі",
-          "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
-          "ROLE": "Lead backend developer (дизайн, розробка, впровадження)",
-          "DESC": "Бекенд для live-редагування документів та онлайн-дошок. Підтримка синхронізації з низькою затримкою, спільного редагування і аудиту дій."
-        },
-        {
-          "NAME": "Модульна платіжна платформа",
-          "DESC": "Стабільна платіжна система з інтеграцією 50+ провайдерів, аналітикою в реальному часі, каскадними платежами і конвертацією валют.",
-          "TECH": "Java 21, Spring Boot, AWS, Webflux, PostgreSQL, Angular",
-          "ROLE": "Lead backend developer (дизайн, розробка, впровадження)"
-        },
-        {
-          "NAME": "SaaS: мікросервісна архітектура",
-          "DESC": "Розробка сервісів для міжнародних продуктів у сферах комунікацій, медіа та фінансів.",
-          "TECH": "Java 17, Spring Boot, Kafka, AWS S3, Jenkins, Swagger",
-          "ROLE": "Lead backend developer (дизайн, розробка, впровадження)"
-        },
-        {
-          "NAME": "ПЗ для медичних закладів",
-          "DESC": "Система для інтеграції медичних пристроїв із відповідністю стандартам (Class B, USA). Міграція у хмару, надійні API, мікросервісна архітектура.",
-          "TECH": "Java 11/17, Spring, Cassandra, S3, Azure DevOps, DockerSWARM, gRPC, Groovy",
-          "ROLE": "Backend developer (дизайн, розробка, R&D, впровадження)"
-        },
-        {
-          "NAME": "Бекенд криптоплатформи",
-          "DESC": "Ядро платформи для взаємодії з криптогаманцями, з унікальною системою безпеки.",
-          "TECH": "Java 8, Spring Security, PostgreSQL, WebSocket",
-          "ROLE": "Backend developer (фічі, R&D, інтеграційні тести)"
-        },
-        {
-          "NAME": "Сервіс аналітики даних",
-          "DESC": "Мікросервіс для аналітики дашбордів і фінансової звітності на основі платіжних даних.",
-          "TECH": "Java 17/21, Spring Boot, PostgreSQL, Kafka",
-          "ROLE": "Backend developer (дослідження та розробка)"
-        },
-        {
-          "NAME": "Інтеграція платіжних систем",
-          "DESC": "Адаптери для швидкої інтеграції з зовнішніми платіжними шлюзами. Безперервна робота і відмовостійкість.",
-          "TECH": "Java, Spring, AWS, SQS, PostgreSQL",
-          "ROLE": "Backend developer (інтеграція та розробка фіч)"
-        }
-      ],
-      "FULLSTACK": [
-        {
-          "NAME": "Інструменти для eCommerce",
-          "TECH": "Java 21, Spring Boot, Angular, PostgreSQL, Docker",
-          "ROLE": "Fullstack developer (R&D, дизайн, розробка, впровадження)",
-          "DESC": "Адмін-панель для управління каталогами товарів, замовленнями та аналітикою клієнтів для онлайн-магазинів. Безпечна автентифікація, архітектура API-first."
-        }
-      ],
-      "MOBILE": [
-        {
-          "NAME": "Додаток для трекінгу здоров'я",
-          "TECH": "Flutter, Firebase, REST API",
-          "ROLE": "Project owner та розробник",
-          "DESC": "Мобільний застосунок для трекінгу спорту, харчування, сну і настрою з хмарною синхронізацією та push-нотифікаціями."
-        },
-        {
-          "NAME": "Мобільна міні CRM",
-          "TECH": "Flutter, Kotlin, Firebase",
-          "ROLE": "Project owner та розробник",
-          "DESC": "Легка CRM для відділів продажу: контакти, угоди, зустрічі, нагадування і швидкий чат."
-        }
+"CONTACT": {
+    "TITLE": "Контакти",
+    "LEAD": "Якщо у Вас є проєкт, пропозиція щодо співпраці або відкрита вакансія, будь ласка, надішліть мені повідомлення, і я зв'яжуся з Вами найближчим часом.",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "Email",
+    "LINKEDIN_URL": "https://linkedin.com/in/ihorshulha",
+    "EMAIL_ADDR": "ihorshulha@mail.online-impressum.de",
+    "IMPRESSUM": "Impressum",
+    "IMPRESSUM_URL": "https://mein.online-impressum.de/ihorshulha/"
+  },
+  "SERVICES": {
+    "TITLE": "Експертиза",
+    "LEAD": "Розробка повного циклу — від відмовостійкого бекенду до інтеграції AI-функцій.",
+    "BACKEND": {
+      "TITLE": "Backend-розробка",
+      "DESC": "Високонавантажені системи, мікросервіси, API та платіжні шлюзи, що легко масштабуються і стабільно працюють під навантаженням.",
+      "STACK": [
+        "Java",
+        "Spring Boot",
+        "Kotlin",
+        "Go",
+        "Python"
+      ]
+    },
+    "AI": {
+      "TITLE": "AI-інтеграція",
+      "DESC": "Впровадження LLM, RAG-архітектур та автономних агентів у продукти. Експертиза в розгортанні локальних AI-моделей (On-Premise) для гарантування безпеки, конфіденційності та повного контролю над даними клієнта.",
+      "STACK": [
+        "Local LLMs",
+        "LLM APIs",
+        "RAG",
+        "Ollama"
+      ]
+    },
+    "CLOUD": {
+      "TITLE": "Cloud & DevOps",
+      "DESC": "Проєктування хмарної архітектури на AWS, налаштування CI/CD та Infrastructure-as-Code для безпечних і швидких релізів.",
+      "STACK": [
+        "AWS",
+        "Docker",
+        "Kafka",
+        "Terraform"
+      ]
+    },
+"FULLSTACK": {
+      "TITLE": "Fullstack & Mobile",
+      "DESC": "Комплексна розробка продуктів з нуля — від проєктування баз даних і надійних API до сучасних веб-додатків (Angular) та кросплатформних мобільних рішень (Flutter).",
+      "STACK": [
+        "Angular",
+        "Flutter",
+        "Kotlin",
+        "REST / gRPC",
+        "PostgreSQL",
+        "Firebase"
       ]
     }
   },
-  "CONTACT": {
-    "TITLE": "Контакти",
-    "LINKEDIN": "LinkedIn",
+  "WORK": {
+    "TITLE": "Обрані проєкти",
+    "LEAD": "Анонімізовані кейси реальних high-load систем.",
+    "LIST": [
+      {
+        "TITLE": "Cloud Billing SaaS",
+        "TAG": "Backend",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "Kafka",
+          "AWS"
+        ],
+        "ROLE": "Lead Backend Engineer",
+        "RESULT": "Спроєктував високопродуктивний конвеєр обробки рахунків із забезпеченням високої доступності (High Availability)."
+      },
+      {
+        "TITLE": "Modular Payments Platform",
+        "TAG": "Backend",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "AWS",
+          "PostgreSQL"
+        ],
+        "ROLE": "Lead Backend Engineer",
+        "RESULT": "Інтегрував низку платіжних провайдерів із механізмом каскадного перемикання при відмовах та аналітикою в реальному часі."
+      },
+      {
+        "TITLE": "Realtime Collaboration Service",
+        "TAG": "Backend",
+        "STACK": [
+          "Java",
+          "Spring Boot",
+          "WebSocket",
+          "Redis"
+        ],
+        "ROLE": "Lead Backend Developer",
+        "RESULT": "Реалізував синхронізацію з низькою затримкою для одночасного редагування документів користувачами."
+      },
+      {
+        "TITLE": "Healthcare Integration Suite",
+        "TAG": "Backend",
+        "STACK": [
+          "Java",
+          "Spring",
+          "Cassandra",
+          "gRPC"
+        ],
+        "ROLE": "Backend Developer",
+        "RESULT": "Забезпечив безпечну інтеграцію медичних пристроїв відповідно до регуляторних стандартів США (Class B)."
+      },
+      {
+        "TITLE": "eCommerce Admin Toolkit",
+        "TAG": "Fullstack",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "Angular",
+          "PostgreSQL"
+        ],
+        "ROLE": "Fullstack Developer",
+        "RESULT": "Розробив API-first панель адміністратора для управління каталогом, замовленнями та клієнтською аналітикою."
+      },
+      {
+        "TITLE": "Wellness Tracker App",
+        "TAG": "Mobile",
+        "STACK": [
+          "Flutter",
+          "Firebase",
+          "REST"
+        ],
+        "ROLE": "Project Owner & Developer",
+        "RESULT": "Створив кросплатформний додаток із хмарною синхронізацією та push-повідомленнями. Опубліковано в App Store та Google Play."
+      }
+    ]
+  },
+"FORM": {
+    "NAME": "Ім’я",
+    "NAME_PLACEHOLDER": "Ваше ім’я та прізвище",
     "EMAIL": "Email",
-    "LINKEDIN_URL": " https://linkedin.com/in/ihorshulha",
-    "EMAIL_ADDR": "ihorshulha@mail.online-impressum.de",
-    "IMPRESSUM": "Імпресум (правова інформація)",
-    "IMPRESSUM_URL": "https://mein.online-impressum.de/ihorshulha/"
+    "EMAIL_PLACEHOLDER": "email@company.com",
+    "MESSAGE": "Деталі запиту",
+    "MESSAGE_PLACEHOLDER": "Будь ласка, коротко опишіть суть Вашого проєкту, орієнтовні терміни та бюджет.",
+    "SUBMIT": "Надіслати повідомлення",
+    "SENDING": "Надсилання…",
+    "SUCCESS": "Дякую за Ваше звернення. Я надам відповідь протягом кількох робочих днів.",
+    "ERROR": "Сталася системна помилка. Будь ласка, зв'яжіться зі мною безпосередньо через email.",
+    "REQUIRED": "Це поле є обов’язковим",
+    "EMAIL_INVALID": "Будь ласка, введіть коректну адресу електронної пошти"
+  },
+  "SEO": {
+    "TITLE": "Ігор Шульга — Software Engineer (Backend / AI / Cloud)",
+    "DESCRIPTION": "Backend-інженер у Німеччині. Проєктую та розробляю сервіси повного циклу — від хмарної інфраструктури до інтеграції AI-функцій. Відкритий до співпраці."
+  },
+  "BUILDING": {
+    "TITLE": "Власні проєкти",
+    "LEAD": "У вільний від клієнтської роботи час я створюю власні продукти: розробляю SaaS-рішення, досліджую AI-інструменти та прототипую ідеї для стартапів.",
+    "FOCUS_LABEL": "Зараз у фокусі",
+    "ITEMS": [
+      {
+        "TITLE": "SaaS-продукти",
+        "DESC": "Продукти повного циклу — від проєктування домену до інтеграції білінгу та аналітики. Сфокусовані рішення, випущені на ринок.",
+        "TAG": "Розробка"
+      },
+      {
+        "TITLE": "AI-інструменти",
+        "DESC": "Автономні агенти, RAG-архітектури та LLM-моделі для розв'язання реальних бізнес-завдань, а не лише для демо.",
+        "TAG": "Дослідження"
+      },
+      {
+        "TITLE": "Startup-ідеї",
+        "DESC": "Валідація концепцій, розробка MVP та партнерство на ранніх стадіях проєктів.",
+        "TAG": "Відкритий до ідей"
+      }
+    ]
+  },
+  "FOOTER": {
+    "TAGLINE": "Software Engineer — Backend, AI та Cloud",
+    "LOCATION": "Німеччина",
+    "LINKS": "Посилання",
+    "LEGAL": "Правова інформація"
   }
 }

@@ -1,116 +1,257 @@
 {
+  "HERO": {
+    "EYEBROW": "Software Engineer · Deutschland",
+    "TITLE_LINE_1": "Ich entwickle",
+    "TITLE_HIGHLIGHT": "robuste Systeme",
+    "TITLE_LINE_2": "und integriere KI in Produkte.",
+    "TITLE_LINE_3": "Wartung und Migration von Altsystemen.",
+    "LEAD": "Software Engineer. Ich entwickle End-to-End-Services – von der Cloud-Infrastruktur bis zur KI-Integration – und baue ein eigenes Tech-Startup auf. Offen für neue Herausforderungen und Zusammenarbeit.",
+    "CTA_PRIMARY": "Projekt starten",
+    "CTA_SECONDARY": "Portfolio ansehen",
+    "SCROLL_HINT": "Scrollen"
+  },
+  "NAV": {
+    "BRAND": "Ihor Shulha",
+    "WORK": "Projekte",
+    "ABOUT": "Über mich",
+    "CONTACT": "Kontakt",
+    "MENU": "Menü",
+    "BUILDING": "Eigene Projekte"
+  },
   "ABOUT": {
     "TITLE": "Über mich",
     "ROLE": "Software Engineer",
-    "LOCATION": "",
-    "TEXT": "Ich bin ein Backend-orientierter Softwareentwickler, der von der Entwicklung zuverlässiger und skalierbarer Systeme für komplexe Geschäftsbereiche angetrieben wird. Mein Haupt-Stack umfasst Java, Spring Boot, AWS und PostgreSQL, aber ich arbeite gerne am gesamten Produkt – von der Cloud-Infrastruktur bis zum Frontend und Mobile.\n\nIn den letzten 6 Jahren habe ich SaaS-Plattformen, leistungsstarke Fintech-Lösungen und Mikrodienste — sowohl als Teamplayer als auch als freiberuflicher Berater. Mein Ansatz ist pragmatisch und produktorientiert: Mir sind sauberer Code, Automatisierung und Lösungen, die für Nutzer und Unternehmen einen echten Mehrwert schaffen, besonders wichtig.\n\nIch arbeite gerne in interdisziplinären Teams, betreue Junioren als Mentor und lerne neue Technologien. Wenn Sie ein herausforderndes Projekt oder eine Idee haben – lassen Sie uns sprechen!",
-    "EXPERIENCE_BLOCK": ""
+    "LOCATION": "Ansässig in Deutschland",
+    "TEXT": "Software Engineer mit über 7 Jahren Erfahrung in der Entwicklung skalierbarer und ausfallsicherer Systeme für FinTech, Healthcare und SaaS. Mein Kern-Stack umfasst Java, Spring Boot, AWS und PostgreSQL. Ich verantworte jedoch den gesamten Produktzyklus – von der Cloud-Infrastruktur über Frontend und Mobile bis hin zur Integration von KI-Funktionen in reale Anwendungen.\n\nIch lege großen Wert auf sauberen Code, Automatisierung und pragmatische Architektur-Entscheidungen, die das Produkt voranbringen. Ich bin offen für Freelance-Projekte, spannende Kooperationen und ambitionierte Ideen."
   },
   "SKILLS": {
-    "TITLE": "Fähigkeiten",
-    "LIST": [
-      "Java",
-      "Spring Boot",
-      "Kotlin",
-      "Python",
-      "Docker",
-      "AWS",
-      "PostgreSQL",
-      "Kafka",
-      "Redis",
-      "Cassandra",
-      "Angular",
-      "Flutter"
+    "TITLE": "Technologien",
+    "GROUPS": [
+      {
+        "LABEL": "Programmiersprachen",
+        "ITEMS": [
+          "Java",
+          "Kotlin",
+          "Go",
+          "Python",
+          "TypeScript"
+        ]
+      },
+      {
+        "LABEL": "Backend & Datenbanken",
+        "ITEMS": [
+          "Spring Boot",
+          "PostgreSQL",
+          "Kafka",
+          "Redis",
+          "Cassandra"
+        ]
+      },
+      {
+        "LABEL": "Cloud & Infrastruktur",
+        "ITEMS": [
+          "AWS",
+          "Docker",
+          "Terraform",
+          "CI/CD"
+        ]
+      },
+      {
+        "LABEL": "KI",
+        "ITEMS": [
+          "LLM APIs",
+          "RAG",
+          "Vector DB",
+          "Orchestrierung"
+        ]
+      },
+      {
+        "LABEL": "Frontend & Mobile",
+        "ITEMS": [
+          "Angular",
+          "Flutter"
+        ]
+      }
     ]
   },
-  "PROJECTS": {
-    "TITLE": "Projekte",
-    "BACKEND": "Backend-Projekte",
-    "FULLSTACK": "Fullstack-Projekte",
-    "MOBILE": "Mobile-Projekte",
-    "EXPERIENCE": "Erfahrungen als interner Entwickler werden im Abschnitt Über mich beschrieben.",
-    "LIST": {
-      "BACKEND": [
-        {
-          "NAME": "Cloud-Abrechnungssystem",
-          "TECH": "Java 21, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
-          "ROLE": "Lead Backend Engineer (Design, Implementierung, Deployment)",
-          "DESC": "Skalierbares Backend für eine SaaS-Plattform im Bereich Geschäftsfakturierung. Automatisiert Rechnungsstellung, Kundenverwaltung, sichere Zahlungen und komplexe Analysen auf Basis von Kafka-Events."
-        },
-        {
-          "NAME": "Echtzeit-Kollaborationsservice",
-          "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
-          "ROLE": "Lead Backend Developer (Design, Implementierung, Deployment)",
-          "DESC": "Backend für einen Service zur Zusammenarbeit an Dokumenten und Whiteboards in Echtzeit. Unterstützt Low-Latency-Synchronisation, gleichzeitiges Bearbeiten und Aktionsprotokollierung."
-        },
-        {
-          "NAME": "Modulare Zahlungsplattform",
-          "DESC": "Zuverlässiges Zahlungssystem mit Integrationen zu 50+ Providern, Echtzeitanalysen, Kaskadenzahlungen und Währungsumrechnung.",
-          "TECH": "Java 21, Spring Boot, AWS, Webflux, PostgreSQL, Angular",
-          "ROLE": "Lead Backend Developer (Design, Implementierung, Deployment)"
-        },
-        {
-          "NAME": "SaaS-Mikroservice-Architektur",
-          "DESC": "Entwicklung von Services für internationale Produkte in Kommunikation, Medien und Finanzen.",
-          "TECH": "Java 17, Spring Boot, Kafka, AWS S3, Jenkins, Swagger",
-          "ROLE": "Lead Backend Developer (Design, Implementierung, Deployment)"
-        },
-        {
-          "NAME": "Softwarelösung für das Gesundheitswesen",
-          "DESC": "System für sichere Integration von Medizinprodukten nach regulatorischen Standards (Class B, USA). Migration in die Cloud, stabile APIs und Microservice-Architektur.",
-          "TECH": "Java 11/17, Spring, Cassandra, S3, Azure DevOps, DockerSWARM, gRPC, Groovy",
-          "ROLE": "Backend Developer (Design, Implementierung, Deployment, R&D)"
-        },
-        {
-          "NAME": "Backend für Krypto-Plattform",
-          "DESC": "Kernplattform für die Interaktion mit Krypto-Wallets unter realen Bedingungen und einem individuellen Sicherheitssystem.",
-          "TECH": "Java 8, Spring Security, PostgreSQL, WebSocket",
-          "ROLE": "Backend Developer (Feature, R&D, Integrationstests)"
-        },
-        {
-          "NAME": "Datenanalyse-Service",
-          "DESC": "Microservice-Analytics für Dashboards und Finanzberichte auf Basis von Zahlungsdaten.",
-          "TECH": "Java 17/21, Spring Boot, PostgreSQL, Kafka",
-          "ROLE": "Backend Developer (Forschung und Entwicklung)"
-        },
-        {
-          "NAME": "Integration von Zahlungssystemen",
-          "DESC": "Adapter für die schnelle Integration mit externen Zahlungs-Gateways, die einen unterbrechungsfreien Betrieb und hohe Verfügbarkeit gewährleisten.",
-          "TECH": "Java, Spring, AWS, SQS, PostgreSQL",
-          "ROLE": "Backend Developer (Integration und Feature-Implementierung)"
-        }
-      ],
-      "FULLSTACK": [
-        {
-          "NAME": "eCommerce Admin Toolkit",
-          "TECH": "Java 21, Spring Boot, Angular, PostgreSQL, Docker",
-          "ROLE": "Fullstack Developer (F&E, Design, Implementierung, Deployment)",
-          "DESC": "Admin-Panel zur Verwaltung von Produktkatalogen, Bestellungen und Kundenanalysen für Onlineshops. Sichere Authentifizierung, API-First-Architektur."
-        }
-      ],
-      "MOBILE": [
-        {
-          "NAME": "Gesundheits-Tracker-App",
-          "TECH": "Flutter, Firebase, REST API",
-          "ROLE": "Projektinhaber und Entwickler",
-          "DESC": "Mobile App zum Tracking von Bewegung, Ernährung, Schlaf und Stimmung mit Cloud-Synchronisierung und Push-Benachrichtigungen."
-        },
-        {
-          "NAME": "Mobile Mini CRM",
-          "TECH": "Flutter, Kotlin, Firebase",
-          "ROLE": "Projektinhaber und Entwickler",
-          "DESC": "Leichtgewichtiges CRM für Vertriebsteams: Kontakte, Deals, Meetings, Erinnerungen und schneller Chat."
-        }
-      ]
-    }
-  },
-  "CONTACT": {
+"CONTACT": {
     "TITLE": "Kontakt",
+    "LEAD": "Wenn Sie ein Projekt planen, eine Kooperation in Erwägung ziehen oder eine offene Position haben, senden Sie mir bitte eine Nachricht. Ich werde mich zeitnah bei Ihnen melden.",
     "LINKEDIN": "LinkedIn",
     "EMAIL": "E-Mail",
-    "LINKEDIN_URL": " https://linkedin.com/in/ihorshulha",
+    "LINKEDIN_URL": "https://linkedin.com/in/ihorshulha",
     "EMAIL_ADDR": "ihorshulha@mail.online-impressum.de",
     "IMPRESSUM": "Impressum",
     "IMPRESSUM_URL": "https://mein.online-impressum.de/ihorshulha/"
+  },
+  "SERVICES": {
+    "TITLE": "Expertise",
+    "LEAD": "End-to-End-Engineering – von hochverfügbaren Backends bis zu KI-gestützten Features.",
+    "BACKEND": {
+      "TITLE": "Backend-Entwicklung",
+      "DESC": "High-Load-Systeme, Microservices, APIs und Payment-Integrationen, die skalieren und auch unter hoher Last zuverlässig performen.",
+      "STACK": [
+        "Java",
+        "Spring Boot",
+        "Kotlin",
+        "Go",
+        "Python"
+      ]
+    },
+    "AI": {
+      "TITLE": "KI-Integration",
+      "DESC": "Implementierung von LLMs, RAG-Architekturen und autonomen Agenten. Spezialisiert auf das Deployment lokaler KI-Modelle (On-Premise) zur Gewährleistung maximaler Datensicherheit, Vertraulichkeit und Compliance.",
+      "STACK": [
+        "Local LLMs",
+        "LLM APIs",
+        "RAG",
+        "Ollama"
+      ]
+    },
+    "CLOUD": {
+      "TITLE": "Cloud & DevOps",
+      "DESC": "Architektur, CI/CD und Infrastructure-as-Code auf AWS für hohe Skalierbarkeit, Observability und schnelle Releases.",
+      "STACK": [
+        "AWS",
+        "Docker",
+        "Kafka",
+        "Terraform"
+      ]
+    },
+"FULLSTACK": {
+      "TITLE": "Fullstack & Mobile",
+      "DESC": "Ganzheitliche Produktentwicklung von Grund auf – vom Datenbankdesign und robusten APIs bis hin zu modernen Web-Anwendungen (Angular) und plattformübergreifenden Mobile-Apps (Flutter).",
+      "STACK": [
+        "Angular",
+        "Flutter",
+        "Kotlin",
+        "REST / gRPC",
+        "PostgreSQL",
+        "Firebase"
+      ]
+    }
+  },
+  "WORK": {
+    "TITLE": "Ausgewählte Projekte",
+    "LEAD": "Anonymisierte Case Studies aus dem Produktivbetrieb.",
+    "LIST": [
+      {
+        "TITLE": "Cloud-Billing-SaaS",
+        "TAG": "Backend",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "Kafka",
+          "AWS"
+        ],
+        "ROLE": "Lead Backend Engineer",
+        "RESULT": "Design und Implementierung einer hochdurchsatzfähigen Rechnungs-Pipeline mit maximaler Verfügbarkeit (High Availability)."
+      },
+      {
+        "TITLE": "Modulare Zahlungsplattform",
+        "TAG": "Backend",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "AWS",
+          "PostgreSQL"
+        ],
+        "ROLE": "Lead Backend Engineer",
+        "RESULT": "Integration diverser Payment-Provider mit kaskadierendem Failover-Mechanismus und Echtzeit-Analytik."
+      },
+      {
+        "TITLE": "Echtzeit-Kollaborationsdienst",
+        "TAG": "Backend",
+        "STACK": [
+          "Java",
+          "Spring Boot",
+          "WebSocket",
+          "Redis"
+        ],
+        "ROLE": "Lead Backend Developer",
+        "RESULT": "Entwicklung einer latenzarmen Synchronisation für die gleichzeitige Dokumentenbearbeitung durch mehrere Nutzer."
+      },
+      {
+        "TITLE": "Healthcare-Integrations-Suite",
+        "TAG": "Backend",
+        "STACK": [
+          "Java",
+          "Spring",
+          "Cassandra",
+          "gRPC"
+        ],
+        "ROLE": "Backend Developer",
+        "RESULT": "Sichere Integration von Medizingeräten unter strikter Einhaltung der US-amerikanischen Class-B-Standards."
+      },
+      {
+        "TITLE": "eCommerce-Admin-Toolkit",
+        "TAG": "Fullstack",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "Angular",
+          "PostgreSQL"
+        ],
+        "ROLE": "Fullstack Developer",
+        "RESULT": "Entwicklung eines API-first Admin-Panels für das Management von Katalogen, Bestellungen und Kunden-Analysen."
+      },
+      {
+        "TITLE": "Wellness-Tracker-App",
+        "TAG": "Mobile",
+        "STACK": [
+          "Flutter",
+          "Firebase",
+          "REST"
+        ],
+        "ROLE": "Project Owner & Developer",
+        "RESULT": "Cross-Plattform-App mit Cloud-Synchronisation und Push-Benachrichtigungen, erfolgreich im App Store und Google Play veröffentlicht."
+      }
+    ]
+  },
+"FORM": {
+    "NAME": "Name",
+    "NAME_PLACEHOLDER": "Ihr Vor- und Nachname",
+    "EMAIL": "E-Mail",
+    "EMAIL_PLACEHOLDER": "email@unternehmen.de",
+    "MESSAGE": "Details zur Anfrage",
+    "MESSAGE_PLACEHOLDER": "Bitte skizzieren Sie kurz Ihr Vorhaben, den gewünschten Zeitrahmen und das Budget.",
+    "SUBMIT": "Nachricht senden",
+    "SENDING": "Wird gesendet…",
+    "SUCCESS": "Vielen Dank für Ihre Nachricht. Ich werde mich innerhalb weniger Werktage bei Ihnen zurückmelden.",
+    "ERROR": "Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie mich direkt per E-Mail.",
+    "REQUIRED": "Dieses Feld ist ein Pflichtfeld",
+    "EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+  },
+  "SEO": {
+    "TITLE": "Ihor Shulha — Software Engineer (Backend / AI / Cloud)",
+    "DESCRIPTION": "Backend-Engineer in Deutschland. Ich entwerfe und entwickle End-to-End-Services – von der Cloud-Infrastruktur bis zur KI-Integration. Offen für Freelance-Projekte."
+  },
+  "BUILDING": {
+    "TITLE": "Eigene Projekte",
+    "LEAD": "Neben Kundenaufträgen entwickle ich eigene Produkte: Ich baue SaaS-Lösungen, erprobe KI-Tools für reale Anwendungen und entwickle Prototypen für Startup-Ideen.",
+    "FOCUS_LABEL": "Aktueller Fokus",
+    "ITEMS": [
+      {
+        "TITLE": "SaaS-Produkte",
+        "DESC": "End-to-End-Entwicklung – vom Domain-Design und Authentifizierung bis hin zu Billing und Analytics. Fokus auf veröffentlichte, skalierbare Lösungen.",
+        "TAG": "Entwicklung"
+      },
+      {
+        "TITLE": "KI-Tools",
+        "DESC": "Entwicklung von autonomen Agenten und RAG-Architekturen zur Lösung realer Business-Probleme, über reine Demos hinaus.",
+        "TAG": "Forschung"
+      },
+      {
+        "TITLE": "Startup-Ideen",
+        "DESC": "Validierung von Geschäftsideen, Entwicklung von MVPs und Partnerschaften in der Frühphase von Ventures.",
+        "TAG": "Offen für Ideen"
+      }
+    ]
+  },
+  "FOOTER": {
+    "TAGLINE": "Software Engineer — Backend, AI & Cloud",
+    "LOCATION": "Deutschland",
+    "LINKS": "Links",
+    "LEGAL": "Rechtliches"
   }
 }

@@ -1,0 +1,32 @@
+# Netlify build configuration for the Angular 20 portfolio.
+# Docs: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "npm run build"
+  # Angular's application (esbuild) builder emits static files under
+  # dist/<project>/browser/.
+  publish = "dist/software-engineer-portfolio/browser"
+
+[build.environment]
+  # Angular 20 requires Node 18.19+ / 20.11+ / 22+.
+  NODE_VERSION = "20"
+
+# SPA redirects + the `/en` -> `/` canonical redirect live in public/_redirects
+# (single source of truth — Netlify merges both _redirects and rules here).
+# Do not duplicate them in this file.
+
+# Long-cache the hashed bundle assets, never the HTML.
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

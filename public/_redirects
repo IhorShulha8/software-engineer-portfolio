@@ -1,0 +1,7 @@
+# Canonical contract: `/` = EN. `/en` is a valid shareable link but the
+# canonical EN URL is the bare root, so 301-redirect `/en` -> `/`.
+/en    /    301
+
+# Netlify SPA fallback — serve index.html for all client-side routes so the
+# Angular router can handle /, /de, /ua and any deep links.
+/*    /index.html   200

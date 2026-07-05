@@ -1,116 +1,257 @@
 {
+  "HERO": {
+    "EYEBROW": "Software Engineer · Germany",
+    "TITLE_LINE_1": "I engineer",
+    "TITLE_HIGHLIGHT": "resilient systems",
+    "TITLE_LINE_2": "and integrate AI into products.",
+    "TITLE_LINE_3": "Maintain and migration of legacy systems.",
+    "LEAD": "Software Engineer designing and building end-to-end services — from cloud infrastructure to AI integration. Developing my own tech startup. Open to collaboration.",
+    "CTA_PRIMARY": "Start a project",
+    "CTA_SECONDARY": "View portfolio",
+    "SCROLL_HINT": "Scroll down"
+  },
+  "NAV": {
+    "BRAND": "Ihor Shulha",
+    "WORK": "Work",
+    "ABOUT": "About",
+    "CONTACT": "Contact",
+    "MENU": "Menu",
+    "BUILDING": "Building"
+  },
   "ABOUT": {
     "TITLE": "About Me",
     "ROLE": "Software Engineer",
-    "LOCATION": "",
-    "TEXT": "I am a backend-focused software engineer driven by building reliable, scalable systems for complex business domains. My core stack is Java, Spring Boot, AWS, and PostgreSQL, but I enjoy working across the whole product – from cloud infrastructure to frontend and mobile.\n\nOver the past 6 years, I have launched SaaS platforms, high-load fintech solutions, and microservices — both as part of a team and as a freelance consultant. My approach is pragmatic and product-oriented: I care about clean code, automation, and creating solutions that make a difference for users and business.\n\nI enjoy working in cross-functional teams, mentoring junior colleagues, and learning new technologies. If you have a challenging project or an idea to discuss, let’s connect!",
-    "EXPERIENCE_BLOCK": ""
+    "LOCATION": "Based in Germany",
+    "TEXT": "Software Engineer with over 7 years of experience building scalable, fault-tolerant systems for Fintech, Healthcare, and SaaS. My core stack includes Java, Spring Boot, AWS, and PostgreSQL. However, I take ownership of the entire product lifecycle — from architecting cloud infrastructure to developing mobile apps and integrating AI into real-world business features.\n\nI strongly advocate for clean code, automated processes, and pragmatic architectural decisions that drive a product forward. I am open to freelance opportunities, exciting collaborations, and ambitious ideas."
   },
   "SKILLS": {
-    "TITLE": "Skills",
-    "LIST": [
-      "Java",
-      "Spring Boot",
-      "Kotlin",
-      "Python",
-      "Docker",
-      "AWS",
-      "PostgreSQL",
-      "Kafka",
-      "Redis",
-      "Cassandra",
-      "Angular",
-      "Flutter"
+    "TITLE": "Toolkit",
+    "GROUPS": [
+      {
+        "LABEL": "Languages",
+        "ITEMS": [
+          "Java",
+          "Kotlin",
+          "Go",
+          "Python",
+          "TypeScript"
+        ]
+      },
+      {
+        "LABEL": "Backend & Databases",
+        "ITEMS": [
+          "Spring Boot",
+          "PostgreSQL",
+          "Kafka",
+          "Redis",
+          "Cassandra"
+        ]
+      },
+      {
+        "LABEL": "Cloud & Infrastructure",
+        "ITEMS": [
+          "AWS",
+          "Docker",
+          "Terraform",
+          "CI/CD"
+        ]
+      },
+      {
+        "LABEL": "AI",
+        "ITEMS": [
+          "LLM APIs",
+          "RAG",
+          "Vector DB",
+          "Orchestration"
+        ]
+      },
+      {
+        "LABEL": "Frontend & Mobile",
+        "ITEMS": [
+          "Angular",
+          "Flutter"
+        ]
+      }
     ]
   },
-  "PROJECTS": {
-    "TITLE": "Projects",
-    "BACKEND": "Backend Projects",
-    "FULLSTACK": "Fullstack Projects",
-    "MOBILE": "Mobile / Frontend Projects",
-    "EXPERIENCE": "Experience as an in-house developer is described in the About Me section.",
-    "LIST": {
-      "BACKEND": [
-        {
-          "NAME": "Cloud Billing System",
-          "TECH": "Java 21, Spring Boot, PostgreSQL, Kafka, Docker, AWS",
-          "ROLE": "Lead Backend Engineer (design, implementation, deployment)",
-          "DESC": "A scalable backend for a business billing SaaS platform. Automates invoicing, customer management, secure payments, and advanced analytics using Kafka event sourcing."
-        },
-        {
-          "NAME": "Realtime Collaboration Service",
-          "TECH": "Java, Spring Boot, WebSocket, Redis, Docker",
-          "ROLE": "Lead backend developer (design, implementation, deployment)",
-          "DESC": "Backend for a service enabling real-time document and whiteboard collaboration. Supports low-latency sync, concurrent editing, and action auditing."
-        },
-        {
-          "NAME": "Modular Payments Platform",
-          "DESC": "A robust payment system integrating 50+ providers, real-time analytics, cascading payments, and currency conversion.",
-          "TECH": "Java 21, Spring Boot, AWS, Webflux, PostgreSQL, Angular",
-          "ROLE": "Lead backend developer (design, implementation, deployment)"
-        },
-        {
-          "NAME": "SaaS Microservice Architecture",
-          "DESC": "Development of services for international products in communications, media, and finance.",
-          "TECH": "Java 17, Spring Boot, Kafka, AWS S3, Jenkins, Swagger",
-          "ROLE": "Lead backend developer (design, implementation, deployment)"
-        },
-        {
-          "NAME": "Healthcare Software Suite",
-          "DESC": "A system for secure integration with medical devices meeting regulatory standards (Class B, USA). Cloud migration, robust APIs, and microservice architecture.",
-          "TECH": "Java 11/17, Spring, Cassandra, S3, Azure DevOps, DockerSWARM, gRPC, Groovy",
-          "ROLE": "Backend developer (design, implementation, deployment, R&D)"
-        },
-        {
-          "NAME": "Crypto Platform Backend",
-          "DESC": "Core platform for crypto wallet interaction with real data and a custom security system.",
-          "TECH": "Java 8, Spring Security, PostgreSQL, WebSocket",
-          "ROLE": "Backend developer (feature, R&D, integration tests)"
-        },
-        {
-          "NAME": "Data Analytics Service",
-          "DESC": "Microservice analytics for dashboards and financial reporting based on payment data.",
-          "TECH": "Java 17/21, Spring Boot, PostgreSQL, Kafka",
-          "ROLE": "Backend developer (research and development)"
-        },
-        {
-          "NAME": "Payment System Integrations",
-          "DESC": "Adapters for rapid integration with external payment gateways, ensuring seamless operation and high availability.",
-          "TECH": "Java, Spring, AWS, SQS, PostgreSQL",
-          "ROLE": "Backend developer (integration and feature implementation)"
-        }
-      ],
-      "FULLSTACK": [
-        {
-          "NAME": "eCommerce Admin Toolkit",
-          "TECH": "Java 21, Spring Boot, Angular, PostgreSQL, Docker",
-          "ROLE": "Fullstack developer (R&D, design, implementation, deployment)",
-          "DESC": "Admin panel for managing product catalogs, orders, and customer analytics for online stores. Secure authentication, API-first architecture."
-        }
-      ],
-      "MOBILE": [
-        {
-          "NAME": "Wellness Tracker App",
-          "TECH": "Flutter, Firebase, REST API",
-          "ROLE": "Project owner and developer",
-          "DESC": "Mobile app for tracking exercise, nutrition, sleep, and mood with cloud sync and push notifications."
-        },
-        {
-          "NAME": "Mobile Mini CRM",
-          "TECH": "Flutter, Kotlin, Firebase",
-          "ROLE": "Project owner and developer",
-          "DESC": "Lightweight CRM for sales teams: contacts, deals, meetings, reminders, and instant chat."
-        }
-      ]
-    }
-  },
-  "CONTACT": {
+"CONTACT": {
     "TITLE": "Contact",
+    "LEAD": "If you have a project, a collaboration proposal, or an open position, please send me a message. I will respond to your inquiry promptly.",
     "LINKEDIN": "LinkedIn",
     "EMAIL": "Email",
-    "LINKEDIN_URL": " https://linkedin.com/in/ihorshulha",
+    "LINKEDIN_URL": "https://linkedin.com/in/ihorshulha",
     "EMAIL_ADDR": "ihorshulha@mail.online-impressum.de",
     "IMPRESSUM": "Impressum",
     "IMPRESSUM_URL": "https://mein.online-impressum.de/ihorshulha/"
+  },
+  "SERVICES": {
+    "TITLE": "Expertise",
+    "LEAD": "End-to-end engineering — from high-availability backends to AI-powered features.",
+    "BACKEND": {
+      "TITLE": "Backend Engineering",
+      "DESC": "High-load systems, microservices, APIs, and payment integrations engineered to scale and perform reliably under pressure.",
+      "STACK": [
+        "Java",
+        "Spring Boot",
+        "Kotlin",
+        "Go",
+        "Python"
+      ]
+    },
+    "AI": {
+      "TITLE": "AI Integration",
+      "DESC": "Implementing LLMs, RAG architectures, and autonomous agents into production. Expertise in deploying local AI models (on-premise) to ensure strict data privacy, security, and non-disclosure.",
+      "STACK": [
+        "Local LLMs",
+        "LLM APIs",
+        "RAG",
+        "Ollama"
+      ]
+    },
+    "CLOUD": {
+      "TITLE": "Cloud & DevOps",
+      "DESC": "Cloud architecture, CI/CD pipelines, and Infrastructure-as-Code on AWS for maximum scalability, observability, and safe releases.",
+      "STACK": [
+        "AWS",
+        "Docker",
+        "Kafka",
+        "Terraform"
+      ]
+    },
+"FULLSTACK": {
+      "TITLE": "Fullstack & Mobile",
+      "DESC": "End-to-end product development from scratch — covering database design, robust APIs, modern web applications (Angular), and cross-platform mobile solutions (Flutter).",
+      "STACK": [
+        "Angular",
+        "Flutter",
+        "Kotlin",
+        "REST / gRPC",
+        "PostgreSQL",
+        "Firebase"
+      ]
+    }
+  },
+  "WORK": {
+    "TITLE": "Selected Work",
+    "LEAD": "Anonymized case studies from production systems.",
+    "LIST": [
+      {
+        "TITLE": "Cloud Billing SaaS",
+        "TAG": "Backend",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "Kafka",
+          "AWS"
+        ],
+        "ROLE": "Lead Backend Engineer",
+        "RESULT": "Architected and delivered a high-throughput invoicing pipeline with maximum availability."
+      },
+      {
+        "TITLE": "Modular Payments Platform",
+        "TAG": "Backend",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "AWS",
+          "PostgreSQL"
+        ],
+        "ROLE": "Lead Backend Engineer",
+        "RESULT": "Integrated multiple payment providers featuring an automated failover mechanism and real-time analytics."
+      },
+      {
+        "TITLE": "Real-Time Collaboration Service",
+        "TAG": "Backend",
+        "STACK": [
+          "Java",
+          "Spring Boot",
+          "WebSocket",
+          "Redis"
+        ],
+        "ROLE": "Lead Backend Developer",
+        "RESULT": "Developed low-latency synchronization for concurrent document editing by multiple users."
+      },
+      {
+        "TITLE": "Healthcare Integration Suite",
+        "TAG": "Backend",
+        "STACK": [
+          "Java",
+          "Spring",
+          "Cassandra",
+          "gRPC"
+        ],
+        "ROLE": "Backend Developer",
+        "RESULT": "Ensured secure medical-device integration in strict compliance with USA Class B regulatory standards."
+      },
+      {
+        "TITLE": "eCommerce Admin Toolkit",
+        "TAG": "Fullstack",
+        "STACK": [
+          "Java 21",
+          "Spring Boot",
+          "Angular",
+          "PostgreSQL"
+        ],
+        "ROLE": "Fullstack Developer",
+        "RESULT": "Built an API-first administrative panel to manage catalogs, orders, and customer analytics."
+      },
+      {
+        "TITLE": "Wellness Tracker App",
+        "TAG": "Mobile",
+        "STACK": [
+          "Flutter",
+          "Firebase",
+          "REST"
+        ],
+        "ROLE": "Project Owner & Developer",
+        "RESULT": "Created and launched a cross-platform mobile application with cloud synchronization and push notifications on iOS and Android."
+      }
+    ]
+  },
+"FORM": {
+    "NAME": "Name",
+    "NAME_PLACEHOLDER": "Your full name",
+    "EMAIL": "Email",
+    "EMAIL_PLACEHOLDER": "email@company.com",
+    "MESSAGE": "Inquiry Details",
+    "MESSAGE_PLACEHOLDER": "Please provide a brief overview of your project, expected timeline, and budget.",
+    "SUBMIT": "Send Message",
+    "SENDING": "Sending…",
+    "SUCCESS": "Thank you for reaching out. I will get back to you within a few business days.",
+    "ERROR": "An error occurred. Please contact me directly via email.",
+    "REQUIRED": "This field is required",
+    "EMAIL_INVALID": "Please enter a valid email address"
+  },
+  "SEO": {
+    "TITLE": "Ihor Shulha — Software Engineer (Backend / AI / Cloud)",
+    "DESCRIPTION": "Backend-focused software engineer based in Germany. I design and build end-to-end services — from cloud infrastructure to AI integration. Available for freelance opportunities."
+  },
+  "BUILDING": {
+    "TITLE": "Building",
+    "LEAD": "Outside of client work, I build my own products: transforming ideas into market-ready SaaS solutions, exploring AI tools, and prototyping startup concepts.",
+    "FOCUS_LABEL": "Current Focus",
+    "ITEMS": [
+      {
+        "TITLE": "SaaS Products",
+        "DESC": "End-to-end product development — from domain modeling and authentication to billing and analytics. Focused, shipped, and scalable.",
+        "TAG": "Building"
+      },
+      {
+        "TITLE": "AI Tooling",
+        "DESC": "Engineering autonomous agents, RAG architectures, and LLM implementations that solve real business problems, beyond basic demos.",
+        "TAG": "Exploring"
+      },
+      {
+        "TITLE": "Startup Ideas",
+        "DESC": "Validating business concepts, prototyping MVPs, and partnering on early-stage ventures.",
+        "TAG": "Open to Ideas"
+      }
+    ]
+  },
+  "FOOTER": {
+    "TAGLINE": "Software Engineer — Backend, AI & Cloud",
+    "LOCATION": "Germany",
+    "LINKS": "Links",
+    "LEGAL": "Legal"
   }
 }

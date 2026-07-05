@@ -1,28 +1,38 @@
-import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+import { provideZonelessChangeDetection } from '@angular/core';
+import {
+  provideRouter,
+  withInMemoryScrolling,
+  withViewTransitions,
+} from '@angular/router';
 
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient } from '@angular/common/http';
+import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
-}
+import { routes } from './app.routes';
 
 export default {
   providers: [
+    provideZonelessChangeDetection(),
     provideHttpClient(),
-    provideRouter([]),
-    importProvidersFrom(
-      TranslateModule.forRoot({
-        defaultLanguage: 'en',
-        loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-        }
-      })
-    )
-  ]
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'enabled',
+      }),
+      withViewTransitions(),
+    ),
+    // ngx-translate v18: the loader must be passed INSIDE
+    // provideTranslateService({ loader }), not as a sibling provider —
+    // otherwise the service has no loader and translations never load.
+    provideTranslateService({
+      loader: provideTranslateHttpLoader({
+        prefix: 'assets/i18n/',
+        suffix: '.json',
+      }),
+      lang: 'en',
+      fallbackLang: 'en',
+    }),
+  ],
 };

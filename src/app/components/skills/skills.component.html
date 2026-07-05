@@ -1,6 +1,16 @@
-<section class="skills-card">
-  <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
-  <ul class="skills-list">
-    <li *ngFor="let skill of skills">{{ skill }}</li>
-  </ul>
+<section class="skills" appReveal>
+  <h2 class="skills__title">{{ 'SKILLS.TITLE' | translate }}</h2>
+
+  <div class="skills__groups">
+    @for (group of groups(); track group.LABEL) {
+      <div class="skills__group">
+        <h3 class="skills__label">{{ group.LABEL }}</h3>
+        <ul class="skills__chips">
+          @for (item of group.ITEMS; track item) {
+            <li class="chip">{{ item }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
 </section>

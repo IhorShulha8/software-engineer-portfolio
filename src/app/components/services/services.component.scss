@@ -1,0 +1,109 @@
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
+
+.services {
+  padding-block: $space-3xl;
+
+  &__head {
+    max-width: 48rem;
+    margin-bottom: $space-2xl;
+
+    h2 {
+      margin-bottom: $space-md;
+    }
+  }
+
+  &__lead {
+    font-size: $fs-lead;
+    color: $color-text-muted;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: $space-lg;
+
+    @include mixins.respond-to(sm) {
+      grid-template-columns: 1fr;
+      gap: $space-md;
+    }
+  }
+}
+
+.service-card {
+  @include mixins.card;
+  @include mixins.hover-lift;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  padding: $space-xl;
+  // Soft top gradient line on every card.
+  background-image: linear-gradient(to bottom, rgba($color-accent, 0.04), transparent 40%);
+
+  &__icon {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius-md;
+    color: $color-accent;
+    background: rgba($color-accent, 0.1);
+    border: 1px solid $color-border;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $fs-h3;
+  }
+
+  &__desc {
+    margin: 0;
+    color: $color-text-muted;
+    font-size: $fs-body;
+    line-height: $lh-normal;
+    flex-grow: 1;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-xs;
+
+    li {
+      font-size: $fs-small;
+      color: $color-text-muted;
+      padding: $space-xs $space-md;
+      border: 1px solid $color-border;
+      border-radius: $radius-pill;
+      background: $color-surface-2;
+    }
+  }
+
+  // --- AI spotlight: cyan accent + violet→cyan glow ---------------------
+  &--ai {
+    background-image:
+      linear-gradient(to bottom, rgba($color-accent-ai, 0.08), transparent 50%),
+      linear-gradient(135deg, rgba($color-accent, 0.12), rgba($color-accent-ai, 0.08));
+    border-color: rgba($color-accent-ai, 0.3);
+
+    .service-card__icon {
+      color: $color-accent-ai;
+      background: rgba($color-accent-ai, 0.1);
+      border-color: rgba($color-accent-ai, 0.3);
+    }
+
+    &:hover {
+      border-color: rgba($color-accent-ai, 0.5);
+      box-shadow: 0 12px 40px rgba(10, 10, 18, 0.6),
+        0 0 0 1px rgba($color-accent-ai, 0.25),
+        0 0 60px rgba($color-accent-ai, 0.15);
+    }
+  }
+}

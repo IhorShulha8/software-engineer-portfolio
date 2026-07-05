@@ -1,48 +1,128 @@
-.contact-content {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
 
-.contact-photo-wrap {
-  flex-shrink: 0;
-}
+.contact {
+  padding-block: $space-3xl;
 
-.contact-photo {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 12%;      //  50% 10%
-  box-shadow: 0 2px 16px #23272f99;
-  border: 3px solid #23272f;
-  background: #21232a;
-}
+  &__head {
+    max-width: 48rem;
+    margin-bottom: $space-2xl;
 
-@media (max-width: 650px) {
-  .contact-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
+    h2 { margin-bottom: $space-md; }
   }
-  .contact-photo {
-    width: 74px;
-    height: 74px;
-    margin-bottom: 5px;
-  }
-}
 
-.impressum-link {
-  margin-top: 16px;
-  font-size: 0.85rem;
-  opacity: 0.7;
-  
-  a {
-    color: inherit;
-    text-decoration: underline;
-    
-    &:hover {
-      opacity: 1;
+  &__lead {
+    font-size: $fs-lead;
+    color: $color-text-muted;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: $space-2xl;
+
+    @include mixins.respond-to(sm) {
+      grid-template-columns: 1fr;
+      gap: $space-xl;
     }
+  }
+
+  // --- Form --------------------------------------------------------------
+  &__form {
+    @include mixins.card;
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    padding: $space-xl;
+  }
+
+  &__submit {
+    align-self: flex-start;
+    margin-top: $space-sm;
+  }
+
+  &__status {
+    margin: 0;
+    font-size: $fs-body;
+
+    &--ok { color: $color-accent-ai; }
+    &--err { color: $color-error; }
+  }
+
+  // --- Links aside -------------------------------------------------------
+  &__links {
+    @include mixins.card;
+    padding: $space-xl;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $space-md;
+      margin-top: $space-md;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: $space-xs;
+    }
+  }
+
+  &__links-title {
+    font-size: $fs-h3;
+    margin: 0;
+  }
+
+  &__link-label {
+    font-size: $fs-small;
+    letter-spacing: $ls-wide;
+    text-transform: uppercase;
+    color: $color-text-faint;
+  }
+}
+
+// Honeypot: hidden from real users (screen-reader + visual).
+.hp {
+  display: none;
+}
+
+// Form fields.
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+
+  label {
+    font-size: $fs-small;
+    color: $color-text-muted;
+  }
+
+  input,
+  textarea {
+    font-family: var(--font-body);
+    font-size: $fs-body;
+    color: $color-text;
+    background: $color-surface-2;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    padding: $space-md;
+    resize: vertical;
+    transition: border-color $dur-fast $ease-out, box-shadow $dur-fast $ease-out;
+
+    &::placeholder { color: $color-text-faint; }
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+      box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+    }
+    &.invalid {
+      border-color: $color-error;
+      box-shadow: 0 0 0 3px $color-error-soft;
+    }
+  }
+
+  &__error {
+    font-size: $fs-small;
+    color: $color-error;
   }
 }

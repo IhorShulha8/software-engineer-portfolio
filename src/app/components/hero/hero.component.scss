@@ -1,0 +1,105 @@
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
+
+.hero {
+  position: relative;
+  min-height: 50svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $space-3xl $container-pad;
+  overflow: hidden;
+
+  // Animated canvas sits behind the content.
+  &__canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    // Soft vignette so the canvas fades toward the edges.
+    mask-image: radial-gradient(ellipse at center, #000 50%, transparent 90%);
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    @include mixins.container;
+    max-width: 60rem;
+  }
+
+  &__eyebrow {
+    font-family: var(--font-body);
+    font-size: $fs-small;
+    letter-spacing: $ls-wider;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: $space-md;
+  }
+
+  &__title {
+    font-size: $fs-hero;
+    line-height: $lh-tight;
+    letter-spacing: $ls-tight;
+    margin-bottom: $space-lg;
+    font-weight: 700;
+
+    // Each line is an overflow-hidden mask so the GSAP yPercent reveal
+    // animates the text sliding up from behind an edge.
+    &-line {
+      display: block;
+      overflow: hidden;
+    }
+
+    &-highlight {
+      display: inline-block;
+      background: $gradient-ai;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__lead {
+    font-size: $fs-lead;
+    line-height: $lh-normal;
+    color: $color-text-muted;
+    max-width: 42rem;
+    margin-bottom: $space-xl;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: $space-xl;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: $fs-small;
+    letter-spacing: $ls-wide;
+    color: $color-text-faint;
+    z-index: 1;
+    text-transform: uppercase;
+  }
+
+  @include mixins.respond-to(sm) {
+    min-height: 92svh;
+    padding: $space-2xl $container-pad;
+
+    &__title {
+      margin-bottom: $space-md;
+    }
+    &__lead {
+      font-size: $fs-body;
+    }
+    &__scroll {
+      display: none;
+    }
+  }
+}
+
+

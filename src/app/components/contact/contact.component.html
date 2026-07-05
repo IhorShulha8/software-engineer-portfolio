@@ -1,24 +1,105 @@
-<section class="contact-card">
-  <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
-  <div class="contact-content">
-    <div class="contact-photo-wrap">
-      <img src="assets/photo.jpg" alt="Ihor Shulha photo" class="contact-photo" />
-    </div>
-    <ul>
-      <li>
-        <strong>{{ 'CONTACT.LINKEDIN' | translate }}:</strong>
-        <a href="{{ 'CONTACT.LINKEDIN_URL' | translate }}" target="_blank">{{ 'CONTACT.LINKEDIN_URL' | translate }}</a>
-      </li>
-      <li>
-        <strong>{{ 'CONTACT.EMAIL' | translate }}:</strong>
-        <a href="mailto:{{ 'CONTACT.EMAIL_ADDR' | translate }}">{{ 'CONTACT.EMAIL_ADDR' | translate }}</a>
-      </li>
-      <li>
-        <strong>{{ 'CONTACT.IMPRESSUM' | translate }}:</strong>
-        <a href="{{ 'CONTACT.IMPRESSUM_URL' | translate }}" target="_blank" rel="noopener">
-          {{ 'CONTACT.IMPRESSUM_URL' | translate }}
-        </a>
-      </li>
-    </ul>
+<section class="contact" id="contact-form" appReveal>
+  <header class="contact__head">
+    <h2>{{ (contact())?.TITLE || ('CONTACT.TITLE' | translate) }}</h2>
+    <p class="contact__lead">{{ (contact())?.LEAD }}</p>
+  </header>
+
+  <div class="contact__grid">
+    <!-- Brief form -->
+    <form class="contact__form" [formGroup]="form" (ngSubmit)="submit()"
+          name="contact" netlify-honeypot="bot-field" netlify
+          novalidate>
+      <!--
+        Honeypot: hidden from real users AND screen readers (aria-hidden +
+        tabindex="-1" so it's skipped in tab order and not announced).
+        Netlify still detects it because the field name is present in the
+        static twin in index.html.
+      -->
+      <div class="hp" aria-hidden="true">
+        <label>
+          Don't fill this out:
+          <input formControlName="bot-field" tabindex="-1" autocomplete="off"
+                 aria-hidden="true" />
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="name">{{ 'FORM.NAME' | translate }}</label>
+        <input id="name" type="text" formControlName="name"
+               [placeholder]="'FORM.NAME_PLACEHOLDER' | translate"
+               [class.invalid]="isInvalid('name')"
+               [attr.aria-invalid]="isInvalid('name')"
+               aria-describedby="name-error" />
+        @if (isInvalid('name')) {
+          <span id="name-error" class="field__error">{{ 'FORM.REQUIRED' | translate }}</span>
+        }
+      </div>
+
+      <div class="field">
+        <label for="email">{{ 'FORM.EMAIL' | translate }}</label>
+        <input id="email" type="email" formControlName="email"
+               [placeholder]="'FORM.EMAIL_PLACEHOLDER' | translate"
+               [class.invalid]="isInvalid('email')"
+               [attr.aria-invalid]="isInvalid('email')"
+               aria-describedby="email-error" />
+        @if (isInvalid('email')) {
+          <span id="email-error" class="field__error">{{ 'FORM.EMAIL_INVALID' | translate }}</span>
+        }
+      </div>
+
+      <div class="field">
+        <label for="message">{{ 'FORM.MESSAGE' | translate }}</label>
+        <textarea id="message" rows="5" formControlName="message"
+                  [placeholder]="'FORM.MESSAGE_PLACEHOLDER' | translate"
+                  [class.invalid]="isInvalid('message')"
+                  [attr.aria-invalid]="isInvalid('message')"
+                  aria-describedby="message-error"></textarea>
+        @if (isInvalid('message')) {
+          <span id="message-error" class="field__error">{{ 'FORM.REQUIRED' | translate }}</span>
+        }
+      </div>
+
+      <button type="submit" class="contact__submit cta cta--primary"
+              [disabled]="state() === 'sending'"
+              [attr.aria-busy]="state() === 'sending'"
+              [attr.aria-disabled]="state() === 'sending'">
+        @if (state() === 'sending') {
+          {{ 'FORM.SENDING' | translate }}
+        } @else {
+          {{ 'FORM.SUBMIT' | translate }}
+        }
+      </button>
+
+      <!-- Live region: announces submit outcome to assistive tech. -->
+      <div role="status" [attr.aria-live]="state() === 'error' ? 'assertive' : 'polite'">
+        @switch (state()) {
+          @case ('success') {
+            <p class="contact__status contact__status--ok">{{ 'FORM.SUCCESS' | translate }}</p>
+          }
+          @case ('error') {
+            <p class="contact__status contact__status--err">{{ 'FORM.ERROR' | translate }}</p>
+          }
+        }
+      </div>
+    </form>
+
+    <!-- Direct contact links -->
+    <aside class="contact__links">
+      <h3 class="contact__links-title">{{ (contact())?.TITLE }}</h3>
+      <ul>
+        <li>
+          <span class="contact__link-label">{{ (contact())?.EMAIL }}</span>
+          <a [href]="'mailto:' + (contact())?.EMAIL_ADDR">{{ (contact())?.EMAIL_ADDR }}</a>
+        </li>
+        <li>
+          <span class="contact__link-label">{{ (contact())?.LINKEDIN }}</span>
+          <a [href]="(contact())?.LINKEDIN_URL" target="_blank" rel="noopener">linkedin.com/in/ihorshulha</a>
+        </li>
+        <li>
+          <span class="contact__link-label">{{ (contact())?.IMPRESSUM }}</span>
+          <a [href]="(contact())?.IMPRESSUM_URL" target="_blank" rel="noopener">mein.online-impressum.de</a>
+        </li>
+      </ul>
+    </aside>
   </div>
 </section>

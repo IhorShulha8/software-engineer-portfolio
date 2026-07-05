@@ -1,25 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 
+import { RevealDirective } from '../../shared/animations/reveal.directive';
+
+interface SkillGroup {
+  LABEL: string;
+  ITEMS: string[];
+}
+
+/**
+ * Toolkit section: skills grouped by category (Languages / Backend / Cloud /
+ * AI / Frontend & Mobile). Reads from `SKILLS.GROUPS` in the i18n files.
+ */
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslatePipe, RevealDirective],
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  skills: string[] = [];
+  private readonly translate = inject(TranslateService);
 
-  constructor(private translate: TranslateService) {
-    this.translate.onLangChange.subscribe(() => this.updateSkills());
-    this.updateSkills(); // Викликаємо одразу при ініціалізації
-  }
+  private readonly langChange = toSignal(this.translate.onLangChange, {
+    initialValue: null,
+  });
 
-  updateSkills() {
-    this.translate.get('SKILLS.LIST').subscribe((val: any) => {
-      this.skills = Array.isArray(val) ? val : [];
-    });
-  }
+  protected readonly groups = computed<SkillGroup[]>(() => {
+    this.langChange();
+    const g = this.translate.instant('SKILLS.GROUPS') as SkillGroup[] | undefined;
+    return Array.isArray(g) ? g : [];
+  });
 }

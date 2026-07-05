@@ -1,12 +1,88 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 
+import { RevealDirective } from '../../shared/animations/reveal.directive';
+
+type SubmitState = 'idle' | 'sending' | 'success' | 'error';
+
+/**
+ * Contact section: a short brief form (name / email / message) plus direct
+ * contact links. Submissions go to Netlify Forms via AJAX POST.
+ *
+ * Netlify detects forms at build time by scanning the static index.html, so
+ * `src/index.html` carries a hidden static twin of this form (same `name`
+ * fields + `data-netlify`). This component POSTs the same field names so the
+ * two stay in sync.
+ */
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslatePipe, RevealDirective],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrl: './contact.component.scss',
 })
-export class ContactComponent {}
+export class ContactComponent {
+  private readonly fb = inject(FormBuilder);
+  private readonly http = inject(HttpClient);
+  protected readonly translate = inject(TranslateService);
+
+  protected readonly state = signal<SubmitState>('idle');
+
+  protected readonly form = this.fb.nonNullable.group({
+    name: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
+    message: ['', Validators.required],
+    // Honeypot: hidden from humans, bots fill it in -> submission dropped.
+    'bot-field': [''],
+  });
+
+  private readonly langChange = toSignal(this.translate.onLangChange, {
+    initialValue: null,
+  });
+
+  protected readonly contact = computed(() => {
+    this.langChange();
+    return this.translate.instant('CONTACT') as Record<string, string>;
+  });
+
+  protected isInvalid(control: 'name' | 'email' | 'message'): boolean {
+    const c = this.form.controls[control];
+    return c.invalid && (c.dirty || c.touched);
+  }
+
+  protected submit(): void {
+    if (this.form.invalid) {
+      this.form.markAllAsTouched();
+      return;
+    }
+    this.state.set('sending');
+
+    // Netlify expects URL-encoded body with form-name + the field names.
+    const formName = 'contact';
+    const value = this.form.getRawValue();
+    const body = new URLSearchParams({
+      'form-name': formName,
+      name: value.name,
+      email: value.email,
+      message: value.message,
+      'bot-field': value['bot-field'],
+    });
+
+    this.http
+      .post('/', body.toString(), {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        responseType: 'text',
+      })
+      .subscribe({
+        next: () => {
+          this.state.set('success');
+          this.form.reset();
+        },
+        error: () => this.state.set('error'),
+      });
+  }
+}

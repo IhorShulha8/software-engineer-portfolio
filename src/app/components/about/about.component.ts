@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
+
+import { RevealDirective } from '../../shared/animations/reveal.directive';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [CommonModule, TranslateModule],
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+    selector: 'app-about',
+    imports: [CommonModule, TranslatePipe, RevealDirective],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.scss'
 })
 export class AboutComponent {}

@@ -1,0 +1,58 @@
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
+
+.about {
+  @include mixins.card;
+  padding-block: $space-2xl;
+
+  &__location {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-sm;
+    font-size: $fs-small;
+    letter-spacing: $ls-wide;
+    color: $color-accent-ai;
+    margin-bottom: $space-lg;
+  }
+
+  // Pulsing dot indicates "available" / "here".
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $color-accent-ai;
+    box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.6);
+    animation: about-pulse 2.4s $ease-in-out infinite;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+  }
+
+  &__title {
+    font-size: $fs-h2;
+    margin-bottom: $space-xs;
+  }
+
+  &__role {
+    font-size: $fs-lead;
+    color: $color-text-muted;
+    margin-bottom: $space-xl;
+  }
+
+  &__text {
+    font-size: $fs-body;
+    line-height: $lh-normal;
+    color: $color-text;
+    white-space: pre-line;
+    margin-bottom: $space-md;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+@keyframes about-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.5); }
+  70%  { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+}

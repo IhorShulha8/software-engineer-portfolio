@@ -1,0 +1,54 @@
+<section class="services" id="services">
+  <header class="services__head">
+    <h2>{{ (services())?.TITLE || ('SERVICES.TITLE' | translate) }}</h2>
+    <p class="services__lead">{{ (services())?.LEAD }}</p>
+  </header>
+
+  <div class="services__grid">
+    @for (key of cardKeys; track key) {
+      @let card = (services())?.[key];
+      @if (card) {
+        <article class="service-card service-card--{{ cardModifier[key] }}"
+                 appReveal [revealDelay]="$index * 0.08">
+          <span class="service-card__icon" aria-hidden="true">
+            @switch (key) {
+              @case ('BACKEND') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="6" rx="1.5"/>
+                  <rect x="3" y="14" width="18" height="6" rx="1.5"/>
+                  <circle cx="7" cy="7" r="0.9" fill="currentColor"/>
+                  <circle cx="7" cy="17" r="0.9" fill="currentColor"/>
+                </svg>
+              }
+              @case ('AI') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>
+                  <circle cx="12" cy="12" r="3.2"/>
+                </svg>
+              }
+              @case ('CLOUD') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M7 18a4 4 0 010-8 5 5 0 019.6-1.3A3.5 3.5 0 0117 18H7z"/>
+                </svg>
+              }
+              @case ('FULLSTACK') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/>
+                </svg>
+              }
+            }
+          </span>
+
+          <h3 class="service-card__title">{{ card.TITLE }}</h3>
+          <p class="service-card__desc">{{ card.DESC }}</p>
+
+          <ul class="service-card__stack">
+            @for (tech of card.STACK; track tech) {
+              <li>{{ tech }}</li>
+            }
+          </ul>
+        </article>
+      }
+    }
+  </div>
+</section>

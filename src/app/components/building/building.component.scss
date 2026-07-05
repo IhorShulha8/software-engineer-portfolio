@@ -1,0 +1,85 @@
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
+
+// Amber accent — visually separates the "founder/indie" energy from the
+// primary violet (services) and AI cyan.
+$accent-warm: $color-accent-warm;
+
+.building {
+  padding-block: $space-3xl;
+
+  &__head {
+    max-width: 48rem;
+    margin-bottom: $space-2xl;
+
+    h2 { margin-bottom: $space-md; }
+  }
+
+  &__kicker {
+    font-size: $fs-small;
+    letter-spacing: $ls-wider;
+    text-transform: uppercase;
+    color: $accent-warm;
+    margin-bottom: $space-md;
+  }
+
+  &__lead {
+    font-size: $fs-lead;
+    color: $color-text-muted;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: $space-lg;
+
+    @include mixins.respond-to(md) {
+      grid-template-columns: 1fr;
+      gap: $space-md;
+    }
+  }
+}
+
+.building-card {
+  @include mixins.card;
+  @include mixins.hover-lift;
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  padding: $space-xl;
+  // Warm top tint to distinguish from the violet-tinted service cards.
+  background-image:
+    linear-gradient(to bottom, rgba($accent-warm, 0.06), transparent 50%);
+
+  &__tag {
+    align-self: flex-start;
+    font-size: $fs-small;
+    letter-spacing: $ls-wide;
+    text-transform: uppercase;
+    color: $accent-warm;
+    padding: $space-xs $space-md;
+    border: 1px solid rgba($accent-warm, 0.3);
+    border-radius: $radius-pill;
+    background: rgba($accent-warm, 0.08);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $fs-h3;
+  }
+
+  &__desc {
+    margin: 0;
+    color: $color-text-muted;
+    font-size: $fs-body;
+    line-height: $lh-normal;
+  }
+
+  // Subtle warm glow on hover, distinct from the violet service cards.
+  &:hover {
+    border-color: rgba($accent-warm, 0.4);
+    box-shadow: 0 12px 40px rgba(10, 10, 18, 0.6),
+      0 0 0 1px rgba($accent-warm, 0.2),
+      0 0 60px rgba($accent-warm, 0.08);
+  }
+}

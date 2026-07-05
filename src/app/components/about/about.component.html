@@ -1,8 +1,13 @@
-<section class="about-card">
-  <img class="avatar" src="assets/avatar.png" alt="Avatar">
-  <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
-  <h3>{{ 'ABOUT.ROLE' | translate }}</h3>
-  <p class="location">{{ 'ABOUT.LOCATION' | translate }}</p>
-  <p class="multiline-text">{{ 'ABOUT.TEXT' | translate }}</p>
-  <div class="experience-block">{{ 'ABOUT.EXPERIENCE_BLOCK' | translate }}</div>
+<section class="about" appReveal>
+  <p class="about__location">
+    <span class="about__dot" aria-hidden="true"></span>
+    {{ 'ABOUT.LOCATION' | translate }}
+  </p>
+
+  <h2 class="about__title">{{ 'ABOUT.TITLE' | translate }}</h2>
+  <p class="about__role">{{ 'ABOUT.ROLE' | translate }}</p>
+
+  @for (para of ('ABOUT.TEXT' | translate).split('\n\n'); track $index) {
+    <p class="about__text">{{ para }}</p>
+  }
 </section>

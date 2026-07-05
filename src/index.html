@@ -3,39 +3,49 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ihor Shulha | Java Backend Software Engineer Portfolio (Germany)</title>
+  <title>Ihor Shulha — Software Engineer (Backend / AI / Cloud)</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ihorshulha.dev/">
+
   <!-- SEO -->
   <meta name="description"
-    content="Portfolio of Ihor Shulha — Java backend developer, Spring Boot specialist, cloud engineer, and fullstack developer in Germany.">
+    content="Backend-focused software engineer in Germany. I design, build and support services and apps end-to-end — from cloud infrastructure to AI-powered features. Open to freelance work and collaboration.">
   <meta name="keywords"
-    content="Ihor Shulha, Java, Software Engineer, Backend Developer, Spring Boot, AWS, Germany, Portfolio, Microservices, Angular, Flutter, Fullstack">
+    content="Ihor Shulha, Software Engineer, Backend Developer, Java, Spring Boot, AWS, AI Integration, Cloud, Fullstack, Germany, Freelance">
   <meta name="author" content="Ihor Shulha">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ihor Shulha | Java Backend Software Engineer Portfolio (Germany)">
+  <meta property="og:title" content="Ihor Shulha — Software Engineer (Backend / AI / Cloud)">
   <meta property="og:description"
-    content="Portfolio of Ihor Shulha — Java backend developer, Spring Boot specialist, cloud engineer, and fullstack developer in Germany.">
-  <meta property="og:url" content="https://ihorshulha.dev">
-  <meta property="og:image" content="https://ihorshulha.dev/assets/avatar.jpg">
+    content="Backend-focused software engineer in Germany. I design, build and support services and apps end-to-end — from cloud infrastructure to AI-powered features.">
+  <meta property="og:url" content="https://ihorshulha.dev/">
+  <!-- TODO: replace avatar.png with a branded social-preview asset (1200x630). -->
+  <meta property="og:image" content="https://ihorshulha.dev/assets/avatar.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ihor Shulha | Java Backend Engineer Portfolio">
+  <meta name="twitter:title" content="Ihor Shulha — Software Engineer (Backend / AI / Cloud)">
   <meta name="twitter:description"
-    content="Portfolio of Ihor Shulha — Java backend and fullstack software engineer in Germany.">
-  <meta name="twitter:image" content="https://ihorshulha.dev/assets/avatar.jpg">
+    content="Backend-focused software engineer in Germany. End-to-end services, cloud and AI integration.">
+  <meta name="twitter:image" content="https://ihorshulha.dev/assets/avatar.png">
 
-  <!-- hreflang for multilingual support (if /ua, /de exist as routes) -->
+  <!-- hreflang: `/` = EN (canonical), `/de`, `/ua` are locale routes. -->
   <link rel="alternate" hreflang="en" href="https://ihorshulha.dev/">
   <link rel="alternate" hreflang="de" href="https://ihorshulha.dev/de">
   <link rel="alternate" hreflang="uk" href="https://ihorshulha.dev/ua">
+  <link rel="alternate" hreflang="x-default" href="https://ihorshulha.dev/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+
+  <!-- Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Structured Data Schema.org Person -->
   <script type="application/ld+json">
@@ -43,9 +53,11 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ihor Shulha",
-    "jobTitle": "Software Engineer",
+    "jobTitle": "Software Engineer — Backend, AI, Cloud",
+    "description": "Backend-focused software engineer in Germany. Designs, builds and supports services and apps end-to-end, integrating AI into real products.",
     "url": "https://ihorshulha.dev",
-    "image": "https://ihorshulha.dev/assets/avatar.jpg",
+    "image": "https://ihorshulha.dev/assets/avatar.png",
+    "knowsAbout": ["Java", "Spring Boot", "AWS", "Microservices", "AI Integration", "Angular"],
     "sameAs": [
       "https://linkedin.com/in/ihorshulha",
       "mailto:ihorshulha@mail.online-impressum.de"
@@ -59,6 +71,20 @@
 </head>
 
 <body>
+  <!--
+    Static twin of the Angular contact form. Netlify detects forms at build
+    time by scanning this HTML; the SPA then POSTs the same field names so
+    submissions land in the Netlify Forms inbox. Keep field names in sync with
+    ContactComponent (name / email / message / bot-field).
+  -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden aria-hidden="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+    <input name="bot-field" />
+  </form>
+
   <app-root></app-root>
 </body>
 

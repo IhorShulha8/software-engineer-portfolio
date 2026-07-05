@@ -1,0 +1,31 @@
+<section class="hero" id="top">
+  <canvas #canvas class="hero__canvas" aria-hidden="true"></canvas>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow">{{ 'HERO.EYEBROW' | translate }}</p>
+
+    <h1 class="hero__title">
+      <span class="hero__title-line">{{ 'HERO.TITLE_LINE_1' | translate }}</span>
+      <span class="hero__title-line">
+        <span class="hero__title-highlight">{{ 'HERO.TITLE_HIGHLIGHT' | translate }}</span>
+      </span>
+      <span class="hero__title-line">{{ 'HERO.TITLE_LINE_2' | translate }}</span>
+      <span class="hero__title-line">{{ 'HERO.TITLE_LINE_3' | translate }}</span>
+    </h1>
+
+    <p class="hero__lead">{{ 'HERO.LEAD' | translate }}</p>
+
+    <div class="hero__actions">
+      <button type="button" class="hero__cta cta cta--primary"
+              (click)="scrollTo('contact')">
+        {{ 'HERO.CTA_PRIMARY' | translate }}
+      </button>
+      <button type="button" class="hero__cta cta cta--ghost"
+              (click)="scrollTo('work')">
+        {{ 'HERO.CTA_SECONDARY' | translate }}
+      </button>
+    </div>
+  </div>
+
+  <span class="hero__scroll" aria-hidden="true">{{ 'HERO.SCROLL_HINT' | translate }}</span>
+</section>

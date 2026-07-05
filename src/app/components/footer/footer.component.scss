@@ -1,0 +1,120 @@
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
+
+.footer {
+  border-top: 1px solid $color-border;
+  background: $color-surface;
+  margin-top: $space-3xl;
+
+  &__inner {
+    @include mixins.container;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr auto;
+    gap: $space-xl;
+    padding-block: $space-2xl;
+
+    @include mixins.respond-to(md) {
+      grid-template-columns: 1fr 1fr;
+      gap: $space-lg;
+    }
+    @include mixins.respond-to(sm) {
+      grid-template-columns: 1fr;
+      gap: $space-lg;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+  }
+
+  &__name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: $fs-body;
+    color: $color-text;
+  }
+
+  &__tagline {
+    font-size: $fs-small;
+    color: $color-text-muted;
+  }
+
+  &__location {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-sm;
+    font-size: $fs-small;
+    color: $color-accent-ai;
+    margin-top: $space-xs;
+  }
+
+  // Small static dot (no animation here — the About section already pulses).
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $color-accent-ai;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $space-sm;
+    }
+
+    a {
+      font-size: $fs-small;
+      color: $color-text-muted;
+      transition: color $dur-fast $ease-out;
+
+      &:hover { color: $color-accent; }
+    }
+  }
+
+  &__col-title {
+    font-size: $fs-small;
+    letter-spacing: $ls-wide;
+    text-transform: uppercase;
+    color: $color-text-faint;
+    margin: 0 0 $space-xs;
+  }
+
+  &__lang {
+    display: flex;
+    gap: $space-xs;
+    align-self: start;
+
+    button {
+      background: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: $fs-small;
+      letter-spacing: $ls-wide;
+      color: $color-text-faint;
+      padding: $space-xs $space-sm;
+      border-radius: $radius-sm;
+      transition: color $dur-fast $ease-out, border-color $dur-fast $ease-out;
+
+      &:hover { color: $color-text; }
+      &.active {
+        color: $color-accent;
+        border-color: $color-border-strong;
+      }
+    }
+  }
+
+  &__bottom {
+    @include mixins.container;
+    padding-bottom: $space-lg;
+    font-size: $fs-small;
+    color: $color-text-faint;
+  }
+}
