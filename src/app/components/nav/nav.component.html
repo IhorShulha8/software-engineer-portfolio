@@ -37,14 +37,5 @@
     <a href="#about" (click)="scrollTo('about', $event)">{{ 'NAV.ABOUT' | translate }}</a>
     <a href="#contact" (click)="scrollTo('contact', $event)">{{ 'NAV.CONTACT' | translate }}</a>
 
-    <div class="nav__mobile-lang" aria-label="Language selection">
-      @for (lang of langs; track lang) {
-        <button type="button"
-                [class.active]="translate.currentLang() === lang"
-                (click)="setLang(lang)">
-          {{ lang | uppercase }}
-        </button>
-      }
-    </div>
   </div>
 </header>

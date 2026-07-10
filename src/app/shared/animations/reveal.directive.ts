@@ -1,4 +1,5 @@
-import { AfterViewInit, Directive, ElementRef, Input, OnDestroy, inject } from '@angular/core';
+import { AfterViewInit, Directive, ElementRef, Input, OnDestroy, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { prefersReducedMotion } from './reduced-motion';
 
 /**
@@ -22,6 +23,7 @@ import { prefersReducedMotion } from './reduced-motion';
 })
 export class RevealDirective implements AfterViewInit, OnDestroy {
   private readonly host = inject<ElementRef<HTMLElement>>(ElementRef);
+  private readonly platformId = inject(PLATFORM_ID);
 
   /** Direction the element travels from. Default: 'bottom' (slide up). */
   @Input() revealFrom: 'bottom' | 'top' | 'left' | 'right' = 'bottom';
@@ -35,6 +37,9 @@ export class RevealDirective implements AfterViewInit, OnDestroy {
   private cleanup: (() => void) | null = null;
 
   async ngAfterViewInit(): Promise<void> {
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
     const el = this.host.nativeElement;
 
     // Reduced motion: skip animation entirely, show the element.

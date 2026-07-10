@@ -1,3 +1,4 @@
+import { ApplicationConfig } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
 import { provideZonelessChangeDetection } from '@angular/core';
 import {
@@ -11,7 +12,7 @@ import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { routes } from './app.routes';
 
-export default {
+export const appConfig: ApplicationConfig = {
   providers: [
     provideZonelessChangeDetection(),
     provideHttpClient(),

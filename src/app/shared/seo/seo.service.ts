@@ -1,4 +1,5 @@
 import { Injectable, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -21,6 +22,7 @@ const SITE_ORIGIN = 'https://ihorshulha.dev';
  */
 @Injectable({ providedIn: 'root' })
 export class SeoService {
+  private readonly document = inject(DOCUMENT);
   private readonly title = inject(Title);
   private readonly meta = inject(Meta);
   private readonly translate = inject(TranslateService);
@@ -42,7 +44,7 @@ export class SeoService {
 
     // <html lang>: UA URL segment is "ua" but the BCP-47 code is "uk".
     const isoLang = lang === 'ua' ? 'uk' : lang;
-    document.documentElement.setAttribute('lang', isoLang);
+    this.document.documentElement.setAttribute('lang', isoLang);
 
     // Canonical + og:url. EN canonical is the root `/` (no `/en`); DE/UA keep
     // their segment. All end without trailing slash inconsistency: root has
@@ -54,11 +56,11 @@ export class SeoService {
 
   /** Create or update a <link rel="..."> element in <head>. */
   private upsertLink(rel: string, href: string): void {
-    let link = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`);
+    let link = this.document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`);
     if (!link) {
-      link = document.createElement('link');
+      link = this.document.createElement('link');
       link.setAttribute('rel', rel);
-      document.head.appendChild(link);
+      this.document.head.appendChild(link);
     }
     link.setAttribute('href', href);
   }

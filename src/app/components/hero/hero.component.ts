@@ -4,8 +4,10 @@ import {
   ElementRef,
   OnDestroy,
   ViewChild,
+  PLATFORM_ID,
+  inject,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { prefersReducedMotion } from '../../shared/animations/reduced-motion';
 
@@ -28,20 +30,25 @@ export class HeroComponent implements AfterViewInit, OnDestroy {
   @ViewChild('canvas', { static: true })
   private canvasRef!: ElementRef<HTMLCanvasElement>;
 
+  private platformId = inject(PLATFORM_ID);
   private rafId = 0;
   private resizeObserver?: ResizeObserver;
   private particles: Particle[] = [];
   private animationCleanup: (() => void) | null = null;
 
   ngAfterViewInit(): void {
-    this.initCanvas();
-    this.playIntro();
+    if (isPlatformBrowser(this.platformId)) {
+      this.initCanvas();
+      this.playIntro();
+    }
   }
 
   ngOnDestroy(): void {
-    cancelAnimationFrame(this.rafId);
-    this.resizeObserver?.disconnect();
-    this.animationCleanup?.();
+    if (isPlatformBrowser(this.platformId)) {
+      cancelAnimationFrame(this.rafId);
+      this.resizeObserver?.disconnect();
+      this.animationCleanup?.();
+    }
   }
 
   // --- Smooth-scroll CTA handlers ----------------------------------------

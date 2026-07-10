@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# Welcome AI search agents and LLM scrapers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: gemini-ad-crawler
+Allow: /
+
 Sitemap: https://ihorshulha.dev/sitemap.xml

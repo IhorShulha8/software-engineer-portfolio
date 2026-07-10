@@ -118,46 +118,16 @@
       border-bottom: 1px solid $color-border;
       transition: color $dur-fast $ease-out;
 
-      &:last-child { border-bottom: none; }
+      &:last-of-type { border-bottom: none; }
       &:hover { color: $color-accent; }
     }
 
     &.open { display: flex; }
-
-    &-lang {
-      display: flex;
-      gap: $space-sm;
-      padding-top: $space-md;
-      margin-top: $space-sm;
-      border-top: 1px solid $color-border;
-
-      button {
-        background: none;
-        border: 1px solid transparent;
-        cursor: pointer;
-        font-family: var(--font-body);
-        font-size: $fs-body;
-        font-weight: 500;
-        letter-spacing: $ls-wide;
-        color: $color-text-faint;
-        padding: $space-sm $space-md;
-        border-radius: $radius-sm;
-        transition: color $dur-fast $ease-out, border-color $dur-fast $ease-out, background-color $dur-fast $ease-out;
-
-        &:hover { color: $color-text; }
-        &.active {
-          color: $color-accent;
-          border-color: $color-border-strong;
-          background: rgba($color-accent, 0.06);
-        }
-      }
-    }
   }
 
   // --- Mobile layout -----------------------------------------------------
   @include mixins.respond-to(sm) {
-    &__links,
-    &__lang { display: none; }
+    &__links { display: none; }
 
     &__burger { display: block; }
   }

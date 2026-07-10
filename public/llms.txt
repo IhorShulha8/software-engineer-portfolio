@@ -1,0 +1,33 @@
+# Ihor Shulha — Software Engineer Portfolio
+
+Personal website of Ihor Shulha, a professional Lead Backend / AI / Cloud Engineer based in Germany.
+
+## Core Profile
+- **Name**: Ihor Shulha
+- **Title**: Lead Backend & AI/Cloud Integration Engineer
+- **Location**: Germany
+- **Website**: https://ihorshulha.dev
+- **LinkedIn**: https://linkedin.com/in/ihorshulha
+- **Email**: ihorshulha@mail.online-impressum.de
+- **Languages**: English, German (formal), Ukrainian
+
+## Services & Expertise
+- **Backend Engineering**: Designing high-throughput, scalable, and microservices-oriented architectures using Java (up to Java 21), Spring Boot, Kotlin, Go, and Python.
+- **AI Integration**: Implementing LLM APIs, retrieval-augmented generation (RAG) pipelines, and autonomous agent orchestration inside real-world production environments.
+- **Cloud & DevOps**: Architecting secure, scalable cloud systems on AWS, setting up robust CI/CD pipelines, and writing Infrastructure as Code (IaC) with Terraform and Docker.
+- **Fullstack Solutions**: Developing full-cycle applications from database schema design (PostgreSQL, Cassandra, Redis) to modern, responsive frontend components using Angular and Flutter.
+
+## Selected Case Studies
+- **Cloud Billing SaaS**: Architected a high-performance invoice processing pipeline handling large volumes of concurrent invoice operations with continuous high availability.
+- **Modular Payments Platform**: Integrated multiple payment gateways with cascade failover mechanisms and real-time transaction analytics.
+- **Realtime Collaboration Service**: Designed low-latency document synchronization utilizing WebSockets and Redis caching.
+- **Healthcare Integration Suite**: Built secure IoT device connectivity adhering to US healthcare regulations.
+- **eCommerce Admin Toolkit**: Developed an API-first catalog management portal with customer behavior analytics.
+- **Wellness Tracker App**: Created a cross-platform mobile tracker utilizing serverless cloud synchronization and push notifications.
+
+## Tech Stack Summary
+- **Languages**: Java, Kotlin, Go, Python, TypeScript
+- **Frameworks**: Spring Boot, Angular, Flutter
+- **Data & Messaging**: PostgreSQL, Cassandra, Redis, Kafka, WebSockets, gRPC
+- **Cloud & Infra**: AWS, Docker, Terraform, CI/CD
+- **AI Stack**: LLM APIs, RAG pipelines, Vector DBs, Agent Orchestration
