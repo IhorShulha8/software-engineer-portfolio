@@ -77,13 +77,14 @@
     submissions land in the Netlify Forms inbox. Keep field names in sync with
     ContactComponent (name / email / message / bot-field).
   -->
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden aria-hidden="true">
-    <input type="hidden" name="form-name" value="contact" />
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
-    <input name="bot-field" />
-  </form>
+  <div style="display: none;">
+    <form name="inquiry" method="post" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </div>
 
   <app-root></app-root>
 </body>

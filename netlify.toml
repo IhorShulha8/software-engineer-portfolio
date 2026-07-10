@@ -8,8 +8,8 @@
   publish = "dist/software-engineer-portfolio/browser"
 
 [build.environment]
-  # Angular 20 requires Node 18.19+ / 20.11+ / 22+.
-  NODE_VERSION = "20"
+  # Angular 20 / @netlify/angular-runtime v4 require Node 22+.
+  NODE_VERSION = "22"
 
 # SPA redirects + the `/en` -> `/` canonical redirect live in public/_redirects
 # (single source of truth — Netlify merges both _redirects and rules here).

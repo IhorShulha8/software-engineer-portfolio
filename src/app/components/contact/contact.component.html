@@ -7,8 +7,8 @@
   <div class="contact__grid">
     <!-- Brief form -->
     <form class="contact__form" [formGroup]="form" (ngSubmit)="submit()"
-          name="contact" netlify-honeypot="bot-field" netlify
-          novalidate>
+          name="inquiry" novalidate>
+      <input type="hidden" name="form-name" value="inquiry" />
       <!--
         Honeypot: hidden from real users AND screen readers (aria-hidden +
         tabindex="-1" so it's skipped in tab order and not announced).
@@ -18,14 +18,14 @@
       <div class="hp" aria-hidden="true">
         <label>
           Don't fill this out:
-          <input formControlName="bot-field" tabindex="-1" autocomplete="off"
+          <input formControlName="bot-field" name="bot-field" tabindex="-1" autocomplete="off"
                  aria-hidden="true" />
         </label>
       </div>
 
       <div class="field">
         <label for="name">{{ 'FORM.NAME' | translate }}</label>
-        <input id="name" type="text" formControlName="name"
+        <input id="name" type="text" formControlName="name" name="name"
                [placeholder]="'FORM.NAME_PLACEHOLDER' | translate"
                [class.invalid]="isInvalid('name')"
                [attr.aria-invalid]="isInvalid('name')"
@@ -37,7 +37,7 @@
 
       <div class="field">
         <label for="email">{{ 'FORM.EMAIL' | translate }}</label>
-        <input id="email" type="email" formControlName="email"
+        <input id="email" type="email" formControlName="email" name="email"
                [placeholder]="'FORM.EMAIL_PLACEHOLDER' | translate"
                [class.invalid]="isInvalid('email')"
                [attr.aria-invalid]="isInvalid('email')"
@@ -49,7 +49,7 @@
 
       <div class="field">
         <label for="message">{{ 'FORM.MESSAGE' | translate }}</label>
-        <textarea id="message" rows="5" formControlName="message"
+        <textarea id="message" rows="5" formControlName="message" name="message"
                   [placeholder]="'FORM.MESSAGE_PLACEHOLDER' | translate"
                   [class.invalid]="isInvalid('message')"
                   [attr.aria-invalid]="isInvalid('message')"

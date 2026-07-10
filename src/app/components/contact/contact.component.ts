@@ -1,7 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
@@ -27,7 +26,6 @@ type SubmitState = 'idle' | 'sending' | 'success' | 'error';
 })
 export class ContactComponent {
   private readonly fb = inject(FormBuilder);
-  private readonly http = inject(HttpClient);
   protected readonly translate = inject(TranslateService);
 
   protected readonly state = signal<SubmitState>('idle');
@@ -62,7 +60,7 @@ export class ContactComponent {
     this.state.set('sending');
 
     // Netlify expects URL-encoded body with form-name + the field names.
-    const formName = 'contact';
+    const formName = 'inquiry';
     const value = this.form.getRawValue();
     const body = new URLSearchParams({
       'form-name': formName,
@@ -72,17 +70,21 @@ export class ContactComponent {
       'bot-field': value['bot-field'],
     });
 
-    this.http
-      .post('/', body.toString(), {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        responseType: 'text',
-      })
-      .subscribe({
-        next: () => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString(),
+    })
+      .then((response) => {
+        if (response.ok) {
           this.state.set('success');
           this.form.reset();
-        },
-        error: () => this.state.set('error'),
+        } else {
+          this.state.set('error');
+        }
+      })
+      .catch(() => {
+        this.state.set('error');
       });
   }
 }

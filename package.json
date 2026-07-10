@@ -29,6 +29,8 @@
     "@angular-devkit/build-angular": "^20.3.25",
     "@angular/cli": "^20.3.25",
     "@angular/compiler-cli": "20.3.25",
+    "@netlify/angular-runtime": "^4.0.0",
+    "@types/node": "^26.1.1",
     "jsdom": "^29.1.1",
     "typescript": "5.9.3",
     "vitest": "^3.2.6"

@@ -21,9 +21,7 @@
               "discoverRoutes": false,
               "routesFile": "prerender-routes.txt"
             },
-            "ssr": {
-              "entry": "src/server.ts"
-            },
+            "ssr": false,
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
