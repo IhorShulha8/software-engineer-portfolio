@@ -12,10 +12,10 @@ type SubmitState = 'idle' | 'sending' | 'success' | 'error';
  * Contact section: a short brief form (name / email / message) plus direct
  * contact links. Submissions go to Netlify Forms via AJAX POST.
  *
- * Netlify detects forms at build time by scanning the static index.html, so
- * `src/index.html` carries a hidden static twin of this form (same `name`
- * fields + `data-netlify`). This component POSTs the same field names so the
- * two stay in sync.
+ * Netlify detects forms at build time by scanning static HTML. Because SSR
+ * plugins can intercept the root path `/`, we have a dedicated static twin
+ * in `public/form.html` (same `name` fields + `data-netlify`). This component
+ * POSTs to `/form.html` so the submissions are intercepted correctly.
  */
 @Component({
   selector: 'app-contact',
@@ -70,7 +70,7 @@ export class ContactComponent {
       'bot-field': value['bot-field'],
     });
 
-    fetch('/', {
+    fetch('/form.html', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: body.toString(),

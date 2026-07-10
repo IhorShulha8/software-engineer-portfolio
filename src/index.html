@@ -71,20 +71,6 @@
 </head>
 
 <body>
-  <!--
-    Static twin of the Angular contact form. Netlify detects forms at build
-    time by scanning this HTML; the SPA then POSTs the same field names so
-    submissions land in the Netlify Forms inbox. Keep field names in sync with
-    ContactComponent (name / email / message / bot-field).
-  -->
-  <div style="display: none;">
-    <form name="inquiry" method="post" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <input name="bot-field" />
-    </form>
-  </div>
 
   <app-root></app-root>
 </body>

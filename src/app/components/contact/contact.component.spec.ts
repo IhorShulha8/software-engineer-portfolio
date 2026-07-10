@@ -46,7 +46,7 @@ describe('ContactComponent', () => {
     component['submit']();
 
     expect(fetchSpy).toHaveBeenCalledWith(
-      '/',
+      '/form.html',
       expect.objectContaining({
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
