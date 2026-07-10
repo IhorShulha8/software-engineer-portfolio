@@ -71,18 +71,6 @@
 </head>
 
 <body>
-  <!-- 
-    Hidden form for Netlify Forms detection.
-    Netlify bots parse this during build to register the form and its fields.
-    The Angular app will POST to `/` with `form-name=inquiry`.
-  -->
-  <form name="inquiry" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
-    <input name="bot-field" />
-  </form>
-
   <app-root></app-root>
 </body>
 
