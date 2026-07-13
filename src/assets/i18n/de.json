@@ -5,7 +5,7 @@
     "TITLE_HIGHLIGHT": "robuste Systeme",
     "TITLE_LINE_2": "und integriere KI in Produkte.",
     "TITLE_LINE_3": "Wartung und Migration von Altsystemen.",
-    "LEAD": "Software Engineer. Ich entwickle End-to-End-Services – von der Cloud-Infrastruktur bis zur KI-Integration – und baue ein eigenes Tech-Startup auf. Offen für neue Herausforderungen und Zusammenarbeit.",
+    "LEAD": "Software Engineer. Ich entwickle End-to-End-Services – von der Cloud-Infrastruktur bis zur KI-Integration – und baue eigene Tech-Startups auf. Offen für neue Herausforderungen und Zusammenarbeit.",
     "CTA_PRIMARY": "Projekt starten",
     "CTA_SECONDARY": "Portfolio ansehen",
     "SCROLL_HINT": "Scrollen"
@@ -22,7 +22,7 @@
     "TITLE": "Über mich",
     "ROLE": "Software Engineer",
     "LOCATION": "Ansässig in Deutschland",
-    "TEXT": "Software Engineer mit über 7 Jahren Erfahrung in der Entwicklung skalierbarer und ausfallsicherer Systeme für FinTech, Healthcare und SaaS. Mein Kern-Stack umfasst Java, Spring Boot, AWS und PostgreSQL. Ich verantworte jedoch den gesamten Produktzyklus – von der Cloud-Infrastruktur über Frontend und Mobile bis hin zur Integration von KI-Funktionen in reale Anwendungen.\n\nIch lege großen Wert auf sauberen Code, Automatisierung und pragmatische Architektur-Entscheidungen, die das Produkt voranbringen. Ich bin offen für Freelance-Projekte, spannende Kooperationen und ambitionierte Ideen."
+    "TEXT": "Software Engineer mit über 7 Jahren Erfahrung in der Entwicklung skalierbarer und ausfallsicherer Systeme für FinTech, Healthcare und SaaS. Mein Kern-Stack umfasst Java, Spring Boot, AWS und PostgreSQL. Ich verantworte jedoch den gesamten Produktzyklus – von der Cloud-Infrastruktur über Frontend und Mobile bis hin zur Integration von KI-Funktionen in reale Anwendungen.\n\nIch lege großen Wert auf sauberen Code, Automatisierung und pragmatische Architektur-Entscheidungen, die das Produkt voranbringen. Meine Systeme liefere ich von Anfang an mit automatisierten Tests (Testcontainers) und vollständiger Observability (OpenTelemetry, Grafana) aus. Ich bin offen für Freelance-Projekte, spannende Kooperationen und ambitionierte Ideen."
   },
   "SKILLS": {
     "TITLE": "Technologien",
@@ -38,31 +38,58 @@
         ]
       },
       {
-        "LABEL": "Backend & Datenbanken",
+        "LABEL": "Backend & Messaging",
         "ITEMS": [
           "Spring Boot",
-          "PostgreSQL",
           "Kafka",
-          "Redis",
-          "Cassandra"
+          "gRPC",
+          "REST APIs"
         ]
       },
       {
-        "LABEL": "Cloud & Infrastruktur",
+        "LABEL": "Datenbanken",
+        "ITEMS": [
+          "PostgreSQL",
+          "Redis",
+          "Cassandra",
+          "Flyway"
+        ]
+      },
+      {
+        "LABEL": "Cloud & DevOps",
         "ITEMS": [
           "AWS",
+          "EKS",
           "Docker",
           "Terraform",
-          "CI/CD"
+          "GitHub Actions"
         ]
       },
       {
-        "LABEL": "KI",
+        "LABEL": "Observability",
         "ITEMS": [
-          "LLM APIs",
+          "OpenTelemetry",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "LABEL": "KI-Engineering",
+        "ITEMS": [
+          "Spring AI",
+          "MCP",
           "RAG",
-          "Vector DB",
-          "Orchestrierung"
+          "LLM APIs",
+          "Ollama"
+        ]
+      },
+      {
+        "LABEL": "Qualität & Sicherheit",
+        "ITEMS": [
+          "Testcontainers",
+          "OAuth2 / OIDC",
+          "Keycloak",
+          "DSGVO"
         ]
       },
       {
@@ -76,7 +103,7 @@
   },
 "CONTACT": {
     "TITLE": "Kontakt",
-    "LEAD": "Wenn Sie ein Projekt planen, eine Kooperation in Erwägung ziehen oder eine offene Position haben, senden Sie mir bitte eine Nachricht. Ich werde mich zeitnah bei Ihnen melden.",
+    "LEAD": "Wenn Sie ein Projekt planen, eine Kooperation in Erwägung ziehen oder eine offene Position haben, senden Sie mir bitte eine Nachricht. Ich melde mich innerhalb von 24–48 Stunden bei Ihnen.",
     "LINKEDIN": "LinkedIn",
     "EMAIL": "E-Mail",
     "LINKEDIN_URL": "https://linkedin.com/in/ihorshulha",
@@ -89,7 +116,7 @@
     "LEAD": "End-to-End-Engineering – von hochverfügbaren Backends bis zu KI-gestützten Features.",
     "BACKEND": {
       "TITLE": "Backend-Entwicklung",
-      "DESC": "High-Load-Systeme, Microservices, APIs und Payment-Integrationen, die skalieren und auch unter hoher Last zuverlässig performen.",
+      "DESC": "High-Load-Systeme, Microservices, APIs und Payment-Integrationen, die skalieren und auch unter hoher Last zuverlässig performen. Aufgebaut auf Event-Driven-Architektur und messbaren SLOs.",
       "STACK": [
         "Java",
         "Spring Boot",
@@ -102,20 +129,20 @@
       "TITLE": "KI-Integration",
       "DESC": "Implementierung von LLMs, RAG-Architekturen und autonomen Agenten. Spezialisiert auf das Deployment lokaler KI-Modelle (On-Premise) zur Gewährleistung maximaler Datensicherheit, Vertraulichkeit und Compliance.",
       "STACK": [
-        "Local LLMs",
-        "LLM APIs",
+        "Spring AI",
+        "MCP",
         "RAG",
-        "Ollama"
+        "Local LLMs / Ollama"
       ]
     },
     "CLOUD": {
       "TITLE": "Cloud & DevOps",
       "DESC": "Architektur, CI/CD und Infrastructure-as-Code auf AWS für hohe Skalierbarkeit, Observability und schnelle Releases.",
       "STACK": [
-        "AWS",
-        "Docker",
-        "Kafka",
-        "Terraform"
+        "AWS / EKS",
+        "Terraform",
+        "GitHub Actions",
+        "OpenTelemetry"
       ]
     },
 "FULLSTACK": {
@@ -145,7 +172,7 @@
           "AWS"
         ],
         "ROLE": "Lead Backend Engineer",
-        "RESULT": "Design und Implementierung einer hochdurchsatzfähigen Rechnungs-Pipeline mit maximaler Verfügbarkeit (High Availability)."
+        "RESULT": "Design und Implementierung einer hochdurchsatzfähigen Rechnungs-Pipeline mit hoher Verfügbarkeit (High Availability)."
       },
       {
         "TITLE": "Modulare Zahlungsplattform",
@@ -181,7 +208,7 @@
           "gRPC"
         ],
         "ROLE": "Backend Developer",
-        "RESULT": "Sichere Integration von Medizingeräten unter strikter Einhaltung der US-amerikanischen Class-B-Standards."
+        "RESULT": "Sichere Integration von Medizingeräten unter strikter Einhaltung der US-amerikanischen Medizinprodukte-Standards (Class B)."
       },
       {
         "TITLE": "eCommerce-Admin-Toolkit",
@@ -217,7 +244,7 @@
     "MESSAGE_PLACEHOLDER": "Bitte skizzieren Sie kurz Ihr Vorhaben, den gewünschten Zeitrahmen und das Budget.",
     "SUBMIT": "Nachricht senden",
     "SENDING": "Wird gesendet…",
-    "SUCCESS": "Vielen Dank für Ihre Nachricht. Ich werde mich innerhalb weniger Werktage bei Ihnen zurückmelden.",
+    "SUCCESS": "Vielen Dank für Ihre Nachricht. Ich melde mich innerhalb von 24–48 Stunden bei Ihnen zurück.",
     "ERROR": "Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie mich direkt per E-Mail.",
     "REQUIRED": "Dieses Feld ist ein Pflichtfeld",
     "EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
@@ -239,7 +266,7 @@
       {
         "TITLE": "KI-Tools",
         "DESC": "Entwicklung von autonomen Agenten und RAG-Architekturen zur Lösung realer Business-Probleme, über reine Demos hinaus.",
-        "TAG": "Forschung"
+        "TAG": "Evaluierung"
       },
       {
         "TITLE": "Startup-Ideen",

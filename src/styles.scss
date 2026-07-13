@@ -5,6 +5,15 @@
 @use './styles/tokens' as *;
 @use './styles/mixins' as mixins;
 
+// Self-hosted fonts (no third-party requests): Inter (body) 400/500/600 +
+// Space Grotesk (display) 500/600/700. Files are emitted hashed under /media.
+@use '@fontsource/inter/400.css' as inter-400;
+@use '@fontsource/inter/500.css' as inter-500;
+@use '@fontsource/inter/600.css' as inter-600;
+@use '@fontsource/space-grotesk/500.css' as space-grotesk-500;
+@use '@fontsource/space-grotesk/600.css' as space-grotesk-600;
+@use '@fontsource/space-grotesk/700.css' as space-grotesk-700;
+
 :root {
   // Color
   --color-bg: #{$color-bg};

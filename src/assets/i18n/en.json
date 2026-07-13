@@ -4,8 +4,8 @@
     "TITLE_LINE_1": "I engineer",
     "TITLE_HIGHLIGHT": "resilient systems",
     "TITLE_LINE_2": "and integrate AI into products.",
-    "TITLE_LINE_3": "Maintain and migration of legacy systems.",
-    "LEAD": "Software Engineer designing and building end-to-end services — from cloud infrastructure to AI integration. Developing my own tech startup. Open to collaboration.",
+    "TITLE_LINE_3": "Maintenance and migration of legacy systems.",
+    "LEAD": "Software Engineer designing and building end-to-end services — from cloud infrastructure to AI integration — while growing my own tech startups. Open to collaboration.",
     "CTA_PRIMARY": "Start a project",
     "CTA_SECONDARY": "View portfolio",
     "SCROLL_HINT": "Scroll down"
@@ -22,7 +22,7 @@
     "TITLE": "About Me",
     "ROLE": "Software Engineer",
     "LOCATION": "Based in Germany",
-    "TEXT": "Software Engineer with over 7 years of experience building scalable, fault-tolerant systems for Fintech, Healthcare, and SaaS. My core stack includes Java, Spring Boot, AWS, and PostgreSQL. However, I take ownership of the entire product lifecycle — from architecting cloud infrastructure to developing mobile apps and integrating AI into real-world business features.\n\nI strongly advocate for clean code, automated processes, and pragmatic architectural decisions that drive a product forward. I am open to freelance opportunities, exciting collaborations, and ambitious ideas."
+    "TEXT": "Software Engineer with over 7 years of experience building scalable, fault-tolerant systems for Fintech, Healthcare, and SaaS. My core stack includes Java, Spring Boot, AWS, and PostgreSQL. However, I take ownership of the entire product lifecycle — from architecting cloud infrastructure to developing mobile apps and integrating AI into real-world business features.\n\nI strongly advocate for clean code, automated processes, and pragmatic architectural decisions that drive a product forward. My systems ship with automated tests (Testcontainers) and full production observability (OpenTelemetry, Grafana) from day one. I am open to freelance opportunities, exciting collaborations, and ambitious ideas."
   },
   "SKILLS": {
     "TITLE": "Toolkit",
@@ -38,31 +38,58 @@
         ]
       },
       {
-        "LABEL": "Backend & Databases",
+        "LABEL": "Backend & Messaging",
         "ITEMS": [
           "Spring Boot",
-          "PostgreSQL",
           "Kafka",
-          "Redis",
-          "Cassandra"
+          "gRPC",
+          "REST APIs"
         ]
       },
       {
-        "LABEL": "Cloud & Infrastructure",
+        "LABEL": "Databases",
+        "ITEMS": [
+          "PostgreSQL",
+          "Redis",
+          "Cassandra",
+          "Flyway"
+        ]
+      },
+      {
+        "LABEL": "Cloud & DevOps",
         "ITEMS": [
           "AWS",
+          "EKS",
           "Docker",
           "Terraform",
-          "CI/CD"
+          "GitHub Actions"
         ]
       },
       {
-        "LABEL": "AI",
+        "LABEL": "Observability",
         "ITEMS": [
-          "LLM APIs",
+          "OpenTelemetry",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "LABEL": "AI Engineering",
+        "ITEMS": [
+          "Spring AI",
+          "MCP",
           "RAG",
-          "Vector DB",
-          "Orchestration"
+          "LLM APIs",
+          "Ollama"
+        ]
+      },
+      {
+        "LABEL": "Quality & Security",
+        "ITEMS": [
+          "Testcontainers",
+          "OAuth2 / OIDC",
+          "Keycloak",
+          "GDPR"
         ]
       },
       {
@@ -76,7 +103,7 @@
   },
 "CONTACT": {
     "TITLE": "Contact",
-    "LEAD": "If you have a project, a collaboration proposal, or an open position, please send me a message. I will respond to your inquiry promptly.",
+    "LEAD": "If you have a project, a collaboration proposal, or an open position, please send me a message. I will respond within 24–48 hours.",
     "LINKEDIN": "LinkedIn",
     "EMAIL": "Email",
     "LINKEDIN_URL": "https://linkedin.com/in/ihorshulha",
@@ -89,7 +116,7 @@
     "LEAD": "End-to-end engineering — from high-availability backends to AI-powered features.",
     "BACKEND": {
       "TITLE": "Backend Engineering",
-      "DESC": "High-load systems, microservices, APIs, and payment integrations engineered to scale and perform reliably under pressure.",
+      "DESC": "High-load systems, microservices, APIs, and payment integrations engineered to scale and perform reliably under pressure. Built on event-driven architecture and measurable SLOs.",
       "STACK": [
         "Java",
         "Spring Boot",
@@ -102,20 +129,20 @@
       "TITLE": "AI Integration",
       "DESC": "Implementing LLMs, RAG architectures, and autonomous agents into production. Expertise in deploying local AI models (on-premise) to ensure strict data privacy, security, and non-disclosure.",
       "STACK": [
-        "Local LLMs",
-        "LLM APIs",
+        "Spring AI",
+        "MCP",
         "RAG",
-        "Ollama"
+        "Local LLMs / Ollama"
       ]
     },
     "CLOUD": {
       "TITLE": "Cloud & DevOps",
       "DESC": "Cloud architecture, CI/CD pipelines, and Infrastructure-as-Code on AWS for maximum scalability, observability, and safe releases.",
       "STACK": [
-        "AWS",
-        "Docker",
-        "Kafka",
-        "Terraform"
+        "AWS / EKS",
+        "Terraform",
+        "GitHub Actions",
+        "OpenTelemetry"
       ]
     },
 "FULLSTACK": {
@@ -145,7 +172,7 @@
           "AWS"
         ],
         "ROLE": "Lead Backend Engineer",
-        "RESULT": "Architected and delivered a high-throughput invoicing pipeline with maximum availability."
+        "RESULT": "Architected and delivered a high-throughput invoicing pipeline with high availability."
       },
       {
         "TITLE": "Modular Payments Platform",
@@ -181,7 +208,7 @@
           "gRPC"
         ],
         "ROLE": "Backend Developer",
-        "RESULT": "Ensured secure medical-device integration in strict compliance with USA Class B regulatory standards."
+        "RESULT": "Ensured secure medical-device integration in strict compliance with US medical-device standards (Class B)."
       },
       {
         "TITLE": "eCommerce Admin Toolkit",
@@ -217,7 +244,7 @@
     "MESSAGE_PLACEHOLDER": "Please provide a brief overview of your project, expected timeline, and budget.",
     "SUBMIT": "Send Message",
     "SENDING": "Sending…",
-    "SUCCESS": "Thank you for reaching out. I will get back to you within a few business days.",
+    "SUCCESS": "Thank you for reaching out. I will get back to you within 24–48 hours.",
     "ERROR": "An error occurred. Please contact me directly via email.",
     "REQUIRED": "This field is required",
     "EMAIL_INVALID": "Please enter a valid email address"

@@ -14,8 +14,8 @@ type SubmitState = 'idle' | 'sending' | 'success' | 'error';
  *
  * Netlify detects forms at build time by scanning static HTML. Because SSR
  * plugins can intercept the root path `/`, we have a dedicated static twin
- * in `public/form.html` (same `name` fields + `data-netlify`). This component
- * POSTs to `/form.html` so the submissions are intercepted correctly.
+ * in `public/__form.html` (same `name` fields + `data-netlify`). This component
+ * POSTs to `/__form.html` so the submissions are intercepted correctly.
  */
 @Component({
   selector: 'app-contact',

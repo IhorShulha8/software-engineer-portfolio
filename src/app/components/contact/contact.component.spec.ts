@@ -38,7 +38,7 @@ describe('ContactComponent', () => {
 
     component['form'].setValue({
       name: 'Igor',
-      email: 'igor.shulga8@gmail.com',
+      email: 'test@example.com',
       message: 'Tests text contact',
       'bot-field': '',
     });
@@ -46,7 +46,7 @@ describe('ContactComponent', () => {
     component['submit']();
 
     expect(fetchSpy).toHaveBeenCalledWith(
-      '/form.html',
+      '/__form.html',
       expect.objectContaining({
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -57,7 +57,7 @@ describe('ContactComponent', () => {
     const parsedParams = new URLSearchParams(bodyArg);
     expect(parsedParams.get('form-name')).toBe('inquiry');
     expect(parsedParams.get('name')).toBe('Igor');
-    expect(parsedParams.get('email')).toBe('igor.shulga8@gmail.com');
+    expect(parsedParams.get('email')).toBe('test@example.com');
     expect(parsedParams.get('message')).toBe('Tests text contact');
     expect(parsedParams.get('bot-field')).toBe('');
 

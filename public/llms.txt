@@ -12,10 +12,11 @@ Personal website of Ihor Shulha, a professional Lead Backend / AI / Cloud Engine
 - **Languages**: English, German (formal), Ukrainian
 
 ## Services & Expertise
-- **Backend Engineering**: Designing high-throughput, scalable, and microservices-oriented architectures using Java (up to Java 21), Spring Boot, Kotlin, Go, and Python.
-- **AI Integration**: Implementing LLM APIs, retrieval-augmented generation (RAG) pipelines, and autonomous agent orchestration inside real-world production environments.
-- **Cloud & DevOps**: Architecting secure, scalable cloud systems on AWS, setting up robust CI/CD pipelines, and writing Infrastructure as Code (IaC) with Terraform and Docker.
+- **Backend Engineering**: Designing high-throughput, scalable, microservices- and event-driven architectures with measurable SLOs, using Java (up to Java 21), Spring Boot, Kotlin, Go, and Python.
+- **AI Integration**: Implementing LLM APIs, Spring AI, Model Context Protocol (MCP) integrations, retrieval-augmented generation (RAG) pipelines, and autonomous agent orchestration — including local/on-premise LLM deployments (Ollama) for strict data privacy.
+- **Cloud & DevOps**: Architecting secure, scalable cloud systems on AWS (including EKS), CI/CD with GitHub Actions, Infrastructure as Code (IaC) with Terraform and Docker, and production observability with OpenTelemetry, Prometheus, and Grafana.
 - **Fullstack Solutions**: Developing full-cycle applications from database schema design (PostgreSQL, Cassandra, Redis) to modern, responsive frontend components using Angular and Flutter.
+- **Quality & Security**: Testcontainers-backed integration testing, OAuth2/OIDC authentication (Keycloak), GDPR-compliant architectures, and versioned database migrations (Flyway, Liquibase).
 
 ## Selected Case Studies
 - **Cloud Billing SaaS**: Architected a high-performance invoice processing pipeline handling large volumes of concurrent invoice operations with continuous high availability.
@@ -27,7 +28,10 @@ Personal website of Ihor Shulha, a professional Lead Backend / AI / Cloud Engine
 
 ## Tech Stack Summary
 - **Languages**: Java, Kotlin, Go, Python, TypeScript
-- **Frameworks**: Spring Boot, Angular, Flutter
-- **Data & Messaging**: PostgreSQL, Cassandra, Redis, Kafka, WebSockets, gRPC
-- **Cloud & Infra**: AWS, Docker, Terraform, CI/CD
-- **AI Stack**: LLM APIs, RAG pipelines, Vector DBs, Agent Orchestration
+- **Frameworks**: Spring Boot, Spring AI, Angular, Flutter
+- **Data & Messaging**: PostgreSQL, Cassandra, Redis, Kafka, WebSockets, gRPC, Flyway, Liquibase
+- **Cloud & Infra**: AWS, EKS, Docker, Terraform, GitHub Actions, CI/CD
+- **AWS services (hands-on)**: EC2, Lambda, ECS/Fargate, EKS, S3, RDS/Aurora, DynamoDB, ElastiCache, SQS, SNS, EventBridge, API Gateway, CloudWatch, IAM, CloudFormation, Secrets Manager, CodePipeline, CodeBuild, CodeCommit
+- **Observability**: OpenTelemetry, Prometheus, Grafana
+- **Quality & Security**: Testcontainers, OAuth2/OIDC, Keycloak, GDPR-compliant design
+- **AI Stack**: Spring AI, MCP, LLM APIs, RAG pipelines, Vector DBs, Agent Orchestration, Ollama (local LLMs)

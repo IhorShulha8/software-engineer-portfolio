@@ -44,13 +44,19 @@
                 "maximumWarning": "2mb",
                 "maximumError": "5mb"
               }]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "buildTarget": "software-engineer-portfolio:build"
+            "buildTarget": "software-engineer-portfolio:build:development"
           }
         },
         "extract-i18n": {

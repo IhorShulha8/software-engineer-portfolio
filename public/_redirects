@@ -2,6 +2,15 @@
 # canonical EN URL is the bare root, so 301-redirect `/en` -> `/`.
 /en    /    301
 
+# The prerenderer emits de/index.html and ua/index.html, so Netlify would
+# 301-normalize /de -> /de/ — but the canonical URLs (hreflang, sitemap,
+# SeoService) are the slash-less /de and /ua. Force rewrites (`!`) override
+# that normalization and serve the content directly. NOTE: Netlify matches
+# `from` paths slash-insensitively, so these rules also cover /de/ and /ua/
+# (a separate /de/ -> /de 301 rule would match /de itself and loop).
+/de    /de/index.html   200!
+/ua    /ua/index.html   200!
+
 # Netlify SPA fallback — serve index.html for all client-side routes so the
 # Angular router can handle /, /de, /ua and any deep links.
 /*    /index.html   200

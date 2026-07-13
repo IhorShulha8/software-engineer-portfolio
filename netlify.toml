@@ -15,6 +15,29 @@
 # (single source of truth — Netlify merges both _redirects and rules here).
 # Do not duplicate them in this file.
 
+# Security headers for every response.
+# script-src needs 'unsafe-inline' for Angular's inline event-replay script
+# in prerendered HTML; style-src for Angular's inlined critical CSS.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+
+# Internal endpoints: keep out of search indexes.
+[[headers]]
+  for = "/__form.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/index.csr.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
 # Long-cache the hashed bundle assets, never the HTML.
 [[headers]]
   for = "/*.js"
@@ -23,6 +46,12 @@
 
 [[headers]]
   for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Hashed font/media files emitted by the bundler.
+[[headers]]
+  for = "/media/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
