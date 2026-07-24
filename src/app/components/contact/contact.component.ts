@@ -37,6 +37,13 @@ export class ContactComponent {
 
   protected readonly state = signal<SubmitState>('idle');
 
+  /**
+   * Whether the user has attempted to submit at least once. Field error
+   * messages stay hidden until then (or until the field is individually
+   * blurred/dirtied), so the form does not scream "required!" on first paint.
+   */
+  private readonly submitted = signal(false);
+
   /** Exposed limits so the template can bind native HTML5 maxlength/minlength. */
   protected readonly limits = FIELD_LIMITS;
 
@@ -85,7 +92,7 @@ export class ContactComponent {
 
   protected isInvalid(control: FieldName): boolean {
     const c = this.form.controls[control];
-    return c.invalid && (c.dirty || c.touched);
+    return c.invalid && (this.submitted() || c.dirty || c.touched);
   }
 
   /**
@@ -121,11 +128,16 @@ export class ContactComponent {
 
   /**
    * Returns the i18n key (under `FORM.`) describing the first error on a
-   * control, or `null` when the control is valid. The template pipes the key
-   * through `TranslatePipe` to render the message.
+   * control, or `null` when the control is valid OR its errors should not be
+   * shown yet (before the first submit and while the field is pristine). The
+   * template pipes the key through `TranslatePipe` to render the message.
    */
   protected errorKey(control: FieldName): string | null {
-    const errors = this.form.controls[control].errors;
+    const c = this.form.controls[control];
+    if (!c.invalid || (!this.submitted() && !c.dirty && !c.touched)) {
+      return null;
+    }
+    const errors = c.errors;
     if (!errors) {
       return null;
     }
@@ -138,6 +150,9 @@ export class ContactComponent {
   }
 
   protected submit(): void {
+    // Mark that a submission was attempted so field errors become visible.
+    this.submitted.set(true);
+
     if (this.form.invalid) {
       this.form.markAllAsTouched();
       return;
@@ -151,6 +166,7 @@ export class ContactComponent {
     if (raw['bot-field']) {
       this.state.set('success');
       this.form.reset();
+      this.submitted.set(false);
       return;
     }
 
@@ -182,6 +198,7 @@ export class ContactComponent {
         if (response.ok) {
           this.state.set('success');
           this.form.reset();
+          this.submitted.set(false);
         } else {
           this.state.set('error');
         }

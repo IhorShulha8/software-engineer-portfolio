@@ -51,6 +51,23 @@ describe('ContactComponent', () => {
     expect(fetchSpy).not.toHaveBeenCalled();
   });
 
+  it('should not show field errors before the first submit attempt', () => {
+    // On initial render the form is invalid (required fields empty), but the
+    // error messages must stay hidden until the user clicks "Send".
+    expect(component['errorKey']('name')).toBeNull();
+    expect(component['errorKey']('email')).toBeNull();
+    expect(component['errorKey']('message')).toBeNull();
+  });
+
+  it('should show field errors after a failed submit attempt', () => {
+    stubFetch();
+    component['submit'](); // triggers submitted=true on an empty (invalid) form
+
+    expect(component['errorKey']('name')).toBe('FORM.REQUIRED');
+    expect(component['errorKey']('email')).toBe('FORM.REQUIRED');
+    expect(component['errorKey']('message')).toBe('FORM.REQUIRED');
+  });
+
   it('should not call fetch when name is invalid (email-shaped)', () => {
     const fetchSpy = stubFetch();
     component['form'].setValue({ ...VALID_PAYLOAD, name: 'test@test.com' });
