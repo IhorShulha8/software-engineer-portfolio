@@ -247,7 +247,13 @@
     "SUCCESS": "Vielen Dank für Ihre Nachricht. Ich melde mich innerhalb von 24–48 Stunden bei Ihnen zurück.",
     "ERROR": "Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie mich direkt per E-Mail.",
     "REQUIRED": "Dieses Feld ist ein Pflichtfeld",
-    "EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+    "EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "NAME_TOO_SHORT": "Bitte geben Sie mindestens 2 Zeichen ein.",
+    "NAME_TOO_LONG": "Der Name darf höchstens 80 Zeichen lang sein.",
+    "NAME_INVALID": "Bitte verwenden Sie nur Buchstaben (keine Zahlen, E-Mail-Adressen oder Links).",
+    "EMAIL_TOO_LONG": "Die E-Mail-Adresse darf höchstens 254 Zeichen lang sein.",
+    "MESSAGE_TOO_SHORT": "Bitte beschreiben Sie Ihr Anliegen ausführlicher (mindestens 20 Zeichen).",
+    "MESSAGE_TOO_LONG": "Die Nachricht darf höchstens 2000 Zeichen lang sein."
   },
   "SEO": {
     "TITLE": "Ihor Shulha — Software Engineer (Backend / AI / Cloud)",

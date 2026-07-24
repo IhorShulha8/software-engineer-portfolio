@@ -7,7 +7,7 @@
   <div class="contact__grid">
     <!-- Brief form -->
     <form class="contact__form" [formGroup]="form" (ngSubmit)="submit()"
-          name="inquiry" novalidate>
+          name="inquiry">
       <input type="hidden" name="form-name" value="inquiry" />
       <!--
         Honeypot: hidden from real users AND screen readers (aria-hidden +
@@ -26,36 +26,46 @@
       <div class="field">
         <label for="name">{{ 'FORM.NAME' | translate }}</label>
         <input id="name" type="text" formControlName="name" name="name"
+               required
+               [minlength]="limits.NAME_MIN"
+               [maxlength]="limits.NAME_MAX"
                [placeholder]="'FORM.NAME_PLACEHOLDER' | translate"
+               autocomplete="name"
                [class.invalid]="isInvalid('name')"
                [attr.aria-invalid]="isInvalid('name')"
                aria-describedby="name-error" />
-        @if (isInvalid('name')) {
-          <span id="name-error" class="field__error">{{ 'FORM.REQUIRED' | translate }}</span>
+        @if (errorKey('name'); as errKey) {
+          <span id="name-error" class="field__error">{{ errKey | translate }}</span>
         }
       </div>
 
       <div class="field">
         <label for="email">{{ 'FORM.EMAIL' | translate }}</label>
         <input id="email" type="email" formControlName="email" name="email"
+               required
+               [maxlength]="limits.EMAIL_MAX"
                [placeholder]="'FORM.EMAIL_PLACEHOLDER' | translate"
+               autocomplete="email"
                [class.invalid]="isInvalid('email')"
                [attr.aria-invalid]="isInvalid('email')"
                aria-describedby="email-error" />
-        @if (isInvalid('email')) {
-          <span id="email-error" class="field__error">{{ 'FORM.EMAIL_INVALID' | translate }}</span>
+        @if (errorKey('email'); as errKey) {
+          <span id="email-error" class="field__error">{{ errKey | translate }}</span>
         }
       </div>
 
       <div class="field">
         <label for="message">{{ 'FORM.MESSAGE' | translate }}</label>
         <textarea id="message" rows="5" formControlName="message" name="message"
+                  required
+                  [minlength]="limits.MESSAGE_MIN"
+                  [maxlength]="limits.MESSAGE_MAX"
                   [placeholder]="'FORM.MESSAGE_PLACEHOLDER' | translate"
                   [class.invalid]="isInvalid('message')"
                   [attr.aria-invalid]="isInvalid('message')"
                   aria-describedby="message-error"></textarea>
-        @if (isInvalid('message')) {
-          <span id="message-error" class="field__error">{{ 'FORM.REQUIRED' | translate }}</span>
+        @if (errorKey('message'); as errKey) {
+          <span id="message-error" class="field__error">{{ errKey | translate }}</span>
         }
       </div>
 

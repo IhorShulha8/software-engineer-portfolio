@@ -13,9 +13,9 @@
   -->
   <form name="inquiry" method="post" action="/__form.html" data-netlify="true" netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="inquiry" />
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
+    <input type="text" name="name" required minlength="2" maxlength="80" />
+    <input type="email" name="email" required maxlength="254" />
+    <textarea name="message" required minlength="20" maxlength="2000"></textarea>
     <input name="bot-field" />
     <button type="submit">Send</button>
   </form>
