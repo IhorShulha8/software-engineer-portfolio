@@ -1,0 +1,71 @@
+# Ihor Shulha — Software Engineer (Full Context)
+
+> This is the extended, machine-readable context for Ihor Shulha's portfolio at https://ihorshulha.dev. It is intended for direct ingestion by AI assistants and search engines. For a concise summary, see https://ihorshulha.dev/llms.txt.
+
+## Identity
+
+- **Name**: Ihor Shulha
+- **Title**: Lead Backend / AI / Cloud Software Engineer
+- **Role**: Software Engineer
+- **Location**: Based in Germany (addressCountry: DE)
+- **Website**: https://ihorshulha.dev
+- **LinkedIn**: https://linkedin.com/in/ihorshulha
+- **Email**: ihorshulha@mail.online-impressum.de
+- **Impressum (legal notice)**: https://mein.online-impressum.de/ihorshulha/
+- **Languages**: English, German (formal), Ukrainian
+- **Availability**: Open to freelance opportunities, collaborations, and ambitious ideas.
+
+## Profile
+
+Software Engineer with over 7 years of experience building scalable, fault-tolerant systems for Fintech, Healthcare, and SaaS. Core stack: Java, Spring Boot, AWS, and PostgreSQL. Takes ownership of the entire product lifecycle — from architecting cloud infrastructure to developing mobile apps and integrating AI into real-world business features.
+
+Strong advocate for clean code, automated processes, and pragmatic architectural decisions that drive a product forward. Systems ship with automated tests (Testcontainers) and full production observability (OpenTelemetry, Grafana) from day one.
+
+## Services & Expertise
+
+### Backend Engineering
+Designing high-throughput, scalable, microservices- and event-driven architectures with measurable SLOs. Built on event-driven architecture and measurable SLOs. Technologies: Java (up to Java 21), Spring Boot, Kotlin, Go, Python.
+
+### AI Integration
+Implementing LLMs, RAG architectures, and autonomous agents into production. Expertise in deploying local AI models (on-premise) to ensure strict data privacy, security, and non-disclosure. Technologies: Spring AI, MCP, RAG, Local LLMs / Ollama, LLM APIs.
+
+### Cloud & DevOps
+Cloud architecture, CI/CD pipelines, and Infrastructure-as-Code on AWS for maximum scalability, observability, and safe releases. Technologies: AWS / EKS, Terraform, GitHub Actions, OpenTelemetry.
+
+### Fullstack & Mobile
+End-to-end product development from scratch — covering database design, robust APIs, modern web applications (Angular), and cross-platform mobile solutions (Flutter). Technologies: Angular, Flutter, Kotlin, REST / gRPC, PostgreSQL, Firebase.
+
+## Selected Case Studies
+
+1. **Cloud Billing SaaS** (Backend) — Architected and delivered a high-throughput invoicing pipeline with high availability. Stack: Java 21, Spring Boot, Kafka, AWS. Role: Lead Backend Engineer.
+2. **Modular Payments Platform** (Backend) — Integrated multiple payment providers featuring an automated failover mechanism and real-time analytics. Stack: Java 21, Spring Boot, AWS, PostgreSQL. Role: Lead Backend Engineer.
+3. **Real-Time Collaboration Service** (Backend) — Developed low-latency synchronization for concurrent document editing by multiple users. Stack: Java, Spring Boot, WebSocket, Redis. Role: Lead Backend Developer.
+4. **Healthcare Integration Suite** (Backend) — Ensured secure medical-device integration in strict compliance with US medical-device standards (Class B). Stack: Java, Spring, Cassandra, gRPC. Role: Backend Developer.
+5. **eCommerce Admin Toolkit** (Fullstack) — Built an API-first administrative panel to manage catalogs, orders, and customer analytics. Stack: Java 21, Spring Boot, Angular, PostgreSQL. Role: Fullstack Developer.
+6. **Wellness Tracker App** (Mobile) — Created and launched a cross-platform mobile application with cloud synchronization and push notifications on iOS and Android. Stack: Flutter, Firebase, REST. Role: Project Owner & Developer.
+
+## Tech Stack (Detailed)
+
+- **Languages**: Java, Kotlin, Go, Python, TypeScript
+- **Backend & Messaging**: Spring Boot, Kafka, gRPC, REST APIs
+- **Databases**: PostgreSQL, Redis, Cassandra, Flyway, Liquibase
+- **Cloud & DevOps**: AWS, EKS, Docker, Terraform, GitHub Actions
+- **AWS services (hands-on)**: EC2, Lambda, ECS/Fargate, EKS, S3, RDS/Aurora, DynamoDB, ElastiCache, SQS, SNS, EventBridge, API Gateway, CloudWatch, IAM, CloudFormation, Secrets Manager, CodePipeline, CodeBuild, CodeCommit
+- **Observability**: OpenTelemetry, Prometheus, Grafana
+- **AI Engineering**: Spring AI, MCP, RAG, LLM APIs, Ollama, Vector DBs, Agent Orchestration
+- **Quality & Security**: Testcontainers, OAuth2 / OIDC, Keycloak, GDPR Compliance
+- **Frontend & Mobile**: Angular, Flutter
+
+## FAQ (frequent questions)
+
+- **Which services do you provide?** Backend engineering, AI integration (Spring AI, RAG, MCP), Cloud & DevOps on AWS, and fullstack/mobile applications (Angular, Flutter).
+- **What is your tech stack?** Java/Spring Boot, Kotlin, Go, Python, AWS, PostgreSQL, Kafka, Angular, Flutter — with OpenTelemetry-based observability and Testcontainers-based testing.
+- **Where are you based, and do you work remotely?** Based in Germany; open to remote work and freelance collaboration.
+- **Do you integrate AI into production systems?** Yes — LLM APIs, RAG pipelines, MCP integrations, autonomous agents, and on-premise LLM deployments (Ollama) for strict data privacy.
+
+## Contact
+
+- **Email**: ihorshulha@mail.online-impressum.de
+- **LinkedIn**: https://linkedin.com/in/ihorshulha
+- **Impressum**: https://mein.online-impressum.de/ihorshulha/
+- **Contact form**: https://ihorshulha.dev/#contact

@@ -255,6 +255,28 @@
     "MESSAGE_TOO_SHORT": "Please provide at least a couple of sentences (20+ characters).",
     "MESSAGE_TOO_LONG": "Message must be 2000 characters or fewer."
   },
+"FAQ": {
+    "TITLE": "Frequently Asked Questions",
+    "LEAD": "Quick answers about my services, stack, and way of working.",
+    "LIST": [
+      {
+        "QUESTION": "Which services do you provide?",
+        "ANSWER": "Backend engineering, AI integration (Spring AI, RAG, MCP), Cloud & DevOps on AWS, and fullstack/mobile applications built with Angular and Flutter."
+      },
+      {
+        "QUESTION": "What is your tech stack?",
+        "ANSWER": "Java and Spring Boot, Kotlin, Go, and Python on the backend; AWS (EKS, Lambda, S3, DynamoDB), PostgreSQL, Redis, and Kafka for data and messaging; Angular and Flutter for web and mobile. All systems ship with OpenTelemetry-based observability and Testcontainers-based integration tests."
+      },
+      {
+        "QUESTION": "Where are you based, and do you work remotely?",
+        "ANSWER": "I am based in Germany and open to remote work, freelance engagements, and collaboration across time zones."
+      },
+      {
+        "QUESTION": "Do you integrate AI into production systems?",
+        "ANSWER": "Yes. I implement LLM APIs, retrieval-augmented generation (RAG) pipelines, Model Context Protocol (MCP) integrations, autonomous agents, and on-premise LLM deployments (Ollama) to keep data private and compliant."
+      }
+    ]
+  },
   "SEO": {
     "TITLE": "Ihor Shulha — Software Engineer (Backend / AI / Cloud)",
     "DESCRIPTION": "Backend-focused software engineer based in Germany. I design and build end-to-end services — from cloud infrastructure to AI integration. Available for freelance opportunities."

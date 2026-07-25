@@ -255,6 +255,28 @@
     "MESSAGE_TOO_SHORT": "Bitte beschreiben Sie Ihr Anliegen ausführlicher (mindestens 20 Zeichen).",
     "MESSAGE_TOO_LONG": "Die Nachricht darf höchstens 2000 Zeichen lang sein."
   },
+"FAQ": {
+    "TITLE": "Häufig gestellte Fragen",
+    "LEAD": "Kurze Antworten zu meinen Leistungen, Stack und Arbeitsweise.",
+    "LIST": [
+      {
+        "QUESTION": "Welche Leistungen bieten Sie an?",
+        "ANSWER": "Backend-Entwicklung, KI-Integration (Spring AI, RAG, MCP), Cloud & DevOps auf AWS sowie Fullstack-/Mobile-Anwendungen mit Angular und Flutter."
+      },
+      {
+        "QUESTION": "Wie sieht Ihr Tech-Stack aus?",
+        "ANSWER": "Backend: Java und Spring Boot, Kotlin, Go und Python; Daten und Messaging: AWS (EKS, Lambda, S3, DynamoDB), PostgreSQL, Redis und Kafka; Web und Mobile: Angular und Flutter. Alle Systeme werden mit OpenTelemetry-basierter Observability und Testcontainers-basierten Integrationstests ausgeliefert."
+      },
+      {
+        "QUESTION": "Wo sind Sie ansässig und arbeiten Sie remote?",
+        "ANSWER": "Ich bin in Deutschland ansässig und offen für Remote-Arbeit, Freelance-Projekte und länderübergreifende Zusammenarbeit."
+      },
+      {
+        "QUESTION": "Integrieren Sie KI in Produktivsysteme?",
+        "ANSWER": "Ja. Ich implementiere LLM-APIs, RAG-Pipelines, Model-Context-Protocol(MCP)-Integrationen, autonome Agenten und On-Premise-LLM-Bereitstellungen (Ollama), um Daten privat und compliant zu halten."
+      }
+    ]
+  },
   "SEO": {
     "TITLE": "Ihor Shulha — Software Engineer (Backend / AI / Cloud)",
     "DESCRIPTION": "Backend-Engineer in Deutschland. Ich entwerfe und entwickle End-to-End-Services – von der Cloud-Infrastruktur bis zur KI-Integration. Offen für Freelance-Projekte."

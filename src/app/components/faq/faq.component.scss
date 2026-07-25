@@ -1,0 +1,85 @@
+@use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as mixins;
+
+.faq {
+  padding-block: $space-3xl;
+
+  &__head {
+    max-width: 48rem;
+    margin-bottom: $space-2xl;
+
+    h2 {
+      margin-bottom: $space-md;
+    }
+  }
+
+  &__lead {
+    font-size: $fs-lead;
+    color: $color-text-muted;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    max-width: 48rem;
+  }
+
+  &__item {
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    overflow: hidden;
+    transition: border-color $dur-base $ease-out;
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-md;
+    padding: $space-lg;
+    font-family: $font-display;
+    font-size: $fs-h3;
+    line-height: $lh-snug;
+    color: $color-text;
+    cursor: pointer;
+    list-style: none;
+    transition: color $dur-base $ease-out;
+
+    // Hide the default disclosure triangle — replaced by a CSS marker below.
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      color: $color-accent-soft;
+    }
+
+    &:focus-visible {
+      @include mixins.focus-ring;
+    }
+
+    // Custom +/- marker via generated content.
+    &::after {
+      content: '+';
+      flex-shrink: 0;
+      font-family: $font-body;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $color-accent;
+      transition: transform $dur-base $ease-out;
+    }
+  }
+
+  // When the <details> is open, flip the marker to a rotated "+" (= ×).
+  &__item[open] &__question::after {
+    transform: rotate(45deg);
+  }
+
+  &__answer {
+    padding: 0 $space-lg $space-lg;
+    color: $color-text-muted;
+    line-height: $lh-normal;
+  }
+}

@@ -1,0 +1,17 @@
+<section class="faq" id="faq" appReveal>
+  <header class="faq__head">
+    <h2>{{ 'FAQ.TITLE' | translate }}</h2>
+    <p class="faq__lead">{{ 'FAQ.LEAD' | translate }}</p>
+  </header>
+
+  <!-- Native <details> works without JS, is keyboard-accessible, and its
+       content is present in the prerendered HTML for AI/search crawlers. -->
+  <div class="faq__list">
+    @for (item of items(); track item.QUESTION) {
+      <details class="faq__item">
+        <summary class="faq__question">{{ item.QUESTION }}</summary>
+        <p class="faq__answer">{{ item.ANSWER }}</p>
+      </details>
+    }
+  </div>
+</section>

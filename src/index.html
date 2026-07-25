@@ -51,6 +51,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://ihorshulha.dev/#person",
     "name": "Ihor Shulha",
     "jobTitle": "Software Engineer — Backend, AI, Cloud",
     "description": "Backend-focused software engineer in Germany. Designs, builds and supports services and apps end-to-end, integrating AI into real products.",
@@ -65,6 +66,37 @@
       "@type": "PostalAddress",
       "addressCountry": "DE"
     }
+  }
+  </script>
+
+  <!-- Structured Data: WebSite (helps AI/search engines parse site structure) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://ihorshulha.dev/#website",
+    "url": "https://ihorshulha.dev/",
+    "name": "Ihor Shulha — Software Engineer Portfolio",
+    "description": "Portfolio of Ihor Shulha, a Backend / AI / Cloud Software Engineer based in Germany.",
+    "inLanguage": ["en", "de", "uk"],
+    "publisher": { "@id": "https://ihorshulha.dev/#person" }
+  }
+  </script>
+
+  <!-- Structured Data: ProfessionalService (service offering for AI search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://ihorshulha.dev/#service",
+    "name": "Ihor Shulha — Software Engineering Services",
+    "description": "Backend engineering, AI integration, Cloud & DevOps, and fullstack/mobile development. Freelance and collaboration engagements.",
+    "url": "https://ihorshulha.dev/",
+    "image": "https://ihorshulha.dev/assets/avatar.jpg",
+    "areaServed": { "@type": "Country", "name": "Germany" },
+    "serviceType": ["Backend Engineering", "AI Integration", "Cloud & DevOps", "Fullstack & Mobile"],
+    "provider": { "@id": "https://ihorshulha.dev/#person" },
+    "knowsAbout": ["Java", "Spring Boot", "Spring AI", "Kotlin", "Go", "Python", "AWS", "PostgreSQL", "Kafka", "Angular", "Flutter", "RAG", "MCP", "OpenTelemetry"]
   }
   </script>
 </head>

@@ -1,37 +1,51 @@
 # Ihor Shulha — Software Engineer Portfolio
 
-Personal website of Ihor Shulha, a professional Lead Backend / AI / Cloud Engineer based in Germany.
+> Ihor Shulha is a Lead Backend / AI / Cloud Software Engineer based in Germany, open to freelance work and collaboration. He designs, builds and supports end-to-end services — from cloud infrastructure to AI-powered features. Website: https://ihorshulha.dev · LinkedIn: https://linkedin.com/in/ihorshulha · Email: ihorshulha@mail.online-impressum.de · Languages: English, German (formal), Ukrainian.
 
-## Core Profile
-- **Name**: Ihor Shulha
-- **Title**: Lead Backend & AI/Cloud Integration Engineer
-- **Location**: Germany
-- **Website**: https://ihorshulha.dev
-- **LinkedIn**: https://linkedin.com/in/ihorshulha
-- **Email**: ihorshulha@mail.online-impressum.de
-- **Languages**: English, German (formal), Ukrainian
+## Summary
 
-## Services & Expertise
-- **Backend Engineering**: Designing high-throughput, scalable, microservices- and event-driven architectures with measurable SLOs, using Java (up to Java 21), Spring Boot, Kotlin, Go, and Python.
-- **AI Integration**: Implementing LLM APIs, Spring AI, Model Context Protocol (MCP) integrations, retrieval-augmented generation (RAG) pipelines, and autonomous agent orchestration — including local/on-premise LLM deployments (Ollama) for strict data privacy.
-- **Cloud & DevOps**: Architecting secure, scalable cloud systems on AWS (including EKS), CI/CD with GitHub Actions, Infrastructure as Code (IaC) with Terraform and Docker, and production observability with OpenTelemetry, Prometheus, and Grafana.
-- **Fullstack Solutions**: Developing full-cycle applications from database schema design (PostgreSQL, Cassandra, Redis) to modern, responsive frontend components using Angular and Flutter.
-- **Quality & Security**: Testcontainers-backed integration testing, OAuth2/OIDC authentication (Keycloak), GDPR-compliant architectures, and versioned database migrations (Flyway, Liquibase).
+Personal portfolio of a professional Software Engineer with 7+ years building scalable, fault-tolerant systems for Fintech, Healthcare, and SaaS. Core stack: Java (up to Java 21), Spring Boot, Kotlin, Go, Python, AWS. Takes ownership of the entire product lifecycle — from cloud architecture to mobile apps and AI integration into real business features.
 
-## Selected Case Studies
-- **Cloud Billing SaaS**: Architected a high-performance invoice processing pipeline handling large volumes of concurrent invoice operations with continuous high availability.
-- **Modular Payments Platform**: Integrated multiple payment gateways with cascade failover mechanisms and real-time transaction analytics.
-- **Realtime Collaboration Service**: Designed low-latency document synchronization utilizing WebSockets and Redis caching.
-- **Healthcare Integration Suite**: Built secure IoT device connectivity adhering to US healthcare regulations.
-- **eCommerce Admin Toolkit**: Developed an API-first catalog management portal with customer behavior analytics.
-- **Wellness Tracker App**: Created a cross-platform mobile tracker utilizing serverless cloud synchronization and push notifications.
+## Sections
 
-## Tech Stack Summary
+- [Services / Expertise](https://ihorshulha.dev/#services): Backend Engineering, AI Integration, Cloud & DevOps, Fullstack & Mobile.
+- [Selected Work](https://ihorshulha.dev/#work): Anonymized case studies from production systems.
+- [About](https://ihorshulha.dev/#about): Background, experience, engineering principles.
+- [FAQ](https://ihorshulha.dev/#faq): Common questions about services, stack, location and AI work.
+- [Contact](https://ihorshulha.dev/#contact): Brief form + direct contact links.
+
+## Services
+
+- **Backend Engineering**: High-throughput microservices and event-driven architectures with measurable SLOs — Java, Spring Boot, Kotlin, Go, Python.
+- **AI Integration**: LLM APIs, Spring AI, Model Context Protocol (MCP), RAG pipelines, autonomous agents, on-premise LLM deployments (Ollama) for data privacy.
+- **Cloud & DevOps**: AWS architecture (EKS, Lambda, ECS), CI/CD with GitHub Actions, IaC with Terraform and Docker, observability via OpenTelemetry, Prometheus, Grafana.
+- **Fullstack & Mobile**: End-to-end apps from database design to Angular web and Flutter mobile clients.
+
+## Case Studies
+
+- [Cloud Billing SaaS](https://ihorshulha.dev/#work): High-throughput invoice processing pipeline with continuous high availability. Stack: Java 21, Spring Boot, Kafka, AWS.
+- [Modular Payments Platform](https://ihorshulha.dev/#work): Multiple payment providers with cascade failover and real-time analytics. Stack: Java 21, Spring Boot, AWS, PostgreSQL.
+- [Realtime Collaboration Service](https://ihorshulha.dev/#work): Low-latency document synchronization via WebSockets and Redis. Stack: Java, Spring Boot, WebSocket, Redis.
+- [Healthcare Integration Suite](https://ihorshulha.dev/#work): Secure IoT device integration compliant with US medical-device standards (Class B). Stack: Java, Spring, Cassandra, gRPC.
+- [eCommerce Admin Toolkit](https://ihorshulha.dev/#work): API-first admin panel for catalogs, orders and customer analytics. Stack: Java 21, Spring Boot, Angular, PostgreSQL.
+- [Wellness Tracker App](https://ihorshulha.dev/#work): Cross-platform mobile app with cloud sync and push notifications. Stack: Flutter, Firebase, REST.
+
+## Tech Stack
+
 - **Languages**: Java, Kotlin, Go, Python, TypeScript
 - **Frameworks**: Spring Boot, Spring AI, Angular, Flutter
 - **Data & Messaging**: PostgreSQL, Cassandra, Redis, Kafka, WebSockets, gRPC, Flyway, Liquibase
 - **Cloud & Infra**: AWS, EKS, Docker, Terraform, GitHub Actions, CI/CD
-- **AWS services (hands-on)**: EC2, Lambda, ECS/Fargate, EKS, S3, RDS/Aurora, DynamoDB, ElastiCache, SQS, SNS, EventBridge, API Gateway, CloudWatch, IAM, CloudFormation, Secrets Manager, CodePipeline, CodeBuild, CodeCommit
 - **Observability**: OpenTelemetry, Prometheus, Grafana
-- **Quality & Security**: Testcontainers, OAuth2/OIDC, Keycloak, GDPR-compliant design
-- **AI Stack**: Spring AI, MCP, LLM APIs, RAG pipelines, Vector DBs, Agent Orchestration, Ollama (local LLMs)
+- **Quality & Security**: Testcontainers, OAuth2 / OIDC, Keycloak, GDPR-compliant design
+- **AI Stack**: Spring AI, MCP, LLM APIs, RAG pipelines, Vector DBs, Agent Orchestration, Ollama
+
+## Contact
+
+- Email: ihorshulha@mail.online-impressum.de
+- LinkedIn: https://linkedin.com/in/ihorshulha
+- Impressum: https://mein.online-impressum.de/ihorshulha/
+
+## Optional
+
+- [Full machine-readable context](https://ihorshulha.dev/llms-full.txt): Extended profile for direct LLM ingestion.

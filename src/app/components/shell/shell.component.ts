@@ -10,6 +10,7 @@ import { BuildingComponent } from '../building/building.component';
 import { AboutComponent } from '../about/about.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { ContactComponent } from '../contact/contact.component';
+import { FaqComponent } from '../faq/faq.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SeoService } from '../../shared/seo/seo.service';
 
@@ -31,6 +32,7 @@ import { SeoService } from '../../shared/seo/seo.service';
     BuildingComponent,
     AboutComponent,
     SkillsComponent,
+    FaqComponent,
     ContactComponent,
     FooterComponent,
   ],
@@ -42,6 +44,7 @@ import { SeoService } from '../../shared/seo/seo.service';
       <section id="work"><app-projects /></section>
       <app-building />
       <section id="about"><app-about /><app-skills /></section>
+      <app-faq />
       <section id="contact"><app-contact /></section>
     </main>
     <app-footer />

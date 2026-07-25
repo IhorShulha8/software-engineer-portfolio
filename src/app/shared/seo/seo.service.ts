@@ -52,6 +52,11 @@ export class SeoService {
     const url = lang === 'en' ? `${SITE_ORIGIN}/` : `${SITE_ORIGIN}/${lang}`;
     this.upsertLink('canonical', url);
     this.meta.updateTag({ property: 'og:url', content: url });
+
+    // Structured data (per-locale, so each prerendered locale HTML carries
+    // its own localized FAQ + case-study graph for AI search engines).
+    this.upsertJsonLd('faq', this.buildFaqSchema(isoLang));
+    this.upsertJsonLd('cases', this.buildCaseStudiesSchema());
   }
 
   /** Create or update a <link rel="..."> element in <head>. */
@@ -63,5 +68,74 @@ export class SeoService {
       this.document.head.appendChild(link);
     }
     link.setAttribute('href', href);
+  }
+
+  /**
+   * Create or replace a JSON-LD `<script>` block in `<head>`, tagged with a
+   * `data-jsonld` attribute so re-runs (locale switches) replace in place
+   * instead of stacking duplicates. Idempotent per `id`.
+   */
+  private upsertJsonLd(id: string, data: unknown): void {
+    const selector = `script[type="application/ld+json"][data-jsonld="${id}"]`;
+    let script = this.document.head.querySelector<HTMLScriptElement>(selector);
+    if (!script) {
+      script = this.document.createElement('script');
+      script.setAttribute('type', 'application/ld+json');
+      script.setAttribute('data-jsonld', id);
+      this.document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(data);
+  }
+
+  /** Build a schema.org FAQPage from the localized FAQ.LIST i18n entries. */
+  private buildFaqSchema(inLanguage: string): unknown {
+    const list = this.translate.instant('FAQ.LIST') as
+      | Array<{ QUESTION: string; ANSWER: string }>
+      | undefined;
+    if (!Array.isArray(list) || list.length === 0) {
+      return null;
+    }
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      inLanguage,
+      mainEntity: list.map((item) => ({
+        '@type': 'Question',
+        name: item.QUESTION,
+        acceptedAnswer: { '@type': 'Answer', text: item.ANSWER },
+      })),
+    };
+  }
+
+  /**
+   * Build an ItemList of schema.org CreativeWork entries from the localized
+   * WORK.LIST i18n entries. Each case study is anonymized (no named
+   * organization) but carries its industry (TAG), stack (keywords) and the
+   * result statement as description — facts AI search engines can cite.
+   */
+  private buildCaseStudiesSchema(): unknown {
+    const cases = this.translate.instant('WORK.LIST') as
+      | Array<{ TITLE: string; TAG: string; STACK: string[]; RESULT: string }>
+      | undefined;
+    if (!Array.isArray(cases) || cases.length === 0) {
+      return null;
+    }
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Selected Work',
+      itemListElement: cases.map((c, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'CreativeWork',
+          name: c.TITLE,
+          description: c.RESULT,
+          about: c.TAG,
+          keywords: c.STACK.join(', '),
+          author: { '@id': 'https://ihorshulha.dev/#person' },
+        },
+      })),
+    };
   }
 }
