@@ -1,6 +1,6 @@
 # Ihor Shulha — Software Engineer Portfolio
 
-> Ihor Shulha is a Lead Backend / AI / Cloud Software Engineer based in Germany, open to freelance work and collaboration. He designs, builds and supports end-to-end services — from cloud infrastructure to AI-powered features. Website: https://ihorshulha.dev · LinkedIn: https://linkedin.com/in/ihorshulha · Email: ihorshulha@mail.online-impressum.de · Languages: English, German (formal), Ukrainian.
+> Ihor Shulha is a Lead Backend / AI / Cloud Software Engineer based in Germany, open to freelance work and collaboration. He designs, builds and supports end-to-end services — from cloud infrastructure to AI-powered features. Website: https://ihorshulha.dev · LinkedIn: https://linkedin.com/in/ihorshulha · GitHub: https://github.com/IhorShulha8 · Email: ihorshulha@mail.online-impressum.de · Languages: English, German (formal), Ukrainian.
 
 ## Summary
 
@@ -44,6 +44,7 @@ Personal portfolio of a professional Software Engineer with 7+ years building sc
 
 - Email: ihorshulha@mail.online-impressum.de
 - LinkedIn: https://linkedin.com/in/ihorshulha
+- GitHub: https://github.com/IhorShulha8
 - Impressum: https://mein.online-impressum.de/ihorshulha/
 
 ## Optional

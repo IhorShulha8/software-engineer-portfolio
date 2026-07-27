@@ -10,6 +10,7 @@
 - **Location**: Based in Germany (addressCountry: DE)
 - **Website**: https://ihorshulha.dev
 - **LinkedIn**: https://linkedin.com/in/ihorshulha
+- **GitHub**: https://github.com/IhorShulha8
 - **Email**: ihorshulha@mail.online-impressum.de
 - **Impressum (legal notice)**: https://mein.online-impressum.de/ihorshulha/
 - **Languages**: English, German (formal), Ukrainian
@@ -67,5 +68,6 @@ End-to-end product development from scratch — covering database design, robust
 
 - **Email**: ihorshulha@mail.online-impressum.de
 - **LinkedIn**: https://linkedin.com/in/ihorshulha
+- **GitHub**: https://github.com/IhorShulha8
 - **Impressum**: https://mein.online-impressum.de/ihorshulha/
 - **Contact form**: https://ihorshulha.dev/#contact

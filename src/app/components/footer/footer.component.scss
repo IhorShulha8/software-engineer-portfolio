@@ -82,7 +82,7 @@
     font-size: $fs-small;
     letter-spacing: $ls-wide;
     text-transform: uppercase;
-    color: $color-text-faint;
+    color: $color-text-muted;
     margin: 0 0 $space-xs;
   }
 
@@ -98,7 +98,7 @@
       font-family: var(--font-body);
       font-size: $fs-small;
       letter-spacing: $ls-wide;
-      color: $color-text-faint;
+      color: $color-text-muted;
       padding: $space-xs $space-sm;
       border-radius: $radius-sm;
       transition: color $dur-fast $ease-out, border-color $dur-fast $ease-out;
@@ -115,6 +115,6 @@
     @include mixins.container;
     padding-bottom: $space-lg;
     font-size: $fs-small;
-    color: $color-text-faint;
+    color: $color-text-muted;
   }
 }
